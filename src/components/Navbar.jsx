@@ -12,11 +12,11 @@ const Navbar = () => {
           <div className="flex flex-col items-end">
             <div>
               <div className="flex">
-                <img className="w-16" src="./public/images/logo.png" alt="" />
+                <img className="w-16" src="./public/images/ringing-phone.png" alt="" />
                 <p>number</p>
               </div>
               <div className="flex">
-                <img className="w-16" src="./public/images/logo.png" alt="" />
+                <img className="w-16" src="./public/images/phone-time.png" alt="" />
                 <p>Heures</p>
               </div>
             </div>
