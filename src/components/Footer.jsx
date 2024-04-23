@@ -5,7 +5,8 @@ const Footer = () => {
         <div className="">
           <div className="z-50 bg-red-200 mx-10">
             <div>
-              flex
+              <h1></h1>
+              <p></p>
             </div>
             <div></div>
             <div></div>
