@@ -6,3 +6,11 @@
   width: 100vw;
   height: 100vh;
 } */
+
+.navbar *, h1 {
+  font-family: "Zen Antique", serif;
+}
+
+* {
+  font-family: "Hina Mincho", serif;
+}
