@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 const Navbar = () => {
   return (
     <>
       <div className="navbar bg-lightpink py-2 shadow-md">
-        <div className="flex gap-5 h-20 mx-9 justify-between ">
+        <div className="flex gap-5 h-20 w-11/12 m-auto justify-between ">
           <Link className="flex items-center gap-1" to="/">
             <img className="w-16" src="./public/images/logo.png" alt="" />
             <h1 className="text-2xl">合同会社徳 徳有企画</h1>
           </Link>
+          <div className="2md:hidden">
+            <Menu />
+          </div>
           <div className="hidden 2md:flex flex-col items-end">
             <div>
               <div className="flex gap-1">
