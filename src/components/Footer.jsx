@@ -34,7 +34,7 @@ const Footer = () => {
           <a className="hover:text-rose-600 transition duration-200 ease-in-out" href="">個人情報保護方針</a>
           <div className="relative">
             <a className="hover:text-rose-600 transition duration-200 ease-in-out" href="">Freepik提供のイラストを使用</a>
-            <img className="absolute -bottom-1.5 -right-10 w-9" src="./public/images/logo.png" alt="" />
+            <img className="absolute -bottom-1.5 -right-10 w-9" src="./images/logo.png" alt="" />
           </div>
           <h1>© 2024  合同会社徳有企画</h1>
         </div>
