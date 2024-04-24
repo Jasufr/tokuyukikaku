@@ -7,7 +7,7 @@
   height: 100vh;
 } */
 
-.navbar *, h1 {
+.navbar *, h1, span {
   font-family: "Zen Antique", serif;
 }
 
