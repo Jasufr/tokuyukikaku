@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <MainLayout>
-      <div className="text-sky-600">
+      <div className="">
         hello
       </div>
     </MainLayout>

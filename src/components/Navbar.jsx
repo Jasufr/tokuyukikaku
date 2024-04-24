@@ -7,8 +7,8 @@ const Navbar = () => {
       <div className="navbar bg-lightpink py-2 shadow-md">
         <div className="flex gap-5 h-20 w-11/12 m-auto justify-between ">
           <Link className="flex items-center gap-1" to="/">
-            <img className="w-16" src="./images/logo.png" alt="" />
-            <h1 className="text-2xl">合同会社徳 徳有企画</h1>
+            <img className="w-12 xs:w-16" src="./images/logo.png" alt="" />
+            <h1 className="text-xl xs:text-2xl">合同会社徳 徳有企画</h1>
           </Link>
           <div className="2md:hidden">
             <Menu />
