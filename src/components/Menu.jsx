@@ -33,37 +33,40 @@ const Menu = () => {
               <h1 className="text-xl text-center flex flex-col"><span>合同会社徳</span>徳有企画</h1>
             </Link>
           </div>
-          <ul className="mb-4 space-y-1">
+          <ul className="mb-4">
             <li>
-              <Link to="/about" className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">私たちについて</Link>
+              <Link to="/about" className="flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                私たちについて
+                <img className="w-4" src="./images/right.png" alt="" />
+              </Link>
             </li>
             <li>
               <div>
-                <div className="flex hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out" onClick={() => setServicesOpened(!servicesOpened)}>
+                <div className="h-[31.2px] flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out" onClick={() => setServicesOpened(!servicesOpened)}>
                   サービス
                   <img className="w-4 pt-0.5" src="./images/sort-down.png" alt="" /></div>
-                <ul className={`ps-3 space-y-1 overflow-hidden ${servicesOpened ? "h-full" : "h-0"}`}>
+                <ul className={`ps-3 overflow-hidden ${servicesOpened ? "h-full" : "h-0"}`}>
                   <li>
-                    <Link to="/houmon" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/houmon" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./images/minibus-.png" alt="" />
                       訪問介護
                     </Link>
                   </li>
                   <li>
-                    <Link to="/taxi" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/taxi" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./images/taxi.png" alt="" />
                       介護タクシー
                     </Link>
                   </li>
                   <li>
-                    <Link to="/dayservice" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/dayservice" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./images/business-group.png" alt="" />
                       デイサービス
                     </Link>
 
                   </li>
                   <li>
-                    <Link to="/kyotaku" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/kyotaku" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./images/neighbour.png" alt="" />
                       居宅介護支援
                     </Link>
@@ -71,8 +74,8 @@ const Menu = () => {
                 </ul>
               </div>
             </li>
-            <li><Link to="/contact" className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">お問い合わせ</Link></li>
-            <li><Link to="/recruit" className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">採用情報</Link></li>
+            <li><Link to="/contact" className="flex hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">お問い合わせ</Link></li>
+            <li><Link to="/recruit" className="flex hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">採用情報</Link></li>
           </ul>
           <div>
             <div>
