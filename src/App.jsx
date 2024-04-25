@@ -1,10 +1,14 @@
+import { Canvas } from "@react-three/fiber";
 import MainLayout from "./layout/MainLayout";
+import Blob from "./components/Blob";
+import { Environment } from "@react-three/drei";
 
 function App() {
 
   return (
     <>
       <MainLayout>
+
         <div className="home">
           <div className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
             <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
