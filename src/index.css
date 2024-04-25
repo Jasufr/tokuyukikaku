@@ -7,10 +7,11 @@
   height: 100vh;
 } */
 
-.navbar *, h1, span {
+.navbar *, h1 {
   font-family: "Zen Antique", serif;
 }
 
 * {
   font-family: "Hina Mincho", serif;
+  color: #313131;
 }
