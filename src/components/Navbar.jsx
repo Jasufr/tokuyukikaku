@@ -26,43 +26,43 @@ const Navbar = () => {
             </div>
             <div>
               <ul className="flex gap-4">
-                <li className="hover:bg-darkstone hover:text-rose-600 px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                   <Link to="/about">私たちについて</Link>
                 </li>
                 <li className="relative group hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                  <div className="flex items-center group-hover:text-rose-600">
+                  <div className="flex items-center group-hover:text-darkpink">
                     サービス
                     <img className="w-4 pt-0.5" src="./images/sort-down.png" alt="" />
                   </div>
-                  <ul className="absolute hidden group-hover:block bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
+                  <ul className="z-50 absolute hidden group-hover:block bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
                     <li>
-                      <Link to="/houmon" className="hover:bg-zinc rounded-sm flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                      <Link to="/houmon" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
                         <img className="w-5" src="./images/minibus-.png" alt="" />
                         訪問介護
                       </Link>
                     </li>
                     <li>
-                      <Link to="/taxi" className="hover:bg-zinc rounded-sm flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                      <Link to="/taxi" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
                         <img className="w-5" src="./images/taxi.png" alt="" />
                         介護タクシー
                       </Link>
                     </li>
                     <li>
-                      <Link to="/dayservice" className="hover:bg-zinc rounded-sm flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                      <Link to="/dayservice" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
                         <img className="w-5" src="./images/business-group.png" alt="" />
                         デイサービス
                       </Link>
                     </li>
                     <li>
-                      <Link to="/kyotaku" className="hover:bg-zinc rounded-sm flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                      <Link to="/kyotaku" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
                         <img className="w-5" src="./images/neighbour.png" alt="" />
                         居宅介護支援
                       </Link>
                     </li>
                   </ul>
                 </li>
-                <li className="hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/contact">お問い合わせ</Link></li>
-                <li className="hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/recruit">採用情報</Link></li>
+                <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/contact">お問い合わせ</Link></li>
+                <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/recruit">採用情報</Link></li>
               </ul>
             </div>
           </div>

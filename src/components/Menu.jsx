@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [menuOpened, setMenuOpened] = useState(null);
+  const [servicesOpened, setServicesOpened] = useState(null);
 
   return (
     <>
@@ -25,36 +26,44 @@ const Menu = () => {
       </button>
       <div className={`z-40 fixed top-0 right-0 bottom-0 bg-white transition-all overflow-hidden flex flex-col
       ${menuOpened ? "w-full xs:w-80" : "w-0"}`}>
-        <div>
-          <ul>
+        <div className="w-2/3 mt-24 mx-auto">
+          <div className="mb-4">
+            <Link className="flex items-center justify-center gap-1" to="/">
+              <img className="w-14" src="./images/logo.png" alt="" />
+              <h1 className="text-xl text-center flex flex-col"><span>合同会社徳</span>徳有企画</h1>
+            </Link>
+          </div>
+          <ul className="mb-4 space-y-1">
             <li>
-              <Link to="/about">私たちについて</Link>
+              <Link to="/about" className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">私たちについて</Link>
             </li>
             <li>
               <div>
-                サービス
-                <ul>
+                <div className="flex hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out" onClick={() => setServicesOpened(!servicesOpened)}>
+                  サービス
+                  <img className="w-4 pt-0.5" src="./images/sort-down.png" alt="" /></div>
+                <ul className={`ps-3 space-y-1 overflow-hidden ${servicesOpened ? "h-full" : "h-0"}`}>
                   <li>
-                    <Link to="/houmon" className="flex items-center">
+                    <Link to="/houmon" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./images/minibus-.png" alt="" />
                       訪問介護
                     </Link>
                   </li>
                   <li>
-                    <Link to="/taxi" className="flex items-center">
+                    <Link to="/taxi" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./images/taxi.png" alt="" />
                       介護タクシー
                     </Link>
                   </li>
                   <li>
-                    <Link to="/dayservice" className="flex items-center">
-                    <img className="w-5" src="./images/business-group.png" alt="" />
-                    デイサービス
+                    <Link to="/dayservice" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                      <img className="w-5" src="./images/business-group.png" alt="" />
+                      デイサービス
                     </Link>
 
                   </li>
                   <li>
-                    <Link to="/kyotaku" className="flex items-center">
+                    <Link to="/kyotaku" className="flex items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./images/neighbour.png" alt="" />
                       居宅介護支援
                     </Link>
@@ -62,7 +71,29 @@ const Menu = () => {
                 </ul>
               </div>
             </li>
+            <li><Link to="/contact" className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">お問い合わせ</Link></li>
+            <li><Link to="/recruit" className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">採用情報</Link></li>
           </ul>
+          <div>
+            <div>
+              <div className="flex gap-1">
+                <img className="w-8" src="./images/ringing-phone.png" alt="" />
+                <p className="text-2xl">042-497-6116</p>
+              </div>
+              <div className="flex justify-end gap-1 items-center">
+                <img className="w-4" src="./images/phone-time.png" alt="" />
+                <p className="text-sm">9：00～18：00</p>
+              </div>
+            </div>
+            <div className="h-14 flex flex-col justify-center items-center text-[10px]">
+              <a className="hover:text-rose-600 transition duration-200 ease-in-out" href="">個人情報保護方針</a>
+              <div className="relative">
+                <a className="hover:text-rose-600 transition duration-200 ease-in-out" href="">Freepik提供のイラストを使用</a>
+                <img className="absolute -bottom-1.5 -right-10 w-9" src="./images/logo.png" alt="" />
+              </div>
+              <h1>© 2024  合同会社徳有企画</h1>
+            </div>
+          </div>
         </div>
       </div>
     </>
