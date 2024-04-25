@@ -6,6 +6,15 @@ import Blob from "../components/Blob";
 
 
 const MainLayout = ({ children }) => {
+  // console.log(children);
+  // console.log(children.props.className);
+  // const position = () => {
+  //   if (children.props.className === "home") {
+  //     [0, 0, 0];
+  //   } else {
+  //     [10, 5, 10];
+  //   }
+  // }
   return (
     <div>
       <Navbar />
