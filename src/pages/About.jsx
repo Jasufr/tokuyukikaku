@@ -6,6 +6,15 @@ const About = () => {
       <MainLayout>
         <div className="about">
           About Page
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
+          <div className="h-80 bg-darkpink">hello</div>
         </div>
       </MainLayout>
     </>

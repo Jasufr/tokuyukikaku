@@ -13,11 +13,12 @@ import ServiceHoumon from './pages/ServiceHoumon.jsx';
 import ServiceTaxi from './pages/ServiceTaxi.jsx';
 import ServiceDay from './pages/ServiceDay.jsx';
 import ServiceKyotaku from './pages/ServiceKyotaku.jsx';
+import Appp from './Appp.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Appp />,
   },
   {
     path: "/about",
