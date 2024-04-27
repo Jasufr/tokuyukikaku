@@ -1,6 +1,6 @@
 import { MeshDistortMaterial } from "@react-three/drei";
 
-const Blob = () => {
+const BlobLightPink = () => {
 
   return (
     <>
@@ -12,7 +12,7 @@ const Blob = () => {
               transparent
               distort={.5}
               speed={1}
-              color={"#ED0066"}
+              color={"#FFEDF4"}
             />
           </mesh>
       </group>
@@ -20,4 +20,4 @@ const Blob = () => {
   )
 };
 
-export default Blob;
+export default BlobLightPink;

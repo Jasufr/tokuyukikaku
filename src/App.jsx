@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import MainLayout from "./layout/MainLayout";
-import Blob from "./components/Blob";
+import Blob from "./components/BlobDarkPink";
 import { Environment } from "@react-three/drei";
 
 function App() {
