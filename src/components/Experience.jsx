@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import BlobDarkPink from "./BlobDarkPink";
 import BlobLightPink from "./BlobLightPink";
+import BlobGreen from "./BlobGreen";
 
 export const Experience = () => {
 
@@ -94,6 +95,40 @@ export const Experience = () => {
       >
         <motion.group>
           <BlobLightPink />
+        </motion.group>
+      </motion.group>
+      <motion.group
+        animate={"" + section}
+        transition={{
+          duration: 0.6,
+        }}
+        variants={{
+          0: {
+            scaleX: 0,
+            scaleY: 0,
+            scaleZ: 0,
+            y: 0,
+            x: 0,
+            z: 0,
+            //  rotateX: 0,
+            //  rotateY: 0,
+            //  rotateZ: 0,
+          },
+          1: {
+            scaleX: .4,
+            scaleY: .4,
+            scaleZ: .4,
+            x: 1.5,
+            y: -viewport.height,
+            z: 0,
+            //  rotateX: 0,
+            //  rotateY: -1,
+            //  rotateZ: 0.1,
+          },
+        }}
+      >
+        <motion.group>
+          <BlobGreen />
         </motion.group>
       </motion.group>
     </>

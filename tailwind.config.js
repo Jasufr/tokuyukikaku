@@ -13,6 +13,7 @@ export default {
       'darkstone': '#57534e',
       'white': '#FEFEFE',
       'black': '#313131',
+      'green': '#2FAD41',
     },
     screens: {
       'xs': '500px',
