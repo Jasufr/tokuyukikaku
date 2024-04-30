@@ -8,7 +8,6 @@ export default {
       'lightpink': '#FFEDF4',
       'darkpink': '#ED0066',
       'lightgray': '#F6F6F6',
-      // 'lightzinc': '#fafafa',
       'zinc': '#e4e4e7',
       'darkstone': '#57534e',
       'white': '#FEFEFE',

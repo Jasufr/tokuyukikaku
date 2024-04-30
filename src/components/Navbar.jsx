@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import { Link } from "wouter";
 import Menu from "./Menu";
 

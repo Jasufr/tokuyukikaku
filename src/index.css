@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #root {
-  width: 100vw;
-  height: 100vh;
-} */
 
 * {
   box-sizing: border-box;
+  font-family: "Hina Mincho", serif;
+  color: #313131;
 }
 
 html,
@@ -22,9 +20,4 @@ body,
 
 .navbar *, h1 {
   font-family: "Zen Antique", serif;
-}
-
-* {
-  font-family: "Hina Mincho", serif;
-  color: #313131;
 }

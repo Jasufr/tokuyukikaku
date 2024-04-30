@@ -1,29 +1,101 @@
 import { Canvas } from "@react-three/fiber";
 import MainLayout from "./layout/MainLayout";
-import Blob from "./components/BlobDarkPink";
-import { Environment } from "@react-three/drei";
+import BlobDarkPink from "./components/BlobDarkPink";
+import { Environment, Html } from "@react-three/drei";
+import BlobLightPink from "./components/BlobLightPink";
+import { Link, Route, useRoute } from "wouter";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import BlobGreen from "./components/BlobGreen";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [contentHeight, setContentHeight] = useState(0);
+  const [blobPositions, setBlobPositions] = useState({
+    darkPink: [0, 0, 0],
+    lightPink: [2, 0, 0],
+    green: [4, 0, 0]
+  });
+
+
+  // Get the height of the content within the Route
+  const [, params] = useRoute("/:page");
+
+  useEffect(() => {
+    const contentElement = document.getElementById("content");
+    if (contentElement) {
+      setContentHeight(contentElement.clientHeight);
+    }
+  }, [params]);
+
+
+  console.log(params);
+  // useEffect(() => {
+  //   if (params?.page === "about") {
+  //     setBlobPositions({
+  //       darkPink: [-2, 0, 0],
+  //       lightPink: [0, 0, 0],
+  //       green: [2, 0, 0]
+  //     });
+  //   }
+  // }, [params]);
+
+  // useEffect(() => {
+  //   // Update blob positions based on the current route
+  //   switch (params.page) {
+  //     case "about":
+  //       setBlobPositions({
+  //         darkPink: [-2, 0, 0],
+  //         lightPink: [0, 0, 0],
+  //         green: [2, 0, 0]
+  //       });
+  //       break;
+  //     case "contact":
+  //       setBlobPositions({
+  //         darkPink: [0, 0, 0],
+  //         lightPink: [2, 0, 0],
+  //         green: [4, 0, 0]
+  //       });
+  //       break;
+  //     default:
+  //       setBlobPositions({
+  //         darkPink: [0, 0, 0],
+  //         lightPink: [2, 0, 0],
+  //         green: [4, 0, 0]
+  //       });
+  //   }
+  // }, [params]);
 
   return (
     <>
-      <MainLayout>
+      <div id="content">
+        <MainLayout>
+          <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
 
-        <div className="home">
-          <div className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
-            <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
-              <div className="bg-white bg-opacity-55 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
-                <h1 className="text-darkpink text-3xl">心の温もり。</h1>
-                <p className="text-lg">幸福を大切にし、安心感を提供することを使命とし、心からのケアとサポートを通じて、共に歩んでいきます。</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            hello
-          </div>
-        </div>
+        </MainLayout>
+      </div>
+      <div className="w-full absolute top-0" style={{ height: contentHeight }}>
 
-      </MainLayout>
+        <Canvas>
+          <Environment preset="sunset" />
+          <group
+            scale={[0.2, 0.2, 0.2]}
+          >
+            <BlobDarkPink position={blobPositions.darkPink} />
+            <BlobLightPink position={blobPositions.lightPink} />
+            <BlobGreen position={blobPositions.green} />
+          </group>
+        </Canvas>
+      </div>
     </>
   )
 }

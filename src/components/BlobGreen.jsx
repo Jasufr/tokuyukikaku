@@ -10,7 +10,7 @@ const BlobGreen = () => {
             <MeshDistortMaterial
               opacity={.9}
               transparent
-              distort={.6}
+              distort={.0}
               speed={1.2}
               color={"#2FAD41"}
             />

@@ -9,7 +9,6 @@ const Section = (props) => {
       className={`
       h-screen w-screen
       flex flex-col
-      justify-center
       `}
       // initial={{
       //   opacity: 0,
@@ -32,13 +31,13 @@ const Section = (props) => {
 export const Interface = (props) => {
 
   return <>
-    {/* <MainLayout> */}
+    <MainLayout>
       <div className="flex flex-col items-center w-screen">
       <AccueilSection />
       <AboutSection />
       <ServicesSection />
     </div>
-    {/* </MainLayout> */}
+    </MainLayout>
 
   </>;
 };
@@ -78,6 +77,7 @@ const ServicesSection = () => {
   return (
     <Section>
       <div>Services</div>
+      <div className="h-80 bg-darkpink">hello</div>
     </Section>
   );
 };
