@@ -56,6 +56,8 @@ const AccueilSection = () => {
           </div>
         </div>
 
+
+
       </div>
     </Section>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import App from './App.jsx'
 import './index.css'
-import ReactDOM from 'react-dom/client'
+import ReactDOM, { createRoot } from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,44 +14,47 @@ import ServiceTaxi from './pages/ServiceTaxi.jsx';
 import ServiceDay from './pages/ServiceDay.jsx';
 import ServiceKyotaku from './pages/ServiceKyotaku.jsx';
 import Appp from './Appp.jsx';
+import Apppp from './Apppp.jsx';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Appp />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/recruit",
-    element: <Recruit />,
-  },
-  {
-    path: "/houmon",
-    element: <ServiceHoumon />,
-  },
-  {
-    path: "/taxi",
-    element: <ServiceTaxi />,
-  },
-  {
-    path: "/dayservice",
-    element: <ServiceDay />,
-  },
-  {
-    path: "/kyotaku",
-    element: <ServiceKyotaku />,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Apppp />,
+//   },
+//   {
+//     path: "/about",
+//     element: <About />,
+//   },
+//   {
+//     path: "/contact",
+//     element: <Contact />,
+//   },
+//   {
+//     path: "/recruit",
+//     element: <Recruit />,
+//   },
+//   {
+//     path: "/houmon",
+//     element: <ServiceHoumon />,
+//   },
+//   {
+//     path: "/taxi",
+//     element: <ServiceTaxi />,
+//   },
+//   {
+//     path: "/dayservice",
+//     element: <ServiceDay />,
+//   },
+//   {
+//     path: "/kyotaku",
+//     element: <ServiceKyotaku />,
+//   },
+// ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+createRoot(document.getElementById("root")).render(<Apppp />)
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <React.StrictMode>
+//     <RouterProvider router={router} />
+//   </React.StrictMode>,
+// )

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "wouter";
 
 const Menu = () => {
   const [menuOpened, setMenuOpened] = useState(null);
