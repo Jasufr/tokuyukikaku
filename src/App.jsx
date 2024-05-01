@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import BlobGreen from "./components/BlobGreen";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
 
 function App() {
   const [contentHeight, setContentHeight] = useState(0);
@@ -30,7 +30,38 @@ function App() {
   }, [params]);
 
 
-  console.log(params);
+  // console.log(params);
+
+
+  const [isVisible, setIsVisible] = useState(false);
+  const targetRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        root: null, // viewport
+        rootMargin: '0px', // no margin
+        threshold: 0.5, // 50% of target visible
+      }
+    );
+
+    if (targetRef.current) {
+      observer.observe(targetRef.current);
+    }
+
+    // Clean up the observer
+    return () => {
+      if (targetRef.current) {
+        observer.unobserve(targetRef.current);
+      }
+    };
+  }, []);
+
+
+
   // useEffect(() => {
   //   if (params?.page === "about") {
   //     setBlobPositions({
@@ -73,6 +104,15 @@ function App() {
         <MainLayout>
           <Route path="/">
             <Home />
+            {/* <div
+            ref={targetRef}
+            style={{
+              width: '100px',
+              height: '100px',
+              backgroundColor: isVisible ? 'green' : 'red',
+              margin: '50px',
+            }}
+            >{isVisible? 'visible' : 'not visible'}</div> */}
           </Route>
           <Route path="/about">
             <About />
@@ -80,22 +120,23 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-
+        <a href="#" className="fixed bottom-0 right-0 w-8 z-50"><img src="./icons/double-left.png" alt="" /></a>
         </MainLayout>
       </div>
-      <div className="w-full absolute top-0" style={{ height: contentHeight }}>
+      {/* <div className="w-full absolute top-0 -z-10" style={{ height: contentHeight }}>
 
         <Canvas>
           <Environment preset="sunset" />
           <group
             scale={[0.2, 0.2, 0.2]}
-          >
-            <BlobDarkPink position={blobPositions.darkPink} />
+          > <group position={[7, 2, 0]}>
+              <BlobDarkPink />
+            </group>
             <BlobLightPink position={blobPositions.lightPink} />
             <BlobGreen position={blobPositions.green} />
           </group>
         </Canvas>
-      </div>
+      </div> */}
     </>
   )
 }
