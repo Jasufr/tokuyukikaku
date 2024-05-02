@@ -45,7 +45,7 @@ const Menu = () => {
               <div>
                 <div className="h-[31.2px] flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out" onClick={() => setServicesOpened(!servicesOpened)}>
                   サービス
-                  <img className="w-4 pt-0.5" src="./icons/sort-down.png" alt="" /></div>
+                  <img className="w-4 pt-0.5" src="./icons/open-bottom.png" alt="" /></div>
                 <ul className={`px-3 overflow-hidden ${servicesOpened ? "h-full" : "h-0"}`}>
                   <li>
                     <Link to="/houmon" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
@@ -87,11 +87,11 @@ const Menu = () => {
           <div>
             <div className="mb-2">
               <div className="flex items-center justify-center gap-1">
-                <img className="w-8" src="./icons/ringing-phone.png" alt="" />
+                <img className="w-8" src="./icons/phone.png" alt="" />
                 <p className="text-xl">042-497-6116</p>
               </div>
               <div className="flex justify-center gap-1 items-center">
-                <img className="w-3" src="./icons/phone-time.png" alt="" />
+                <img className="w-3" src="./icons/time.png" alt="" />
                 <p className="text-[12px]">9：00～18：00</p>
               </div>
             </div>

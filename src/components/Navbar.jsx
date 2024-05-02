@@ -16,11 +16,11 @@ const Navbar = () => {
           <div className="hidden 2md:flex flex-col items-end">
             <div>
               <div className="flex gap-1">
-                <img className="w-8" src="./icons/ringing-phone.png" alt="" />
+                <img className="w-8" src="./icons/phone.png" alt="" />
                 <p className="text-2xl">042-497-6116</p>
               </div>
               <div className="flex justify-end gap-1 items-center">
-                <img className="w-4" src="./icons/phone-time.png" alt="" />
+                <img className="w-4" src="./icons/time.png" alt="" />
                 <p className="text-sm">9：00～18：00</p>
               </div>
             </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <li className="relative group hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                   <div className="flex items-center group-hover:text-darkpink">
                     サービス
-                    <img className="w-4 pt-0.5" src="./icons/sort-down.png" alt="" />
+                    <img className="w-4 pt-0.5" src="./icons/open-bottom.png" alt="" />
                   </div>
                   <ul className="z-50 absolute hidden group-hover:block bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
                     <li>
