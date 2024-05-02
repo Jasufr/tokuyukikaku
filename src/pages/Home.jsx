@@ -74,7 +74,7 @@ const Home = () => {
                   <p>訪問介護員（ホームヘルパー）などがご自宅に訪問し、介護や日常生活上のお世話を行うサービスです。ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。</p>
                   <Link to="/houmon" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img src="./icons/right.png" alt="" className="w-8 group-hover:" />
+                    <img src="./icons/rightt.png" alt="" className="w-8 group-hover:" />
                   </Link>
                 </div>
               </div>

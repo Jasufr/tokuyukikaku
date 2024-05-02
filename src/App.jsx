@@ -120,7 +120,7 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-        <a href="#" className="fixed bottom-0 right-0 w-8 z-50"><img src="./icons/double-left.png" alt="" /></a>
+        <a href="#" className="fixed bottom-0 right-0 w-8 z-50 opacity-80 m-4"><img src="./icons/double-upp.png" alt="" /></a>
         </MainLayout>
       </div>
       {/* <div className="w-full absolute top-0 z-10" style={{ height: contentHeight }}>
