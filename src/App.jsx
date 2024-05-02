@@ -123,9 +123,9 @@ function App() {
         <a href="#" className="fixed bottom-0 right-0 w-8 z-50"><img src="./icons/double-left.png" alt="" /></a>
         </MainLayout>
       </div>
-      {/* <div className="w-full absolute top-0 -z-10" style={{ height: contentHeight }}>
+      {/* <div className="w-full absolute top-0 z-10" style={{ height: contentHeight }}>
 
-        <Canvas>
+        <Canvas camera={{ fov: 50 }}>
           <Environment preset="sunset" />
           <group
             scale={[0.2, 0.2, 0.2]}
