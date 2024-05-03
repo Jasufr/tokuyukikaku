@@ -31,11 +31,11 @@ const Home = () => {
         </div>
         <div>
           {/* About */}
-          <div className="about-section relative my-12">
-            <div className="flex gap-10 px-28 py-6">
-              <div className="w-2/3 bg-[url('./illustrations/helper1.jpg')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
+          <div className="about-section relative my-6 lg:my-12">
+            <div className="flex gap-10 px-6 2md:px-12 lg:px-24 xl:px-28 py-6">
+              <div className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('./illustrations/helper1.jpg')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
               {/* <img src="./illustrations/helper1.jpg" alt="" className="w-1/2 h-" /> */}
-              <div className="w-1/3 flex flex-col justify-center">
+              <div className="md:w-1/2 lg:w-1/3 flex flex-col justify-center">
                 <h1 className="text-2xl mb-2 text-darkpink">心温まるサポートで幸福と健康を</h1>
                 <p>徳有企画では、全ての方々に心からのケアとサポートを提供することをモットーにしています。私たちは、ご利用者の皆様、ご家族の方々、地域の皆様、そしてスタッフの幸福と健康を大切に考えています。介護に取り組む私たちの姿勢は、慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、学び合い、支え合う環境を作り出すことを目指しています。誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々を提供できるよう努めています。</p>
                 <Link to="/about" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
