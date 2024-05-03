@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="flex gap-6 w-full lg:w-3/4">
                 <div className="bg-lightpink rounded-lg shadow-md p-1 xs:p-4 lg:p-8 text-center w-1/2">
                   <div className="flex items-center justify-center gap-1">
-                    <img className="w-4 xs:w-6 lg:w-10" src="./icons/ringing-phone.png" alt="" />
+                    <img className="w-4 xs:w-6 lg:w-10" src="./icons/phone.png" alt="" />
                     <h1 className="text-sm xs:text-xl lg:text-3xl">042-497-6116</h1>
                   </div>
                   <h1 className="text-[10px] xs:text-sm lg:text-base"><span className="hidden xs:inline">受付時間</span> 9：00～18：00</h1>
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <a href="" className="bg-lightpink rounded-lg shadow-md p-2 xs:p-4 lg:p-8 flex flex-col items-center justify-center w-1/2 hover:bg-darkpink hover:bg-opacity-20 transition-colors duration-200">
                   <h1 className="text-[10px] xs:text-sm sm:text-base lg:text-xl">メールでのお問い合わせ</h1>
-                  <img className="w-8 lg:w-14" src="./icons/edit-message.png" alt="" />
+                  <img className="w-8 lg:w-14" src="./icons/mail.png" alt="" />
                 </a>
               </div>
 
