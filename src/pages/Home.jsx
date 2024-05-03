@@ -186,16 +186,16 @@ const Home = () => {
           {/* Recruit */}
           <div className="">
             <div className="flex h-96 relative mt-12 py-6">
-              <div className="h-full w-1/3 bg-[url('./illustrations/helper2.jpg')] bg-cover bg-top">
+              <div className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper2.jpg')] bg-cover bg-top">
                 <div className="w-full h-full bg-black bg-opacity-40"></div>
               </div>
-              <div className="h-full w-1/3 bg-[url('./illustrations/helper4.jpg')] bg-cover bg-top">
+              <div className="hidden sm:block h-full w-1/3 bg-[url('./illustrations/helper4.jpg')] bg-cover bg-top">
                 <div className="w-full h-full bg-black bg-opacity-40"></div>
               </div>
-              <div className="h-full w-1/3 bg-[url('./illustrations/helper3.jpg')] bg-cover bg-top">
+              <div className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper3.jpg')] bg-cover bg-top">
                 <div className="w-full h-full bg-black bg-opacity-40"></div>
               </div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+              <div className="absolute  transform   top-1/2 md:left-1/2 md:-translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                 <p className="text-white text-xl w-2/3 text-center mb-2">あなたの笑顔が誰かの笑顔になる職場で、
                   一緒に働きませんか？</p>
                 <div className="p-6 bg-white bg-opacity-70 rounded-full shadow-md w-52 hover:bg-black hover:bg-opacity-70 group transition-colors duration-200">
