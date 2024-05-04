@@ -30,9 +30,9 @@ const Navbar = () => {
                   <Link to="/about">私たちについて</Link>
                 </li>
                 <li className="relative group hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                  <div className="flex items-center group-hover:text-darkpink">
+                  <div className="group flex items-center group-hover:text-darkpink">
                     サービス
-                    <img className="w-4 pt-0.5" src="./icons/open-bottom.png" alt="" />
+                    <img className="w-4 pt-0.5 group-hover:rotate-90 transition-all duration-200" src="./icons/open-bottom.png" alt="" />
                   </div>
                   <ul className="z-50 absolute hidden group-hover:block bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
                     <li>
