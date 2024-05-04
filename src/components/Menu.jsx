@@ -36,16 +36,16 @@ const Menu = () => {
           </div>
           <ul className="mb-2 w-11/12 mx-auto">
             <li>
-              <Link to="/about" className="flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+              <Link to="/about" className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                 私たちについて
-                <img className="w-4" src="./icons/right.png" alt="" />
+                <img className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="" />
               </Link>
             </li>
             <li>
               <div>
-                <div className="h-[31.2px] flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out" onClick={() => setServicesOpened(!servicesOpened)}>
+                <div className="group h-[31.2px] flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out" onClick={() => setServicesOpened(!servicesOpened)}>
                   サービス
-                  <img className="w-4 pt-0.5" src="./icons/open-bottom.png" alt="" /></div>
+                  <img className={`w-4 pt-0.5 ${servicesOpened ? "rotate-90 transition-all duration-200 delay-75" : "rotate-0 transition-all duration-200 delay-75"}`} src="./icons/open-bottom.png" alt="" /></div>
                 <ul className={`px-3 overflow-hidden ${servicesOpened ? "h-full" : "h-0"}`}>
                   <li>
                     <Link to="/houmon" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
@@ -75,13 +75,13 @@ const Menu = () => {
                 </ul>
               </div>
             </li>
-            <li><Link to="/contact" className="flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+            <li><Link to="/contact" className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
               お問い合わせ
-              <img className="w-4" src="./icons/right.png" alt="" />
+              <img className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="" />
             </Link></li>
-            <li><Link to="/recruit" className="flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+            <li><Link to="/recruit" className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
               採用情報
-              <img className="w-4" src="./icons/right.png" alt="" />
+              <img className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="" />
             </Link></li>
           </ul>
           <div>
