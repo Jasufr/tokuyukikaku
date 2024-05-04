@@ -40,7 +40,7 @@ const Home = () => {
                 <p>徳有企画では、全ての方々に心からのケアとサポートを提供することをモットーにしています。私たちは、ご利用者の皆様、ご家族の方々、地域の皆様、そしてスタッフの幸福と健康を大切に考えています。介護に取り組む私たちの姿勢は、慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、学び合い、支え合う環境を作り出すことを目指しています。誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々を提供できるよう努めています。</p>
                 <Link to="/about" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                   <p className="">私たちについて</p>
-                  <img src="./icons/right.png" alt="" className="w-8 group-hover:" />
+                  <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                 </Link>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Home = () => {
                   <p>訪問介護員（ホームヘルパー）などがご自宅に訪問し、介護や日常生活上のお世話を行うサービスです。ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。</p>
                   <Link to="/houmon" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img src="./icons/right.png" alt="" className="w-8 group-hover:" />
+                    <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const Home = () => {
                   <p>介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります、ケアマネージャーさまの作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。(障害者総合支援法にも適用されます）</p>
                   <Link to="/taxi" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img src="./icons/right.png" alt="" className="w-8 group-hover:" />
+                    <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
                 <div className="hidden md:block w-1/2 bg-[url('./images/kuruma2.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
@@ -101,7 +101,7 @@ const Home = () => {
                   <p>全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。また、看護師が常駐しているので、日々の機能訓練も安心して行っていただけます。</p>
                   <Link to="/dayservice" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img src="./icons/right.png" alt="" className="w-8 group-hover:" />
+                    <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
               </div>
@@ -113,7 +113,7 @@ const Home = () => {
                   <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
                   <Link to="/kyotaku" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img src="./icons/right.png" alt="" className="w-8 group-hover:" />
+                    <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
                 <div className="hidden md:block w-1/2 bg-darkstone bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
