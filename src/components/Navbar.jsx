@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import Menu from "./Menu";
 
 const Navbar = () => {
+
   return (
     <>
       <div className="navbar z-50 fixed top-0 w-full bg-lightpink py-2 shadow-md">
@@ -30,11 +31,13 @@ const Navbar = () => {
                   <Link to="/about">私たちについて</Link>
                 </li>
                 <li className="relative group hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                  <div className="group flex items-center group-hover:text-darkpink">
+                  <button className="group ">
+
+                    <div className="group flex items-center group-hover:text-darkpink cursor-pointer">
                     サービス
-                    <img className="w-4 pt-0.5 group-hover:rotate-90 transition-all duration-200" src="./icons/open-bottom.png" alt="" />
+                    <img className="w-4 pt-0.5 group-focus:rotate-90 group-hover:rotate-90 transition-all duration-200" src="./icons/open-bottom.png" alt="" />
                   </div>
-                  <ul className="z-50 absolute hidden group-hover:block bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
+                  <ul className="z-50 absolute group-focus:block group-hover:block hidden bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
                     <li>
                       <Link to="/houmon" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
                         <img className="w-5" src="./icons/minibus-.png" alt="" />
@@ -60,6 +63,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
+                    </button>
                 </li>
                 <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/contact">お問い合わせ</Link></li>
                 <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/recruit">採用情報</Link></li>
