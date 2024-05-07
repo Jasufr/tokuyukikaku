@@ -6,11 +6,20 @@ const Menu = () => {
   const [menuOpened, setMenuOpened] = useState(null);
   const [servicesOpened, setServicesOpened] = useState(null);
 
+  const menu_icon = document.querySelector(".menu_icon");
+  const menu_box = document.querySelector(".menu_box");
+
+  document.onclick = function (e) {
+    if (!menu_icon.contains(e.target) && !menu_box.contains(e.target)) {
+      setMenuOpened(false);
+    }
+  };
+
   return (
     <>
       <button
         onClick={() => setMenuOpened(!menuOpened)}
-        className="z-50 fixed top-7 xs:top-6 right-4 xs:right-8 p-3 bg-white shadow-md w-10 h-10 xs:w-11 xs:h-11 rounded-md"
+        className={`menu_icon z-50 fixed top-7 xs:top-6 right-4 xs:right-8 p-3 bg-white shadow-md w-10 h-10 xs:w-11 xs:h-11 rounded-md`}
       >
         <div
           className={`bg-darkpink h-0.5 rounded-md w-full transition-all ${menuOpened ? "rotate-45  translate-y-0.5" : ""
@@ -25,18 +34,18 @@ const Menu = () => {
             }`}
         />
       </button>
-      <div className={`z-40 fixed top-0 right-0 bottom-0 bg-white transition-all overflow-x-hidden overflow-y-auto flex flex-col
+      <div className={`menu_box z-40 fixed top-0 right-0 bottom-0 bg-white transition-all overflow-x-hidden overflow-y-auto flex flex-col
       ${menuOpened ? "w-full xs:w-80" : "w-0"}`}>
         <div className="w-3/4 mt-24 mx-auto text-nowrap">
           <div className="mb-2">
-            <Link className="flex items-center justify-center gap-1" to="/">
+            <Link to="/" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="flex items-center justify-center gap-1">
               <img className="w-12" src="./icons/logo.png" alt="" />
               <h1 className="text-xl text-center">合同会社徳 徳有企画</h1>
             </Link>
           </div>
           <ul className="mb-2 w-11/12 mx-auto">
             <li>
-              <Link to="/about" className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+              <Link to="/about" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                 私たちについて
                 <img className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="" />
               </Link>
@@ -48,26 +57,26 @@ const Menu = () => {
                   <img className={`w-4 pt-0.5 ${servicesOpened ? "rotate-90 transition-all duration-200 delay-75" : "rotate-0 transition-all duration-200 delay-75"}`} src="./icons/open-bottom.png" alt="" /></div>
                 <ul className={`px-3 overflow-hidden ${servicesOpened ? "h-full" : "h-0"}`}>
                   <li>
-                    <Link to="/houmon" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/houmon" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./icons/minibus-.png" alt="" />
                       訪問介護
                     </Link>
                   </li>
                   <li>
-                    <Link to="/taxi" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/taxi" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./icons/taxi.png" alt="" />
                       介護タクシー
                     </Link>
                   </li>
                   <li>
-                    <Link to="/dayservice" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/dayservice" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./icons/business-group.png" alt="" />
                       デイサービス
                     </Link>
 
                   </li>
                   <li>
-                    <Link to="/kyotaku" className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    <Link to="/kyotaku" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                       <img className="w-5" src="./icons/neighbour.png" alt="" />
                       居宅介護支援
                     </Link>
@@ -75,11 +84,11 @@ const Menu = () => {
                 </ul>
               </div>
             </li>
-            <li><Link to="/contact" className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+            <li><Link to="/contact" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
               お問い合わせ
               <img className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="" />
             </Link></li>
-            <li><Link to="/recruit" className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+            <li><Link to="/recruit" onClick={() => {setMenuOpened(!menuOpened), setServicesOpened(false)}} className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
               採用情報
               <img className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="" />
             </Link></li>
