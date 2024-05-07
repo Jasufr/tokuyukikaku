@@ -7,8 +7,13 @@ import { Link, Route, useRoute } from "wouter";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ServiceHoumon from "./pages/ServiceHoumon";
+import ServiceTaxi from "./pages/ServiceTaxi";
+import ServiceDay from "./pages/ServiceDay";
+import ServiceKyotaku from "./pages/ServiceKyotaku";
 import BlobGreen from "./components/BlobGreen";
 import { useEffect, useState, useMemo, useRef } from "react";
+import Recruit from "./pages/Recruit";
 
 function App() {
   const [contentHeight, setContentHeight] = useState(0);
@@ -117,8 +122,23 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/houmon">
+            <ServiceHoumon />
+          </Route>
+          <Route path="/taxi">
+            <ServiceTaxi />
+          </Route>
+          <Route path="/dayservice">
+            <ServiceDay />
+          </Route>
+          <Route path="/kyotaku">
+            <ServiceKyotaku />
+          </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/recruit">
+            <Recruit />
           </Route>
         <a href="#" className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></a>
         </MainLayout>
