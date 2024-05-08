@@ -190,7 +190,7 @@ const Home = () => {
                  <div className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper2.jpg')] bg-cover bg-top">
                 <div className="w-full h-full bg-black bg-opacity-40"></div>
               </div>
-              <div className="hidden sm:block h-full w-1/3 bg-[url('./illustrations/helper4.jpg')] bg-cover bg-top">
+              <div className="hidden sm:block h-full w-1/3 bg-[url('./illustrations/helper1.jpg')] bg-cover bg-top">
                 <div className="w-full h-full bg-black bg-opacity-40"></div>
               </div>
               <div className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper3.jpg')] bg-cover bg-top">
