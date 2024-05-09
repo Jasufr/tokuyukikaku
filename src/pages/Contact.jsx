@@ -1,3 +1,5 @@
+import SendMail from "../components/SendMail";
+
 const Contact = () => {
   return (
     <>
@@ -36,7 +38,8 @@ const Contact = () => {
                 <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
               </div>
               <div className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.jpg')] bg-cover bg-center rounded-md shadow-md"></div>
-              <form action="" className="flex flex-col items-center">
+              <SendMail />
+              {/* <form action="" className="flex flex-col items-center">
                 <table className="w-full mb-2">
                   <tbody>
                     <tr>
@@ -81,7 +84,7 @@ const Contact = () => {
                   <label htmlFor="personal_info" className="ms-1 xs:ms-2 mb-2">個人情報保護方針に同意する<span className="ms-1 xs:ms-2 text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></label>
                 </div>
                 <button type="submit" className="bg-darkpink px-4 py-2 text-xl text-white rounded-lg shadow-md mt-4 hover:bg-opacity-40  transition-colors duration-200 ">入力内意を送信する</button>
-              </form>
+              </form> */}
             </div>
             <div className="hidden sm:block bg-[url('./illustrations/helper4.jpg')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
           </div>
