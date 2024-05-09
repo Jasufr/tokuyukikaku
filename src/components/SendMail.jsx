@@ -16,9 +16,9 @@ const SendMail = () => {
     e.preventDefault();
 
     // use .env variables, do not push this directly to github
-    const serviceId = "service_vxy5gyu";
-    const templateId = "template_58k3kbb";
-    const publicKey = "uXSigQlw1EPKss_V1";
+    const serviceId = import.meta.env.VITE_MAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_MAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_MAILJS_PUBLIC_KEY;
 
     const data = {
       service_id: serviceId,
