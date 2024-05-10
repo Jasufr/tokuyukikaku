@@ -14,6 +14,7 @@ import ServiceKyotaku from "./pages/ServiceKyotaku";
 import BlobGreen from "./components/BlobGreen";
 import { useEffect, useState, useMemo, useRef } from "react";
 import Recruit from "./pages/Recruit";
+import Privacy from "./pages/Privacy";
 
 function App() {
   const [contentHeight, setContentHeight] = useState(0);
@@ -139,6 +140,9 @@ function App() {
           </Route>
           <Route path="/recruit">
             <Recruit />
+          </Route>
+          <Route path="/privacy">
+            <Privacy />
           </Route>
         <a href="#" className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></a>
         </MainLayout>
