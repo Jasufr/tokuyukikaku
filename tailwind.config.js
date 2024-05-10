@@ -13,7 +13,7 @@ export default {
       'white': '#FEFEFE',
       'black': '#313131',
       'green': '#2FAD41',
-      'red': '#FF0000',
+      'red': '#FF4242',
     },
     screens: {
       'xs': '500px',
