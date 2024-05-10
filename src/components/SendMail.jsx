@@ -5,9 +5,9 @@ const SendMail = () => {
   const [subject, setSubject] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [isEmailValid, setIsEmailValid] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(true);
   const [number, setNumber] = useState("");
-  const [isNumberValid, setIsNumberValid] = useState("");
+  const [isNumberValid, setIsNumberValid] = useState(true);
   const [message, setMessage] = useState("");
   const [checkbox, setCheckbox] = useState(false);
   const [isDisabled, setIsDisabled] = useState(true);
@@ -54,7 +54,7 @@ const SendMail = () => {
 
     if (email_reg.test(email) == false) {
       setIsEmailValid(false);
-      window.alert("enter a valid email");
+      // window.alert("enter a valid email");
     } else {
       setIsEmailValid(true);
     }
@@ -63,36 +63,22 @@ const SendMail = () => {
   const validateNumber = () => {
     const number_reg = /^(0([1-9]{1}-?[1-9]\d{3}|[1-9]{2}-?\d{3}|[1-9]{2}\d{1}-?\d{2}|[1-9]{2}\d{2}-?\d{1})-?\d{4}|0[789]0-?\d{4}-?\d{4}|050-?\d{4}-?\d{4})$/;
 
-    if (number_reg.test(number) == false) {
+    if (number_reg.test(number) == false && number !== "") {
       setIsNumberValid(false);
-      window.alert("enter a valid number");
+      // window.alert("enter a valid number");
     } else {
       setIsNumberValid(true);
     }
   };
 
-  // useEffect(() => {
-  //   validateFormData();
-  // }, [subject, name, email, number, message, checkbox]);
-
-  // const validateFormData = () => {
-  //   // if (subject === "" || name === "" || email === "" || number === "" || message === "" || checkbox === false) {
-  //   //   setIsDisabled(true);
-  //   // } else {
-  //   //   setIsDisabled(false);
-  //   // }
-  //   console.log("update");
-  //   console.log(`subject: ${subject}, name: ${name}, email: ${email}, number: ${number}, message: ${message}, checkbox: ${checkbox}`);
-  // };
-
   const validateFormData = useCallback(() => {
-    console.log(`subject: ${subject}, name: ${name}, email: ${email}, number: ${number}, message: ${message}, checkbox: ${checkbox}`);
-    if ((subject === "" || name === "" || email === "" || number === "" || message === "" || checkbox === false) || (isEmailValid === false || isNumberValid === false)) {
+    // console.log(`subject: ${subject}, name: ${name}, email: ${email}, number: ${number}, message: ${message}, checkbox: ${checkbox}`);
+    if ((subject === "" || name === "" || email === "" || message === "" || checkbox === false) || (isEmailValid === false || isNumberValid === false)) {
       setIsDisabled(true);
     } else {
       setIsDisabled(false);
     }
-  }, [subject, name, email, number, message, checkbox, isEmailValid, isNumberValid]);
+  }, [subject, name, email, message, checkbox, isEmailValid, isNumberValid]);
 
   useEffect(() => {
     validateFormData();
@@ -124,12 +110,14 @@ const SendMail = () => {
               <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">メールアドレス<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
               <td className="border border-darkslate p-4 bg-white">
                 <input required={true} type="email" value={email} onChange={(e) => {setEmail(e.target.value)}} onBlur={validateEmail} placeholder="例）tokuyukikaku@yahoo.com" className="border border-zinc p-2 focus:outline-darkpink w-full" />
+                <p className={`text-red text-sm pt-1 ${isEmailValid ? "hidden" : "block"}`}>有効なメールアドレスを入力してください。</p>
               </td>
             </tr>
             <tr>
               <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">電話番号</th>
               <td className="border border-darkslate p-4 bg-white">
                 <input type="tel" value={number} onChange={(e) => {setNumber(e.target.value)}} onBlur={validateNumber} placeholder="例）080-000-000" className="border border-zinc p-2 focus:outline-darkpink w-full" />
+                <p className={`text-red text-sm pt-1 ${isNumberValid ? "hidden" : "block"}`}>有効な電話番号を入力してください。</p>
               </td>
             </tr>
             <tr>
