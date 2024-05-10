@@ -133,11 +133,11 @@ const SendMail = () => {
               <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">項目<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
               <td className="border border-darkslate p-4 bg-white">
                 <input checked={subject === "サービスのお問い合わせ"} required={true} onChange={(e) => { setSubject(e.target.value) }} type="radio" name="subject" id="service" value="サービスのお問い合わせ" />
-                <label htmlFor="service">サービスのお問い合わせ</label><br />
+                <label className="ps-1" htmlFor="service">サービスのお問い合わせ</label><br />
                 <input checked={subject === "採用のお問い合わせ"} onChange={(e) => { setSubject(e.target.value) }} type="radio" name="subject" id="recruit" value="採用のお問い合わせ" />
-                <label htmlFor="recruit">採用のお問い合わせ</label><br />
+                <label className="ps-1" htmlFor="recruit">採用のお問い合わせ</label><br />
                 <input checked={subject === "その他の項目"} onChange={(e) => { setSubject(e.target.value) }} type="radio" name="subject" id="other" value="その他の項目" />
-                <label htmlFor="other">その他の項目</label>
+                <label className="ps-1" htmlFor="other">その他の項目</label>
               </td>
             </tr>
             <tr>
