@@ -39,52 +39,6 @@ const Contact = () => {
               </div>
               <div className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.jpg')] bg-cover bg-center rounded-md shadow-md"></div>
               <SendMail />
-              {/* <form action="" className="flex flex-col items-center">
-                <table className="w-full mb-2">
-                  <tbody>
-                    <tr>
-                      <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">項目<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-                      <td className="border border-darkslate p-4 bg-white">
-                        <input type="radio" name="subject" id="service" value="サービスのお問い合わせ" />
-                        <label htmlFor="service">サービスのお問い合わせ</label><br />
-                        <input type="radio" name="subject" id="recruit" value="採用のお問い合わせ" />
-                        <label htmlFor="recruit">採用のお問い合わせ</label><br />
-                        <input type="radio" name="subject" id="other" value="その他の項目" />
-                        <label htmlFor="other">その他の項目</label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">お名前<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-                      <td className="border border-darkslate p-4 bg-white">
-                        <input type="text" placeholder="例）幕ノ内一歩" className="border border-zinc p-2 focus:outline-darkpink w-full" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">メールアドレス<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-                      <td className="border border-darkslate p-4 bg-white">
-                        <input type="email" placeholder="例）tokuyukikaku@yahoo.com" className="border border-zinc p-2 focus:outline-darkpink w-full" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">電話番号</th>
-                      <td className="border border-darkslate p-4 bg-white">
-                        <input type="tel" placeholder="例）080-000-000" className="border border-zinc p-2 focus:outline-darkpink w-full" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">お問い合わせ内容<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-                      <td className="border border-darkslate p-4 bg-white">
-                        <textarea name="" id="" className="border border-zinc p-2 focus:outline-darkpink w-full"></textarea>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div className="">
-                  <input type="checkbox" id="personal_info" name="personal_info" value="個人情報保護方針に同意します。" />
-                  <label htmlFor="personal_info" className="ms-1 xs:ms-2 mb-2">個人情報保護方針に同意する<span className="ms-1 xs:ms-2 text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></label>
-                </div>
-                <button type="submit" className="bg-darkpink px-4 py-2 text-xl text-white rounded-lg shadow-md mt-4 hover:bg-opacity-40  transition-colors duration-200 ">入力内意を送信する</button>
-              </form> */}
             </div>
             <div className="hidden sm:block bg-[url('./illustrations/helper4.jpg')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
           </div>
