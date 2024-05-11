@@ -10,7 +10,7 @@ const Menu = () => {
   const menu_box = document.querySelector(".menu_box");
 
   document.onclick = function (e) {
-    if (!menu_icon.contains(e.target) && !menu_box.contains(e.target)) {
+    if (!menu_icon?.contains(e.target) && !menu_box?.contains(e.target)) {
       setMenuOpened(false);
     }
   };
