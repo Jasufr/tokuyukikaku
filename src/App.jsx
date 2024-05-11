@@ -58,8 +58,7 @@ function App() {
               <PageNotFound />
             </Route>
           </Switch>
-          {/* <a href="#" className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></a> */}
-          <button onClick={() => window.scrollTo(0, 0)} className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></button>
+          <button onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></button>
         </MainLayout>
       </div>
     </>
