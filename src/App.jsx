@@ -26,7 +26,7 @@ function App() {
 
 
   // Get the height of the content within the Route
-  const [, params] = useRoute("/:page");
+  const [params] = useRoute("/:page");
 
   useEffect(() => {
     const contentElement = document.getElementById("content");
