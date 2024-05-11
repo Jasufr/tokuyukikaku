@@ -2,7 +2,7 @@ import MainLayout from "./layout/MainLayout";
 import BlobDarkPink from "./components/BlobDarkPink";
 import BlobLightPink from "./components/BlobLightPink";
 import BlobGreen from "./components/BlobGreen";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -13,8 +13,14 @@ import ServiceKyotaku from "./pages/ServiceKyotaku";
 import Recruit from "./pages/Recruit";
 import Privacy from "./pages/Privacy";
 import PageNotFound from "./pages/PageNotFound";
+import { useEffect } from "react";
 
 function App() {
+ const pathname = useLocation();
+
+ useEffect(() => {
+  window.scrollTo(0, 0);
+ }, [pathname]);
 
   return (
     <>
@@ -52,7 +58,8 @@ function App() {
               <PageNotFound />
             </Route>
           </Switch>
-          <a href="#" className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></a>
+          {/* <a href="#" className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></a> */}
+          <button onClick={() => window.scrollTo(0, 0)} className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></button>
         </MainLayout>
       </div>
     </>
