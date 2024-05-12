@@ -1,10 +1,15 @@
-import Tabs from "../components/Tabs";
+import Tabs from "../layout/Tabs";
 
-const ServiceHoumon = () => {
+const ServiceHoumon = (props) => {
+  const visibleTab = props;
+
   return (
     <>
-      <Tabs />
-
+      <Tabs>
+        <div className={`${visibleTab === "tab1" ? "block" : "hidden"}`}>halo</div>
+        <div className={`${visibleTab === "tab2" ? "block" : "hidden"}`}>hello</div>
+        <div className={`${visibleTab === "tab3" ? "block" : "hidden"}`}>bjr</div>
+      </Tabs>
     </>
   );
 };
