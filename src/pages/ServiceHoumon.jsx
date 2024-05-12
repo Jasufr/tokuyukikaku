@@ -1,7 +1,10 @@
+import Tabs from "../components/Tabs";
+
 const ServiceHoumon = () => {
   return (
     <>
-        <div>Houmon</div>
+      <Tabs />
+
     </>
   );
 };
