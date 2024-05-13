@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState, Children, isValidElement, cloneElement } from "react";
+import ServiceHoumon from "../pages/ServiceHoumon";
 
-const Tabs = ({ children }) => {
-  const [visibleTab, setVisibleTab] = useState("tab1");
-
+const Tabs = ({ children, visibleTab, setVisibleTab }) => {
   const handleTabChange = (tab) => {
     setVisibleTab(tab);
   };
@@ -23,7 +22,9 @@ const Tabs = ({ children }) => {
             </div>
           </div>
         </div>
-        <div className="service">{children}</div>
+        <div className="service">
+          {children}
+        </div>
       </div>
     </>
   );
