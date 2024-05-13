@@ -1,7 +1,4 @@
-import React, { useState, Children, isValidElement, cloneElement } from "react";
-import ServiceHoumon from "../pages/ServiceHoumon";
-
-const Tabs = ({ children, visibleTab, setVisibleTab }) => {
+const Tabs = ({ children, setVisibleTab }) => {
   const handleTabChange = (tab) => {
     setVisibleTab(tab);
   };
@@ -9,8 +6,8 @@ const Tabs = ({ children, visibleTab, setVisibleTab }) => {
   return (
     <>
       <div>
-        <div className="pt-4 flex justify-center items-center">
-          <div className="w-11/12 2md:w-3/4 h-20 flex flex-col justify-center bg-lightpink p-3 rounded-lg shadow-md">
+        <div className="flex justify-center items-center">
+          <div className="w-full h-20 flex flex-col justify-center bg-lightpink p-3 rounded-lg shadow-md">
             <div className="tabs relative flex justify-center items-center h-full">
               <input type="radio" id="radio-1" name="tabs" className="hidden peer/radio-1" defaultChecked onClick={() => handleTabChange("tab1")} />
               <label className="tab h-full flex items-center justify-center peer-checked/radio-1:text-darkpink z-10 w-1/3 transition-all duration-200 text-sm xs:text-xl font-bold" htmlFor="radio-1">サービス紹介</label>
