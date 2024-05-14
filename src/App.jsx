@@ -1,8 +1,4 @@
 import MainLayout from "./layout/MainLayout";
-import BlobDarkPink from "./components/BlobDarkPink";
-import BlobLightPink from "./components/BlobLightPink";
-import BlobGreen from "./components/BlobGreen";
-import Blobs from './components/Blobs';
 import { Route, Switch, useLocation } from "wouter";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -25,13 +21,6 @@ function App() {
 
   return (
     <>
-      <style>{`
-        body {
-          margin: 0;
-          overflow-x: hidden;
-        }
-      `}</style>
-      <Blobs />
       <div id="content">
         <MainLayout>
           <Switch>
