@@ -3,7 +3,25 @@ const About = () => {
 
   return (
     <>
-      <div className="about">
+      <div className="about relative">
+        {/* Blobs About */}
+        <div className="blobs w-full h-full absolute overflow-hidden -z-10">
+          <div className="green absolute top-1/3 translate-y-1/4 2md:top-1/2 2md:-translate-y-1/2 -left-16 w-52 rotate-45">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#2FAD41" d="M43.1,-64.2C53.2,-52,56.8,-35.8,62.8,-19.8C68.9,-3.8,77.4,12.1,75.7,26.8C74,41.6,62,55.3,47.7,63.4C33.4,71.6,16.7,74.3,-0.5,75C-17.8,75.8,-35.6,74.6,-50.7,66.7C-65.7,58.8,-78.1,44.1,-81.6,27.8C-85.1,11.6,-79.7,-6.3,-73.8,-23.9C-67.9,-41.5,-61.6,-58.8,-49.3,-70.2C-36.9,-81.7,-18.4,-87.2,-1,-85.9C16.5,-84.6,33.1,-76.4,43.1,-64.2Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          <div className="darkpink absolute top-3/4 -translate-y-2/3 2md:top-1/2 2md:-translate-y-1/4 -right-16 w-52 xs:w-64 rotate-45">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#ED0066" d="M31.7,-46.2C43,-35.4,55.5,-28.7,62.1,-17.9C68.8,-7.1,69.5,7.9,67.6,24.5C65.7,41.1,61.1,59.4,49.3,64.5C37.6,69.6,18.8,61.5,0.7,60.5C-17.4,59.5,-34.7,65.6,-45.5,60.2C-56.2,54.8,-60.3,37.9,-65.8,21.3C-71.3,4.8,-78.1,-11.4,-76,-26.8C-73.9,-42.3,-63,-56.9,-48.8,-66.8C-34.7,-76.7,-17.3,-81.8,-3.6,-76.9C10.2,-72,20.4,-57,31.7,-46.2Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+          <div className="lightpink absolute top-12 left-1/2 2md:-translate-x-1/4 w-80">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FFEDF4" d="M40.1,-58.3C51,-47.3,58.1,-34.2,60.9,-20.9C63.7,-7.6,62.2,6.1,57.6,18.2C53,30.4,45.3,41,35.1,49.5C25,57.9,12.5,64.2,-0.2,64.5C-13,64.8,-25.9,59.1,-36.6,50.9C-47.3,42.6,-55.6,31.7,-62,18.6C-68.4,5.5,-72.7,-9.8,-69.2,-23C-65.6,-36.3,-54.2,-47.5,-41.3,-57.9C-28.5,-68.3,-14.2,-77.8,0.2,-78.1C14.6,-78.3,29.2,-69.3,40.1,-58.3Z" transform="translate(100 100)" />
+            </svg>
+          </div>
+        </div>
         <div className="about-us px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12 flex gap-10 items-center">
           <div className="md:w-3/4 2md:w-3/5">
             <h1 className="text-2xl mb-2 text-darkpink">私たちについて</h1>
