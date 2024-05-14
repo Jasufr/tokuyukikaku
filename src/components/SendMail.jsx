@@ -130,8 +130,8 @@ const SendMail = () => {
         <table className="w-full mb-2">
           <tbody>
             <tr>
-              <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">項目<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-              <td className="border border-darkslate p-4 bg-white">
+              <th className="border border-darkslate text-start p-2 bg-lightpink bg-opacity-80" scope="row">項目<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
+              <td className="border border-darkslate p-4 bg-white bg-opacity-50">
                 <input checked={subject === "サービスのお問い合わせ"} required={true} onChange={(e) => { setSubject(e.target.value) }} type="radio" name="subject" id="service" value="サービスのお問い合わせ" />
                 <label className="ps-1" htmlFor="service">サービスのお問い合わせ</label><br />
                 <input checked={subject === "採用のお問い合わせ"} onChange={(e) => { setSubject(e.target.value) }} type="radio" name="subject" id="recruit" value="採用のお問い合わせ" />
@@ -141,28 +141,28 @@ const SendMail = () => {
               </td>
             </tr>
             <tr>
-              <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">お名前<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-              <td className="border border-darkslate p-4 bg-white">
+              <th className="border border-darkslate text-start p-2 bg-lightpink bg-opacity-80" scope="row">お名前<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
+              <td className="border border-darkslate p-4 bg-white bg-opacity-50">
                 <input required={true} type="text" value={name} onChange={(e) => { setName(e.target.value) }} placeholder="例）幕ノ内一歩" className="border border-zinc p-2 focus:outline-darkpink w-full" />
               </td>
             </tr>
             <tr>
-              <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">メールアドレス<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-              <td className="border border-darkslate p-4 bg-white">
+              <th className="border border-darkslate text-start p-2 bg-lightpink bg-opacity-80" scope="row">メールアドレス<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
+              <td className="border border-darkslate p-4 bg-white bg-opacity-50">
                 <input required={true} type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} onBlur={validateEmail} placeholder="例）tokuyukikaku@yahoo.com" className="border border-zinc p-2 focus:outline-darkpink w-full" />
                 <p className={`text-red text-sm pt-1 ${isEmailValid ? "hidden" : "block"}`}>有効なメールアドレスを入力してください。</p>
               </td>
             </tr>
             <tr>
-              <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">電話番号</th>
-              <td className="border border-darkslate p-4 bg-white">
+              <th className="border border-darkslate text-start p-2 bg-lightpink bg-opacity-80" scope="row">電話番号</th>
+              <td className="border border-darkslate p-4 bg-white bg-opacity-50">
                 <input type="tel" value={number} onChange={(e) => { setNumber(e.target.value) }} onBlur={validateNumber} placeholder="例）080-000-000" className="border border-zinc p-2 focus:outline-darkpink w-full" />
                 <p className={`text-red text-sm pt-1 ${isNumberValid ? "hidden" : "block"}`}>有効な電話番号を入力してください。</p>
               </td>
             </tr>
             <tr>
-              <th className="border border-darkslate text-start p-2 bg-lightpink" scope="row">お問い合わせ内容<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
-              <td className="border border-darkslate p-4 bg-white">
+              <th className="border border-darkslate text-start p-2 bg-lightpink bg-opacity-80" scope="row">お問い合わせ内容<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
+              <td className="border border-darkslate p-4 bg-white bg-opacity-50">
                 <textarea required={true} value={message} onChange={(e) => { setMessage(e.target.value) }} className="border border-zinc p-2 focus:outline-darkpink w-full"></textarea>
               </td>
             </tr>
