@@ -10,14 +10,23 @@ import ServiceKyotaku from "./pages/ServiceKyotaku";
 import Recruit from "./pages/Recruit";
 import Privacy from "./pages/Privacy";
 import PageNotFound from "./pages/PageNotFound";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [isScrolled, setIsScrolled] = useState("");
   const pathname = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  const backUpVisible = () => {
+    if (window.scrollX !== 0) {
+      setIsScrolled("true");
+    } else {
+      setIsScrolled("false");
+    }
+  };
 
   return (
     <>
@@ -55,7 +64,7 @@ function App() {
               <PageNotFound />
             </Route>
           </Switch>
-          <button onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></button>
+          <button onClick={() =>  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></button>
         </MainLayout>
       </div>
     </>

@@ -9,8 +9,8 @@ const Home = () => {
         <div className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
             <div className="bg-white bg-opacity-55 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
-              <h1 className="text-darkpink text-3xl">心の温もり。</h1>
-              <p className="text-lg">幸福を大切にし、安心感を提供することを使命とし、心からのケアとサポートを通じて、共に歩んでいきます。</p>
+              <h1 className="text-darkpink text-3xl">温もりで支える介護</h1>
+              <p className="text-lg">やさしさをもって利用者様と接し、心温まる時間を提供します。</p>
             </div>
           </div>
         </div>
@@ -39,7 +39,8 @@ const Home = () => {
               <div className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('./illustrations/helper1.jpg')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
               <div className="md:w-1/2 lg:w-1/3 flex flex-col justify-center">
                 <h1 className="text-2xl mb-2 text-darkpink">心温まるサポートで幸福と健康を</h1>
-                <p>徳有企画では、全ての方々に心からのケアとサポートを提供することをモットーにしています。私たちは、ご利用者の皆様、ご家族の方々、地域の皆様、そしてスタッフの幸福と健康を大切に考えています。介護に取り組む私たちの姿勢は、慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、学び合い、支え合う環境を作り出すことを目指しています。誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々を提供できるよう努めています。</p>
+                <p className="mb-2">徳有企画では、全ての方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。</p>
+                <p>慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、支え合う環境を提供し、誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々をお届けします。</p>
                 <Link to="/about" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                   <p className="">私たちについて</p>
                   <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
@@ -76,11 +77,12 @@ const Home = () => {
               </div>
               {/* Houmon service */}
               <div className="houmon md:flex gap-10 mb-6">
-                <div className="hidden md:block w-1/2 bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"></div>
+                <div className="hidden md:block w-1/2 bg-[url('./images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"></div>
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-2">訪問介護</h1>
-                  <div className="md:hidden bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
-                  <p>訪問介護員（ホームヘルパー）などがご自宅に訪問し、介護や日常生活上のお世話を行うサービスです。ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。</p>
+                  <div className="md:hidden bg-[url('./images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  <p className="mb-2">訪問介護員（ホームヘルパー）などがご自宅に訪問し、介護や日常生活上のお世話を行うサービスです。ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。</p>
+                  <p>食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。</p>
                   <Link to="/houmon" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
                     <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
@@ -91,14 +93,16 @@ const Home = () => {
               <div className="taxi flex gap-10 mb-6">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-2">介護タクシー</h1>
-                  <div className="md:hidden bg-[url('./images/kuruma2.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
-                  <p>介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります、ケアマネージャーさまの作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。(障害者総合支援法にも適用されます）</p>
+                  <div className="md:hidden bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  <p className="mb-2">介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。</p>
+                  <p className="mb-2">ケアマネージャー様の作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。</p>
+                  <p>ご利用対象に当てはまらない方々は、一般介護タクシーをご利用することが可能です。</p>
                   <Link to="/taxi" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
                     <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                <div className="hidden md:block w-1/2 bg-[url('./images/kuruma2.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                <div className="hidden md:block w-1/2 bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
               </div>
               {/* Day service */}
               <div className="dayservice flex gap-10 mb-6">
@@ -106,7 +110,8 @@ const Home = () => {
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-2">デイサービス</h1>
                   <div className="md:hidden bg-[url('./images/dayservice1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
-                  <p>全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。また、看護師が常駐しているので、日々の機能訓練も安心して行っていただけます。</p>
+                  <p className="mb-2">全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。</p>
+                  <p>また、看護師が常駐しているので日々の機能訓練も安心して行っていただけます。</p>
                   <Link to="/dayservice" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
                     <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
@@ -117,14 +122,15 @@ const Home = () => {
               <div className="kyotaku flex gap-10">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-2">居宅介護支援</h1>
-                  <div className="md:hidden bg-darkstone bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
-                  <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
+                  <div className="md:hidden bg-[url('./images/kyotaku.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  <p className="mb-2">介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。</p>
+                  <p>ケアマネジャーは、利用者やその家族と綿密にコミュニケーションを取りながら、利用者様のニーズに合わせたケアプランを作成します。これにより、利用者が自立した生活を維持し、可能な限り自宅で快適に過ごせるようにサポートします。</p>
                   <Link to="/kyotaku" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
                     <img src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                <div className="hidden md:block w-1/2 bg-darkstone bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                <div className="hidden md:block w-1/2 bg-[url('./images/kyotaku.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div>
               </div>
             </div>
           </div>
@@ -156,7 +162,7 @@ const Home = () => {
               <div className="w-full xl:w-2/3 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 2lg:grid-cols-4 xl:grid-cols-3 gap-2">
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
-                    <p className="text-vertical text-sm">スタッフの方々がいつも<span className="text-darkpink">笑顔</span>で接してくれるので、<span className="text-darkpink">安心</span>しています。</p>
+                    <p className="text-vertical text-sm">スタッフが<span className="text-darkpink">丁寧</span>に運転してくださって、いつも<span className="text-darkpink">安心</span>して通院ができています。</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">介護タクシー</p>
@@ -165,7 +171,8 @@ const Home = () => {
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
-                    <p className="text-vertical text-sm">身体の不自由な部分も、<span className="text-darkpink">丁寧</span>にサポートしてもらえるので、安心しています。</p>
+                    <p className="text-vertical text-sm">
+                      友人と<span className="text-darkpink">楽しく</span>お喋りする機会が出来て、嬉しいです。</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">デイサービス</p>
@@ -174,7 +181,8 @@ const Home = () => {
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
-                    <p className="text-vertical text-sm">日々の暮らしを<span className="text-darkpink">楽しめる場</span>が提供されているので、とても<span className="text-darkpink">嬉しい</span>です。</p>
+                    <p className="text-vertical text-sm">
+                    <span className="text-darkpink">住み慣れた自宅</span>での生活をサポートしていただけて、<span className="text-darkpink">感謝</span>しています。</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">訪問介護</p>
@@ -183,7 +191,8 @@ const Home = () => {
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
-                    <p className="text-vertical text-sm">スタッフの方々が、いつも私の話を<span className="text-darkpink">聞いてくれる</span>ので、孤独を感じることがありません。</p>
+                    <p className="text-vertical text-sm">
+                     遠くに住んでいる母の生活が<span className="text-darkpink">安全</span>になり、<span className="text-darkpink">ほっとしました</span>。<br />（ご家族より）</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">訪問介護</p>
@@ -192,7 +201,7 @@ const Home = () => {
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
-                    <p className="text-vertical text-sm">こちらのサービスを利用してから、体調が<span className="text-darkpink">安定</span>し、心も穏やかになりました。<span className="text-darkpink">感謝</span>します。</p>
+                    <p className="text-vertical text-sm">急な通院の予定でも、<span className="text-darkpink">迅速</span>な対応をしてくださり、助かりました。</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">介護タクシー</p>
@@ -201,7 +210,8 @@ const Home = () => {
                 </div>
                 <div className="flex justify-end h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
-                    <p className="text-vertical text-sm">サービスを利用してから、日々が<span className="text-darkpink">豊か</span>になりました。</p>
+                    <p className="text-vertical text-sm">
+                      天気がいい日には<span className="text-darkpink">自然</span>の中を散歩するので、気持ちが<span className="text-darkpink">穏やか</span>になりました。</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">デイサービス</p>
