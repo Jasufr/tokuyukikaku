@@ -79,7 +79,6 @@ const ServiceHoumon = () => {
               </div>
               <p className="mt-4 text-center">※他事業所で、サービスをお受けしている方でも、当社のサービスに関心がございましたら、<br className="hidden md:block" />お気軽にご相談ください。</p>
             </div>
-            <div className={`ryoukin ${visibleTab === "tab3" ? "block" : "hidden"}`}>bjr</div>
           </Tabs>
         </div>
       </div>
