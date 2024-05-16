@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="absolute sm:top-2 md:top-8 lg:top-10 w-full">
             <div className="z-50 bg-white bg-opacity-90 m-auto w-11/12 p-2 xs:p-4 lg:p-8 rounded-lg shadow-md flex justify-center gap-6">
               <div className="w-1/4 hidden lg:block">
-                <h1 className="text-2xl text-darkpink mb-2">お問い合わせ</h1>
+                <h1 className="text-2xl text-darkpink mb-3">お問い合わせ</h1>
                 <p>お困りごとやご質問がございましたら、お気軽にお問い合わせください。私たちがお手伝いさせていただきます。</p>
               </div>
               <div className="flex gap-6 w-full lg:w-3/4">

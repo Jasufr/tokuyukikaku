@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 mb-6 py-6 lg:py-12">
-          <h1 className="text-2xl text-darkpink mb-2">お問い合わせ</h1>
+          <h1 className="text-2xl text-darkpink mb-3">お問い合わせ</h1>
           <p className="mb-2">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
           <div className="flex justify-center">
             <div className="w-1/2 sm:w-1/3 text-center">
@@ -52,7 +52,7 @@ const Contact = () => {
           <div className="flex gap-10">
             <div className="sm:w-3/4 2md:w-2/3">
               <div className="mb-2">
-                <h1 className="text-xl mb-2">メールでのお問い合わせ</h1>
+                <h1 className="text-xl mb-3">メールでのお問い合わせ</h1>
                 <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
               </div>
               <div className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.jpg')] bg-cover bg-center rounded-md shadow-md"></div>

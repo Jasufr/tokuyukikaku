@@ -23,9 +23,9 @@ const Recruit = () => {
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28">
           <div className="flex gap-10">
             <div className="sm:w-4/5 2md:w-3/5">
-              <h1 className="text-2xl text-darkpink mb-2">採用情報</h1>
+              <h1 className="text-2xl text-darkpink mb-3">採用情報</h1>
               <div>
-                <h1 className="text-xl mb-2">お仕事内容</h1>
+                <h1 className="text-xl mb-3">お仕事内容</h1>
                 <p className="mb-2">介護職員（常勤・非常勤ヘルパー）及び介護タクシードライバーを募集中</p>
                 <p className="mb-2">朝食･昼食･夕食作り､各所掃除･洗濯･おむつ交換､お買物､入浴介助などの介護業務を､シフト制で分担して対応していきます｡</p>
                 <p className="text-[px]">※直行直帰OK！</p>
@@ -36,7 +36,7 @@ const Recruit = () => {
                 <div className="bg-[url('./illustrations/helper3.jpg')] bg-cover bg-top w-1/3 rounded-r-md"></div>
               </div>
               <div className="mt-6">
-                <h1 className="text-xl mb-2">募集要項</h1>
+                <h1 className="text-xl mb-3">募集要項</h1>
                 <table>
                   <tbody>
                     <tr>

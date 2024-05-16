@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div className="about-us px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12 flex gap-10 items-center">
           <div className="md:w-3/4 2md:w-3/5">
-            <h1 className="text-2xl mb-2 text-darkpink">私たちについて</h1>
+            <h1 className="text-2xl mb-3 text-darkpink">私たちについて</h1>
             <p className="mb-2">当社は、高齢者や障がいを持つ方々、そしてそのご家族の方々に寄り添い、心身の健康と幸福をサポートをしていきます。利用者様、ご家族の皆様、地域のコミュニティ、そして当社のスタッフ全員の幸福と福祉を真摯に考えています。</p>
             <p className="mb-2">介護に取り組む私たちは、利用者様のニーズを理解し、満たすことを最優先にしています。一人ひとりの利用者様に最適なケアプランを提供し、利用者様の生活を豊かで充実したものにすることを目指します。</p>
             <p>また、私たちは真の人間関係を築き、お互いに学び合い、支え合う環境を大切にしています。地域のコミュニティとの協力を通じて、お互いに成長し、より良い未来を築いていくことを使命としています。</p>
@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className="annai py-6 lg:py-12 bg-lightgray bg-opacity-30">
           <div className="px-6 2md:px-12 lg:px-24 xl:px-28">
-            <h1 className="text-2xl mb-2 text-darkpink">会社案内</h1>
+            <h1 className="text-2xl mb-3 text-darkpink">会社案内</h1>
             <div className="2md:flex gap-10">
               <table className="mb-4 2md:mb-0 w-full 2md:w-3/4">
                 <tbody>
