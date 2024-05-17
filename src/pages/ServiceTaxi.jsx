@@ -33,7 +33,7 @@ const ServiceTaxi = () => {
             <div className="bg-[url('./images/kuruma1.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div>
           </div>
           <Tabs id="1" visibleTab={visibleTab1} setVisibleTab={setVisibleTab1}>
-            <div className={`shoukai ${visibleTab1 === "tab1" ? "block" : "hidden"} mt-4`}>
+            <div className={`shoukai ${visibleTab1 === "tab1" ? "block" : "hidden"} my-4`}>
               <div className="xs:flex gap-5 2md:gap-10 mt-4">
                 <div className="xs:w-1/2 mb-4 xs:mb-0">
                   <h1 className="mb-3 text-xl">介護保険タクシーとは</h1>
@@ -50,7 +50,7 @@ const ServiceTaxi = () => {
               </div>
             </div>
 
-            <div className={`riyou ${visibleTab1 === "tab2" ? "block" : "hidden"} mt-4`}>
+            <div className={`riyou ${visibleTab1 === "tab2" ? "block" : "hidden"} my-4`}>
               <div className="xs:flex gap-5 2md:gap-10">
                 <div className="xs:w-1/2 mb-4 xs:mb-0">
                   <h1 className="mb-3 text-xl">ご利用方法</h1>
