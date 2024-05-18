@@ -37,7 +37,7 @@ const ServiceKyotaku = () => {
               <p></p>
               <div className="mt-4">
                 <div className="">
-                  <h1 className="mb-3 text-xl">具体的な仕事の内容は以下の通りです： </h1>
+                  <h1 className="mb-3 text-xl">具体的な仕事の内容</h1>
                   <ul className="list-decimal ms-5">
                     <li>
                       <h1 className="text-lg mb-1">ケアプランの作成</h1>
@@ -72,37 +72,64 @@ const ServiceKyotaku = () => {
             <div className={`riyou ${visibleTab === "tab2" ? "block" : "hidden"} mt-4`}>
               <div className="flex">
                 <div className="w-1/2">
-                  <h1 className="mb-3 text-xl">具体的な仕事の内容は以下の通りです： </h1>
+                  <h1 className="mb-3 text-xl">ご利用までのステップ</h1>
                   <ul className="list-decimal ms-5">
                     <li>
+                      <h1 className="text-lg mb-1">相談・申し込み</h1>
+                      <p className="">まず、居宅介護支援事業所に相談します。</p>
+                      <p>事業所は市町村や地域包括支援センターに問い合わせることで探すことができます。</p>
+                    </li>
+                    <li>
+                      <h1 className="text-lg mb-1">初回訪問とアセスメント</h1>
+                      <p className="">ケアマネジャーが自宅を訪問し、利用者や家族から生活状況、健康状態、介護の希望などを詳しく聞き取ります。</p>
+                      <p>このプロセスをアセスメントと呼びます。</p>
+                    </li>
+                    <li>
                       <h1 className="text-lg mb-1">ケアプランの作成</h1>
-                      <p className="">介護を必要とする人の状態や希望を把握し、その人に最適な介護サービスを計画する。</p>
-                      <p>ケアプランには、どのようなサービスをどの程度利用するかが具体的に記載される。</p>
+                      <p className="">アセスメントの結果に基づき、ケアマネジャーが利用者に最適なケアプランを作成します。</p>
+                      <p>のケアプランには、具体的な介護サービスの内容や頻度が記載されます。</p>
                     </li>
                     <li>
-                      <h1 className="text-lg mb-1">サービス提供事業者との調整 </h1>
-                      <p className="">ケアプランに基づき、訪問介護やデイサービス、ショートステイなどの各種介護サービスを提供する事業者と連携し、</p>
-                      <p>利用者がスムーズにサービスを受けられるように調整を行う。</p>
+                      <h1 className="text-lg mb-1">ケアプランの説明と同意</h1>
+                      <p className="">ケアマネジャーが作成したケアプランを利用者とその家族に説明し、同意を得ます。</p>
+                      <p>の際、ケアプランに関する質問や意見を交換し、必要に応じて修正を行います。</p>
                     </li>
                     <li>
-                      <h1 className="text-lg mb-1">モニタリング</h1>
-                      <p className="">サービスの提供が始まった後も、利用者の状態やサービスの質を定期的にチェックし、</p>
-                      <p>必要に応じてケアプランの見直しやサービスの変更を行う。</p>
+                      <h1 className="text-lg mb-1">サービスの手配と開始</h1>
+                      <p className="">ケアプランに基づいて、訪問介護やデイサービス、ショートステイなどの介護サービスを提供する事業者と契約を結びます。</p>
+                      <p>サービスの手配が完了すると、実際にサービスの提供が開始されます。</p>
                     </li>
                     <li>
-                      <h1 className="text-lg mb-1">相談・助言</h1>
-                      <p className="">利用者やその家族からの相談に応じ、介護に関する助言を行う。</p>
-                      <p>また、介護保険の利用方法や他の福祉サービスについての情報提供も行う。</p>
-                    </li>
-                    <li>
-                      <h1 className="text-lg mb-1">関係機関との連携</h1>
-                      <p className="">医療機関や福祉施設、市町村の窓口など、様々な関係機関と連携し、</p>
-                      <p>利用者が包括的な支援を受けられるようにする。</p>
+                      <h1 className="text-lg mb-1">定期的なモニタリングとプランの見直し</h1>
+                      <p className="">サービスが開始された後も、ケアマネジャーは定期的に利用者の状況やサービスの質を確認します。</p>
+                      <p>必要に応じてケアプランを見直し、サービス内容の調整を行います。</p>
                     </li>
                   </ul>
                 </div>
                 <div className="w-1/2">
-                  <h1>hahaa</h1>
+                  <h1 className="mb-3 text-xl">具体的な利用手順</h1>
+                  <ul className="list-decimal ms-5">
+                    <li>
+                      <h1 className="text-lg mb-1">介護保険の申請</h1>
+                      <p className="">市町村の介護保険課に介護保険の申請を行います。</p>
+                    </li>
+                    <li>
+                      <h1 className="text-lg mb-1">要介護認定</h1>
+                      <p className="">市町村の職員が訪問調査を行い、医師の意見書と合わせて要介護度の認定がされます。</p>
+                    </li>
+                    <li>
+                      <h1 className="text-lg mb-1">ケアマネジャーの選定</h1>
+                      <p className="">要介護認定を受けた後、居宅介護支援事業所からケアマネジャーを選定します。</p>
+                    </li>
+                    <li>
+                      <h1 className="text-lg mb-1">ケアプランの作成</h1>
+                      <p className="">ケアマネジャーがアセスメントを行い、ケアプランを作成します。</p>
+                    </li>
+                    <li>
+                      <h1 className="text-lg mb-1">サービス利用開始</h1>
+                      <p className="">ケアプランに基づき、具体的なサービスの利用を開始します。</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
