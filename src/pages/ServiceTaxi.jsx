@@ -29,12 +29,13 @@ const ServiceTaxi = () => {
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12">
           {/* 保険タクシー */}
           <div className="flex items-center gap-5 2md:gap-10 mb-3 xs:mb-4">
-            <h1 className="text-2xl text-darkpink text-nowrap">介護保険タクシー</h1>
+            <h1 className="text-2xl text-darkpink text-nowrap">介護タクシー</h1>
             <div className="bg-[url('./images/kuruma1.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div>
           </div>
           <Tabs id="1" visibleTab={visibleTab1} setVisibleTab={setVisibleTab1}>
             <div className={`shoukai ${visibleTab1 === "tab1" ? "block" : "hidden"} my-4`}>
-              <div className="xs:flex gap-5 2md:gap-10 mt-4">
+              <h1 className="text-2xl mb-2 text-darkpink">介護保険タクシー</h1>
+              <div className="xs:flex gap-5 2md:gap-10">
                 <div className="xs:w-1/2 mb-4 xs:mb-0">
                   <h1 className="mb-3 text-xl">介護保険タクシーとは</h1>
                   <p className="mb-2">介護保険で利用できる介護タクシーは介護保険タクシーとも言います。</p>
@@ -48,9 +49,21 @@ const ServiceTaxi = () => {
                   <p>院内介助も対応できます。</p>
                 </div>
               </div>
+              <h1 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h1>
+              <div>
+                <h1 className="mb-3 text-xl">一般介護タクシーとは</h1>
+                <p className="">西東京市を拠点に東京都全域介護保険外（自費利用）でも安心安全安い介護タクシーをご利用いただけます。</p>
+                <div className="mt-4">
+                  <h1 className="mb-3 text-xl">ご利用対象</h1>
+                  <p className="mb-2">（1）介護保険法第19条に規定する要介護認定又は要支援認定を受けている方。
+                    （2）身体障害者福祉法第4条に規定する身体障害者手帳の交付を受けている方。
+                    （3）上記（1）,（2）に該当する方のほか、肢体不自由、内部障害、知的障害及び精神障害その他の障害を有する等により単独での移動が困難な方であって、単独でタクシーその他の公共交通機関を利用することが困難な方。 </p>
+                </div>
+              </div>
             </div>
 
             <div className={`riyou ${visibleTab1 === "tab2" ? "block" : "hidden"} my-4`}>
+              <h1 className="text-2xl mb-2 text-darkpink">介護保険タクシー</h1>
               <div className="xs:flex gap-5 2md:gap-10">
                 <div className="xs:w-1/2 mb-4 xs:mb-0">
                   <h1 className="mb-3 text-xl">ご利用方法</h1>
@@ -86,10 +99,40 @@ const ServiceTaxi = () => {
                   </table>
                 </div>
               </div>
+              <h1 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h1>
+              <div>
+                <h1 className="mb-3 text-xl">ご利用対象</h1>
+                <p>要介護1～5の方または特定疾病が原因で介護を必要とする方。</p>
+                <p className="mb-2">このサービスを利用できるのは、要介護認定を受けて「要介護（1～5）と認定された方」、あるいは「特定疾病が原因で介護を必要とする40～64歳の方」です。</p>
+                <p>※要支援（1～2）の方は 介護予防訪問介護 の対象となります。 </p>
+                <h1 className="mt-4 mb-3 text-xl">ご利用までの流れ</h1>
+                <div className="xs:flex gap-5 2md:gap-10">
+                  <div className="xs:w-1/2 mb-4 xs:mb-0">
+                    <h1 className="mb-2 text-lg">介護認定を受けていない方</h1>
+                    <ul className="list-disc list-inside">
+                      <li>居宅介護支援事業所のケアマネージャーまでご相談ください。ご本人やご家族の代行で、役所へ申請手続きを致します。</li>
+                      <li>ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
+                      <li>役所に介護保険の申請を行い、後日、認定員がご自宅に伺って、介護認定調査が行なわれます。その後、認定結果が郵便にて送られてきます。</li>
+                      <li>ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。</li>
+                      <li>各サービスの事業所との契約をし、各介護サービスのご利用が始まります。</li>
+                    </ul>
+                  </div>
+                  <div className="xs:w-1/2">
+                    <h1 className="mb-2 text-lg">介護認定を受けられていてご利用してない方</h1>
+                    <ul className="list-disc list-inside">
+                      <li>居宅介護支援事業所のケアマネージャーまでご相談ください。</li>
+                      <li>ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
+                      <li>ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。 </li>
+                      <li>各サービスの事業所との契約をし、各介護サービスのご利用が始まります。 </li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="mt-4 text-center">※他事業所で、サービスをお受けしている方でも、当社のサービスに関心がございましたら、<br className="hidden md:block" />お気軽にご相談ください。</p>
+              </div>
             </div>
           </Tabs>
           {/* 一般タクシー */}
-          <div className="flex items-center gap-5 2md:gap-10 mb-3 xs:mb-4">
+          {/* <div className="flex items-center gap-5 2md:gap-10 mb-3 xs:mb-4">
             <h1 className="text-2xl text-darkpink text-nowrap">一般介護タクシー</h1>
             <div className="bg-[url('./images/kuruma2.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div>
           </div>
@@ -134,7 +177,7 @@ const ServiceTaxi = () => {
               </div>
               <p className="mt-4 text-center">※他事業所で、サービスをお受けしている方でも、当社のサービスに関心がございましたら、<br className="hidden md:block" />お気軽にご相談ください。</p>
             </div>
-          </Tabs>
+          </Tabs> */}
         </div>
       </div>
     </>
