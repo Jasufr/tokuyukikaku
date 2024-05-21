@@ -101,33 +101,107 @@ const ServiceTaxi = () => {
               </div>
               <h1 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h1>
               <div>
-                <h1 className="mb-3 text-xl">ご利用対象</h1>
-                <p>要介護1～5の方または特定疾病が原因で介護を必要とする方。</p>
-                <p className="mb-2">このサービスを利用できるのは、要介護認定を受けて「要介護（1～5）と認定された方」、あるいは「特定疾病が原因で介護を必要とする40～64歳の方」です。</p>
-                <p>※要支援（1～2）の方は 介護予防訪問介護 の対象となります。 </p>
-                <h1 className="mt-4 mb-3 text-xl">ご利用までの流れ</h1>
-                <div className="xs:flex gap-5 2md:gap-10">
-                  <div className="xs:w-1/2 mb-4 xs:mb-0">
-                    <h1 className="mb-2 text-lg">介護認定を受けていない方</h1>
-                    <ul className="list-disc list-inside">
-                      <li>居宅介護支援事業所のケアマネージャーまでご相談ください。ご本人やご家族の代行で、役所へ申請手続きを致します。</li>
-                      <li>ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
-                      <li>役所に介護保険の申請を行い、後日、認定員がご自宅に伺って、介護認定調査が行なわれます。その後、認定結果が郵便にて送られてきます。</li>
-                      <li>ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。</li>
-                      <li>各サービスの事業所との契約をし、各介護サービスのご利用が始まります。</li>
-                    </ul>
+                <div>
+                  <h1>ご利用料金</h1>
+                  <table>
+                    <caption className="">
+                      距離制運賃：
+                    </caption>
+                    <tbody>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>小型車</th>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">２キロ　７００円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">２８８メートル　９０円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４５秒までごとに</th>
+                        <td className="bg-white p-2 border border-darkstone">９０円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">２キロ　７３０円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">２７６メートル　９０円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４０秒までごとに</th>
+                        <td className="bg-white p-2 border border-darkstone">９０円</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <caption className="">
+                      時間制運賃：
+                    </caption>
+                    <tbody>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>小型車</th>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">３０分まで　２７６０円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">３０分までごとに　２７６０円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">３０分まで　２８８０円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                        <td className="bg-white p-2 border border-darkstone">３０分までごとに　２８８０円</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+                    <p><span className="font-bold">深夜・早朝割増：</span>２２時から５時まで２割増</p>
+                    <p><span className="font-bold">迎車料金：</span>１キロを限度として実車扱い(350円～365円)</p>
+                    <p><span className="font-bold">予約料金：</span>無料</p>
                   </div>
-                  <div className="xs:w-1/2">
-                    <h1 className="mb-2 text-lg">介護認定を受けられていてご利用してない方</h1>
-                    <ul className="list-disc list-inside">
-                      <li>居宅介護支援事業所のケアマネージャーまでご相談ください。</li>
-                      <li>ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
-                      <li>ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。 </li>
-                      <li>各サービスの事業所との契約をし、各介護サービスのご利用が始まります。 </li>
-                    </ul>
+                  <table>
+                    <caption className="">
+                    介助料金：
+                    </caption>
+                    <tbody>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">基本料金（車椅子対応車両）</th>
+                        <td className="bg-white p-2 border border-darkstone">1,100円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">室内（外）移動介助（乗降介助含む１５分ごと）</th>
+                        <td className="bg-white p-2 border border-darkstone">1,100円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">階段の昇降介助（５階まで介護員１名）</th>
+                        <td className="bg-white p-2 border border-darkstone">1,500円～5,500円</td>
+                      </tr>
+                      <tr>
+                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">ベッド上おむつ交換・更衣介助</th>
+                        <td className="bg-white p-2 border border-darkstone">3,300円</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div>
+                    <p>※その他の介助は応相談</p>
+                    <p>※介助中にメーター料金は発生致しません</p>
                   </div>
                 </div>
-                <p className="mt-4 text-center">※他事業所で、サービスをお受けしている方でも、当社のサービスに関心がございましたら、<br className="hidden md:block" />お気軽にご相談ください。</p>
               </div>
             </div>
           </Tabs>
