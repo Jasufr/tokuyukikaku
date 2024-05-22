@@ -55,9 +55,15 @@ const ServiceTaxi = () => {
                 <p className="">西東京市を拠点に東京都全域介護保険外（自費利用）でも安心安全安い介護タクシーをご利用いただけます。</p>
                 <div className="mt-4">
                   <h1 className="mb-3 text-xl">ご利用対象</h1>
-                  <p className="mb-2">（1）介護保険法第19条に規定する要介護認定又は要支援認定を受けている方。
-                    （2）身体障害者福祉法第4条に規定する身体障害者手帳の交付を受けている方。
-                    （3）上記（1）,（2）に該当する方のほか、肢体不自由、内部障害、知的障害及び精神障害その他の障害を有する等により単独での移動が困難な方であって、単独でタクシーその他の公共交通機関を利用することが困難な方。 </p>
+                  <ul className="list-decimal list-inside">
+                    <li>介護保険法第19条に規定する要介護認定又は要支援認定を受けている方</li>
+                    <li>身体障害者福祉法第4条に規定する身体障害者手帳の交付を受けている方</li>
+                    <li>上記 ①と② に該当する方のほか、肢体不自由、内部障害、知的障害及び精神障害その他の障害を有する等により単独での移動が困難な方であって、単独でタクシーその他の公共交通機関を利用することが困難な方</li>
+                  </ul>
+                </div>
+                <div className="mt-4 text-cente">
+                  <p><span className="font-bold">車両：</span>スズキエブリィワゴン＆ニッサンキャラバンを使用しております、車いす又はリクライニング車いす、ストレッチャーにも対応できます。</p>
+                  <p><span className="font-bold">運転手：</span>二種免許はもちろん、介護福祉士又はヘルパー2級の資格が取得しております、ご安心してお任せください。</p>
                 </div>
               </div>
             </div>
@@ -102,107 +108,116 @@ const ServiceTaxi = () => {
               <h1 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h1>
               <div>
                 <div>
-                  <h1>ご利用料金</h1>
-                  <table>
-                    <caption className="">
-                      距離制運賃：
-                    </caption>
-                    <tbody>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>小型車</th>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">２キロ　７００円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">２８８メートル　９０円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４５秒までごとに</th>
-                        <td className="bg-white p-2 border border-darkstone">９０円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">２キロ　７３０円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">２７６メートル　９０円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４０秒までごとに</th>
-                        <td className="bg-white p-2 border border-darkstone">９０円</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table>
-                    <caption className="">
-                      時間制運賃：
-                    </caption>
-                    <tbody>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>小型車</th>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">３０分まで　２７６０円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">３０分までごとに　２７６０円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">３０分まで　２８８０円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                        <td className="bg-white p-2 border border-darkstone">３０分までごとに　２８８０円</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div>
-                    <p><span className="font-bold">深夜・早朝割増：</span>２２時から５時まで２割増</p>
-                    <p><span className="font-bold">迎車料金：</span>１キロを限度として実車扱い(350円～365円)</p>
-                    <p><span className="font-bold">予約料金：</span>無料</p>
+                  <h1 className="text-xl mb-3">ご利用料金</h1>
+                  <div className="flex gap-10">
+                    <div className="w-1/2">
+                      <table className="w-full">
+                        <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">
+                          距離制運賃：
+                        </caption>
+                        <tbody>
+                          <tr>
+                            <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>小型車</th>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">２キロ　７００円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">２８８メートル　９０円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４５秒までごとに</th>
+                            <td className="bg-white p-2 border border-darkstone">９０円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">２キロ　７３０円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">２７６メートル　９０円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４０秒までごとに</th>
+                            <td className="bg-white p-2 border border-darkstone">９０円</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="w-1/2">
+                      <table className="w-full">
+                        <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">
+                          時間制運賃：
+                        </caption>
+                        <tbody>
+                          <tr>
+                            <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>小型車</th>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">３０分まで　２７６０円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">３０分までごとに　２７６０円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">３０分まで　２８８０円</td>
+                          </tr>
+                          <tr>
+                            <th className="bg-white p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
+                            <td className="bg-white p-2 border border-darkstone">３０分までごとに　２８８０円</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div className="mt-2 ms-1">
+                        <p><span className="font-bold">深夜・早朝割増：</span>２２時から５時まで２割増</p>
+                        <p><span className="font-bold">迎車料金：</span>１キロを限度として実車扱い(350円～365円)</p>
+                        <p><span className="font-bold">予約料金：</span>無料</p>
+                      </div>
+                    </div>
                   </div>
-                  <table>
-                    <caption className="">
-                    介助料金：
-                    </caption>
-                    <tbody>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">基本料金（車椅子対応車両）</th>
-                        <td className="bg-white p-2 border border-darkstone">1,100円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">室内（外）移動介助（乗降介助含む１５分ごと）</th>
-                        <td className="bg-white p-2 border border-darkstone">1,100円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">階段の昇降介助（５階まで介護員１名）</th>
-                        <td className="bg-white p-2 border border-darkstone">1,500円～5,500円</td>
-                      </tr>
-                      <tr>
-                        <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">ベッド上おむつ交換・更衣介助</th>
-                        <td className="bg-white p-2 border border-darkstone">3,300円</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div>
-                    <p>※その他の介助は応相談</p>
-                    <p>※介助中にメーター料金は発生致しません</p>
+                  <div className="m-auto w-1/2 mt-4">
+                    <table className="w-full">
+                      <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">
+                        介助料金：
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">基本料金（車椅子対応車両）</th>
+                          <td className="bg-white p-2 border border-darkstone">1,100円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">室内（外）<br />移動介助（乗降介助含む１５分ごと）</th>
+                          <td className="bg-white p-2 border border-darkstone">1,100円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">階段の昇降介助（５階まで介護員１名）</th>
+                          <td className="bg-white p-2 border border-darkstone">1,500円～5,500円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">ベッド上おむつ交換・更衣介助</th>
+                          <td className="bg-white p-2 border border-darkstone">3,300円</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div className="ms-1 mt-2">
+                      <p>※その他の介助は応相談</p>
+                      <p>※介助中にメーター料金は発生致しません</p>
+                    </div>
                   </div>
+
                 </div>
-                <div className="mt-4">
+                <div className="mt-4 text-center">
                   <p>※高速道路使用料金及び駐車料金が発生した場合はお客様負担となります。</p>
                   <p>※ご利用当日のキャンセルは車両到着前無料、車両到着後メーター料金７３０円発生します。</p>
                   <p>※利用中の車いすの貸し出しは無料・リクライニング車椅子の貸出料金：1,000円</p>
