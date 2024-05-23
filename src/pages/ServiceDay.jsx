@@ -89,7 +89,7 @@ const ServiceDay = () => {
                     <p className="">※他事業所で、サービスをお受けしている方でも、当社のサービスに関心がございましたら、<br className="hidden md:block" />お気軽にご相談ください。</p>
                   </div>
                 </div>
-                <div className="flex gap-10">
+                <div className="flex gap-10 mt-4">
                   <div className="w-1/2">
                     <h1 className="mb-3 text-xl">ご利用料金</h1>
                     <table className="w-full">
@@ -145,7 +145,7 @@ const ServiceDay = () => {
                       </tbody>
                     </table>
                     <div className="mt-4 text-center">
-                      <p>※詳細なご料金は<a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="./pdfs/test.pdf" target="_blank">こちら</a>からご覧になれます。</p>
+                      <p>※詳細なご料金は<a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="./pdfs/test.pdf" target="_blank">こちら</a>からご覧ください。</p>
                     </div>
                   </div>
                   <div className="w-1/2">
