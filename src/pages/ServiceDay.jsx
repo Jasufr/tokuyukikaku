@@ -60,12 +60,97 @@ const ServiceDay = () => {
             </div>
 
             <div className={`riyou ${visibleTab === "tab2" ? "block" : "hidden"} mt-4`}>
-              <div className="sm:flex gap-5 2md:gap-10">
+              <div className="">
                 <div>
-                  <h1>ご利用料金</h1>
+                  <h1 className="mt-4 mb-3 text-xl">ご利用までの流れ</h1>
+                  <div className="xs:flex gap-5 2md:gap-10">
+                    <div className="xs:w-1/2 mb-4 xs:mb-0">
+                      <h1 className="mb-2 text-lg">介護認定を受けていない方</h1>
+                      <ul className="list-square list-inside">
+                        <li className="mb-1">居宅介護支援事業所のケアマネージャーまでご相談ください。ご本人やご家族の代行で、役所へ申請手続きを致します。</li>
+                        <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
+                        <li className="mb-1">役所に介護保険の申請を行い、後日、認定員がご自宅に伺って、介護認定調査が行なわれます。その後、認定結果が郵便にて送られてきます。</li>
+                        <li className="mb-1">ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。</li>
+                        <li className="mb-1">各サービスの事業所との契約をし、各介護サービスのご利用が始まります。</li>
+                      </ul>
+                    </div>
+                    <div className="xs:w-1/2">
+                      <h1 className="mb-2 text-lg">介護認定を受けられていてご利用してない方</h1>
+                      <ul className="list-square list-inside">
+                        <li className="mb-1">居宅介護支援事業所のケアマネージャーまでご相談ください。</li>
+                        <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
+                        <li className="mb-1">ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。</li>
+                        <li className="mb-1">各サービスの事業所との契約をし、各介護サービスのご利用が始まります。</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="mt-4 text-center">
+                    <p className="mb-1">※契約の際に、詳しくご説明させていただきます。</p>
+                    <p className="">※他事業所で、サービスをお受けしている方でも、当社のサービスに関心がございましたら、<br className="hidden md:block" />お気軽にご相談ください。</p>
+                  </div>
                 </div>
-                <div>
-                  <h1>一日の流れ</h1>
+                <div className="flex gap-10">
+                  <div className="w-1/2">
+                    <h1 className="mb-3 text-xl">ご利用料金</h1>
+                    <table className="w-full">
+                      <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">
+                        8時間以上9時間未満、1割負担の場合（1日につき）
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone" scope="row">要介護 1</th>
+                          <td className="text-end bg-white bg-opacity-50 p-2 border border-darkstone">837円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone" scope="row">要介護 2</th>
+                          <td className="text-end bg-white bg-opacity-50 p-2 border border-darkstone">988円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone" scope="row">要介護 3</th>
+                          <td className="text-end bg-white bg-opacity-50 p-2 border border-darkstone">1145円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone" scope="row">要介護 4</th>
+                          <td className="text-end bg-white bg-opacity-50 p-2 border border-darkstone">1303円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone" scope="row">要介護 5</th>
+                          <td className="text-end bg-white bg-opacity-50 p-2 border border-darkstone">1458円</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div className="mt-4">
+                      <h1 className="text-start text-darkstone text-lg ms-2 mb-2">入浴介助料　43円</h1>
+                      <p>上記の料金は一例になります。<br /> その他の時間や加算については、お問い合わせ時や面接の際にご説明させていただきます。</p>
+                    </div>
+                    <table className="w-full mt-4">
+                      <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">その他サービス</caption>
+                      <tbody>
+                        <tr>
+                          <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone" scope="row">昼食+おやつ</th>
+                          <td className="text-end bg-white bg-opacity-50 p-2 border border-darkstone">750円</td>
+                        </tr>
+                        <tr>
+                          <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone" scope="row">
+                            <p className="mb-1">おむつ（1枚）</p>
+                            <p className="mb-1">リハビリパンツ（1枚）</p>
+                            <p>パット（1枚</p>
+                          </th>
+                          <td className="text-end bg-white bg-opacity-50 p-2 border border-darkstone">
+                            <p className="mb-1">100円</p>
+                            <p className="mb-1">100円</p>
+                            <p>50円</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div className="mt-4 text-center">
+                      <p>※詳細なご料金は<a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="./pdfs/test.pdf" target="_blank">こちら</a>からご覧になれます。</p>
+                    </div>
+                  </div>
+                  <div className="w-1/2">
+                    <h1 className="mb-3 text-xl">一日の流れ</h1>
+                  </div>
                 </div>
               </div>
             </div>
