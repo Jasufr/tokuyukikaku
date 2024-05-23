@@ -37,7 +37,7 @@ const ServiceDay = () => {
               <div className="mt-4">
                 <div className="">
                   <h1 className="mb-3 text-xl">室内の様子</h1>
-                  <div className="flex flex-col sm:flex-row gap-3 min-h-96 bg-lightgray rounded-md bg-opacity-30 p-3">
+                  <div className="flex flex-col sm:flex-row gap-3 in-h-96 min-h-[500px] bg-lightgray rounded-md bg-opacity-30 p-3">
                     <h2 className="hidden sm:block pt-2 text-vertical text-lg font-bold text-darkstone">全面床暖房付きデイルーム</h2>
                     <h2 className="sm:hidden pt-0 text-lg font-bold text-darkstone">全面床暖房付きデイルーム</h2>
                     <div className="bg-[url('./images/dayservice4.JPG')] bg-center bg-cover w-full min-h-52 rounded-md shadow-md"></div>
@@ -47,13 +47,13 @@ const ServiceDay = () => {
                   <div className="mt-4 flex flex-col sm:flex-row gap-3 bg-lightgray rounded-md bg-opacity-30 p-3">
                     <h2 className="hidden sm:block pt-2 text-vertical text-lg font-bold text-darkstone">品数豊富な日替わり昼食</h2>
                     <h2 className="sm:hidden pt-0 text-lg font-bold text-darkstone">品数豊富な日替わり昼食</h2>
-                    <div className="bg-[url('./images/dayservice8.jpg')] bg-center bg-cover w-full min-h-52 sm:min-h-96 rounded-md shadow-md"></div>
+                    <div className="bg-[url('./images/dayservice8.jpg')] bg-center bg-cover w-full min-h-56 sm:min-h-[500px] rounded-md shadow-md"></div>
                   </div>
-                  <div className="mt-4 flex flex-col sm:flex-row gap-3 min-h-96 bg-lightgray rounded-md bg-opacity-30 p-3">
+                  <div className="mt-4 flex flex-col sm:flex-row gap-3 in-h-96 min-h-[500px] bg-lightgray rounded-md bg-opacity-30 p-3">
                     <h2 className="hidden sm:block pt-2 text-vertical text-lg font-bold text-darkstone">広いバスタブとお手洗い完備</h2>
                     <h2 className="sm:hidden pt-0 text-lg font-bold text-darkstone">広いバスタブとお手洗い完備</h2>
-                    <div className="bg-[url('./images/dayservice6.jpg')] bg-center bg-cover sm:w-2/3 min-h-52 rounded-md shadow-md"></div>
-                    <div className="bg-[url('./images/dayservice7.jpg')] bg-center bg-cover sm:w-1/3 min-h-52 rounded-md shadow-md"></div>
+                    <div className="bg-[url('./images/dayservice6.jpg')] bg-bottom bg-cover sm:w-2/3 min-h-56 rounded-md shadow-md"></div>
+                    <div className="bg-[url('./images/dayservice7.jpg')] bg-center bg-cover sm:w-1/3 min-h-56 rounded-md shadow-md"></div>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@ const ServiceDay = () => {
                       </tbody>
                     </table>
                     <div className="mt-4">
-                      <h1 className="text-start text-darkstone text-lg ms-2 mb-2">入浴介助料　43円</h1>
+                      <p className="text-start font-bold text-darkstone text-lg ms-2 mb-2">入浴介助料　43円</p>
                       <p>上記の料金は一例になります。<br /> その他の時間や加算については、お問い合わせ時や面接の際にご説明させていただきます。</p>
                     </div>
                     <table className="w-full mt-4">
