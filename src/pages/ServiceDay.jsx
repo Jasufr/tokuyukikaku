@@ -148,16 +148,18 @@ const ServiceDay = () => {
                       <p>※詳細なご料金は<a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="./pdfs/test.pdf" target="_blank">こちら</a>からご覧ください。</p>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-1/2 ">
                     <h1 className="mb-3 text-xl">一日の流れ</h1>
-                    <div className="border-s-2 border-darkstone border-opacity-50 relative h-52">
-                      <div className="w-1.5 h-1.5 rounded-full -left-1.5 absolute bg-green">
-                        <div className="w-1 h-1 bg-white rounded-full absolute left-0.5 top-0.5"></div><span className=""></span></div>
-                      <span className=""></span>
-                      <div className=""><span className=""></span></div>
-                      <span className=""></span>
-                      <div className=""><span className=""></span></div>
-                    </div>
+                    <ul className="list-disc list-inside relative ms-2 w-full">
+                      <div className="h-full w-0.5 bg-darkstone absolute bg-opacity-20 top-0 -z-10 left-0.5"></div>
+                      <li className="text-green mb-8 relative"><span className="">到着</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">8：30</span></li>
+                      <li className="text-green mb-8 relative"><span className="">バイタルチェック 入浴</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">9：00</span></li>
+                      <li className="text-green mb-8 relative"><span className="">体操</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">11：00</span></li>
+                      <li className="text-green mb-8 relative"><span className="">昼食</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">12：00</span></li>
+                      <li className="text-green mb-8 relative"><span className="">レクレーション 個別機能訓練</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">14：00</span></li>
+                      <li className="text-green mb-8 relative"><span className="">おやつ</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">15：00</span></li>
+                      <li className="text-green mb-8 relative"><span className="">帰宅</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">16：45</span></li>
+                    </ul>
                   </div>
                 </div>
               </div>
