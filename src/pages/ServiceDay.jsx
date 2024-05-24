@@ -150,6 +150,14 @@ const ServiceDay = () => {
                   </div>
                   <div className="w-1/2">
                     <h1 className="mb-3 text-xl">一日の流れ</h1>
+                    <div className="border-s-2 border-darkstone border-opacity-50 relative h-52">
+                      <div className="w-1.5 h-1.5 rounded-full -left-1.5 absolute bg-green">
+                        <div className="w-1 h-1 bg-white rounded-full absolute left-0.5 top-0.5"></div><span className=""></span></div>
+                      <span className=""></span>
+                      <div className=""><span className=""></span></div>
+                      <span className=""></span>
+                      <div className=""><span className=""></span></div>
+                    </div>
                   </div>
                 </div>
               </div>
