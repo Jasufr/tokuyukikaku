@@ -89,8 +89,8 @@ const ServiceDay = () => {
                     <p className="">※他事業所で、サービスをお受けしている方でも、当社のサービスに関心がございましたら、<br className="hidden md:block" />お気軽にご相談ください。</p>
                   </div>
                 </div>
-                <div className="flex gap-10 mt-4">
-                  <div className="w-1/2">
+                <div className="md:flex gap-10 mt-4">
+                  <div className="md:w-1/2">
                     <h1 className="mb-3 text-xl">ご利用料金</h1>
                     <table className="w-full">
                       <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">
@@ -148,18 +148,22 @@ const ServiceDay = () => {
                       <p>※詳細なご料金は<a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="./pdfs/test.pdf" target="_blank">こちら</a>からご覧ください。</p>
                     </div>
                   </div>
-                  <div className="w-1/2 ">
+                  <div className="md:w-1/2">
                     <h1 className="mb-3 text-xl">一日の流れ</h1>
-                    <ul className="list-disc list-inside relative ms-2 w-full">
-                      <div className="h-full w-0.5 bg-darkstone absolute bg-opacity-20 top-0 -z-10 left-0.5"></div>
-                      <li className="text-green mb-8 relative"><span className="">到着</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">8：30</span></li>
-                      <li className="text-green mb-8 relative"><span className="">バイタルチェック 入浴</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">9：00</span></li>
+                    <ul className="list-disc list-inside relative w-full px-2">
+                      <div className="h-full w-0.5 bg-darkstone absolute bg-opacity-20 top-0 -z-10 left-2.5"></div>
+                      <li className=" text-green mb-8 relative"><span className="font-bold">到着</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">8：30</span></li>
+                      <li className="text-green mb-8 relative"><span className="">バイタルチェック <span className="max-[375px]:absolute left-6 top-6">入浴</span></span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">9：00</span></li>
                       <li className="text-green mb-8 relative"><span className="">体操</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">11：00</span></li>
-                      <li className="text-green mb-8 relative"><span className="">昼食</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">12：00</span></li>
-                      <li className="text-green mb-8 relative"><span className="">レクレーション 個別機能訓練</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">14：00</span></li>
+                      <li className="text-green mb-8 relative"><span className="font-bold">昼食</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">12：00</span></li>
+                      <li className="text-green mb-8 relative"><span className="">レクレーション <span className="max-[375px]:absolute left-6 top-6">個別機能訓練</span></span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">14：00</span></li>
                       <li className="text-green mb-8 relative"><span className="">おやつ</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">15：00</span></li>
-                      <li className="text-green mb-8 relative"><span className="">帰宅</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">16：45</span></li>
+                      <li className="text-green relative"><span className="font-bold">帰宅</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">16：45</span></li>
                     </ul>
+                    <div className="mt-4">
+                      <p><span className="font-bold">住所：</span>西東京市向台町6丁目 10-10</p>
+                      <p><span className="font-bold">受付時間：</span>08：00 ～ 17：30</p>
+                    </div>
                   </div>
                 </div>
               </div>
