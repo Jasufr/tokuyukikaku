@@ -55,6 +55,10 @@ const ServiceHoumon = () => {
               <p>要介護1～5の方または特定疾病が原因で介護を必要とする方。</p>
               <p className="mb-2">このサービスを利用できるのは、要介護認定を受けて「要介護（1～5）と認定された方」、あるいは「特定疾病が原因で介護を必要とする40～64歳の方」です。</p>
               <p>※要支援（1～2）の方は 介護予防訪問介護 の対象となります。</p>
+              <div className="mt-3">
+                <p><span className="font-bold">対応地域：</span>西東京市・小平市・武蔵野市</p>
+                <p><span className="font-bold">営業時間：</span>7:00～20:00　年中無休</p>
+              </div>
               <h1 className="mt-4 mb-3 text-xl">ご利用までの流れ</h1>
               <div className="xs:flex gap-5 2md:gap-10">
                 <div className="xs:w-1/2 mb-4 xs:mb-0">
