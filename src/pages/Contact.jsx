@@ -55,10 +55,10 @@ const Contact = () => {
                 <h1 className="text-xl mb-3">メールでのお問い合わせ</h1>
                 <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
               </div>
-              <div className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.jpg')] bg-cover bg-center rounded-md shadow-md"></div>
+              <div className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div>
               <SendMail />
             </div>
-            <div className="hidden sm:block bg-[url('./illustrations/helper4.jpg')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
+            <div className="hidden sm:block bg-[url('./illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
           </div>
 
         </div>
