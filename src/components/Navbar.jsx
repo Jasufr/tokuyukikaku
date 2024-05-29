@@ -27,46 +27,55 @@ const Navbar = () => {
             </div>
             <div>
               <ul className="flex gap-4">
-                <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                  <Link to="/about">私たちについて</Link>
-                </li>
-                <li className="relative group hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                  <button className="group ">
-
+                <Link to="/about">
+                  <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
+                    私たちについて
+                  </li>
+                </Link>
+                <button className="group">
+                  <li className="relative group hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                     <div className="group flex items-center group-hover:text-darkpink cursor-pointer">
-                    サービス
-                    <img className="w-4 pt-0.5 group-focus:rotate-90 group-hover:rotate-90 transition-all duration-200" src="./icons/open-bottom.png" alt="" />
-                  </div>
-                  <ul className="z-50 absolute group-focus:block group-hover:block hidden bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
-                    <li>
-                      <Link to="/houmon" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
-                        <img className="w-5" src="./icons/minibus-.png" alt="" />
-                        訪問介護
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/taxi" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
-                        <img className="w-5" src="./icons/taxi.png" alt="" />
-                        介護タクシー
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/dayservice" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
-                        <img className="w-5" src="./icons/business-group.png" alt="" />
-                        デイサービス
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/kyotaku" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
-                        <img className="w-5" src="./icons/neighbour.png" alt="" />
-                        居宅介護支援
-                      </Link>
-                    </li>
-                  </ul>
-                    </button>
-                </li>
-                <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/contact">お問い合わせ</Link></li>
-                <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600"><Link to="/recruit">採用情報</Link></li>
+                      サービス
+                      <img className="w-4 pt-0.5 group-focus:rotate-90 group-hover:rotate-90 transition-all duration-200" src="./icons/open-bottom.png" alt="" />
+                    </div>
+                    <ul className="z-50 absolute group-focus:block group-hover:block hidden bg-white mt-1 px-2 py-1 left-0 -right-16 rounded-md shadow-md">
+                      <li>
+                        <Link to="/houmon" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                          <img className="w-5" src="./icons/minibus-.png" alt="" />
+                          訪問介護
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/taxi" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                          <img className="w-5" src="./icons/taxi.png" alt="" />
+                          介護タクシー
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/dayservice" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                          <img className="w-5" src="./icons/business-group.png" alt="" />
+                          デイサービス
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/kyotaku" className="hover:bg-zinc hover:bg-opacity-70 hover:text-darkpink rounded-md p-1 flex items-center gap-1 transition duration-200 ease-in-out hover:text-rose-600">
+                          <img className="w-5" src="./icons/neighbour.png" alt="" />
+                          居宅介護支援
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </button>
+                <Link to="/contact">
+                  <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600">
+                    お問い合わせ
+                  </li>
+                </Link>
+                <Link to="/recruit">
+                  <li className="hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out hover:text-rose-600">
+                    採用情報
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
