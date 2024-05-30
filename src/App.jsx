@@ -30,7 +30,6 @@ function App() {
       } else {
         upBtnRef.current.classList.add('opacity-0');
       }
-      console.log(window.scrollY);
     }
   };
   useEffect(() => {
