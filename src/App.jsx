@@ -10,23 +10,32 @@ import ServiceKyotaku from "./pages/ServiceKyotaku";
 import Recruit from "./pages/Recruit";
 import Privacy from "./pages/Privacy";
 import PageNotFound from "./pages/PageNotFound";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useScroll } from "@react-three/drei";
 
 function App() {
-  const [isScrolled, setIsScrolled] = useState("");
   const pathname = useLocation();
+  const upBtnRef = useRef(null);
 
+  // Always be on top of the page when changing route
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const backUpVisible = () => {
-    if (window.scrollX !== 0) {
-      setIsScrolled("true");
-    } else {
-      setIsScrolled("false");
+  // upBtn show only if scrolled
+  const handleScroll = () => {
+    if (upBtnRef.current) {
+      if (window.scrollY >= 500) {
+        upBtnRef.current.classList.remove('opacity-0');
+      } else {
+        upBtnRef.current.classList.add('opacity-0');
+      }
+      console.log(window.scrollY);
     }
   };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -64,7 +73,7 @@ function App() {
               <PageNotFound />
             </Route>
           </Switch>
-          <button onClick={() =>  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} className="fixed bottom-0 right-0 w-8 z-50 m-4"><img src="./icons/up.png" alt="" /></button>
+          <button onClick={() =>  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} ref={upBtnRef} className="upbtn fixed bottom-0 right-0 w-8 z-50 m-4 transition-opacity opacity-0 duration-500"><img src="./icons/up.png" alt="" /></button>
         </MainLayout>
       </div>
     </>
