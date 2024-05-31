@@ -31,9 +31,9 @@ const Recruit = () => {
                 <p className="text-[px]">※直行直帰OK！</p>
               </div>
               <div className="flex w-full h-32 mt-6 sm:hidden shadow-md rounded-md">
-                <div className="bg-[url('./illustrations/helper2.png')] bg-cover bg-top w-1/3 rounded-l-md"></div>
-                <div className="bg-[url('./illustrations/helper1.png')] bg-cover bg-top w-1/3"></div>
-                <div className="bg-[url('./illustrations/helper3.png')] bg-cover bg-top w-1/3 rounded-r-md"></div>
+                <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('./illustrations/helper2.png')] bg-cover bg-top w-1/3 rounded-l-md"></div>
+                <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('./illustrations/helper1.png')] bg-cover bg-top w-1/3"></div>
+                <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('./illustrations/helper3.png')] bg-cover bg-top w-1/3 rounded-r-md"></div>
               </div>
               <div className="mt-6">
                 <h1 className="text-xl mb-3">募集要項</h1>
@@ -85,9 +85,9 @@ const Recruit = () => {
               </div>
             </div>
             <div className="hidden sm:block w-1/5 2md:w-2/5 rounded-md shadow-md">
-              <div className="bg-[url('./illustrations/helper2.png')] bg-cover bg-top h-1/3 rounded-t-md"></div>
-              <div className="bg-[url('./illustrations/helper1.png')] bg-cover bg-top h-1/3"></div>
-              <div className="bg-[url('./illustrations/helper3.png')] bg-cover bg-top h-1/3 rounded-b-md"></div>
+              <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('./illustrations/helper2.png')] bg-cover bg-top h-1/3 rounded-t-md"></div>
+              <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('./illustrations/helper1.png')] bg-cover bg-top h-1/3"></div>
+              <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('./illustrations/helper3.png')] bg-cover bg-top h-1/3 rounded-b-md"></div>
             </div>
           </div>
         </div>

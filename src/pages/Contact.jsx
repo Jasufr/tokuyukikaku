@@ -27,23 +27,23 @@ const Contact = () => {
           <p className="mb-2">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
           <div className="flex justify-center">
             <div className="w-1/2 sm:w-1/3 text-center">
-              <img loading="lazy" src="./icons/address.png" alt="" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+              <img loading="lazy" src="./icons/address.png" alt="住所" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
               <h1>住所</h1>
               <p>188-0013 西東京市<br /> 向台町6丁目10番10号</p>
             </div>
             <div className="w-1/2 sm:w-1/3 text-center">
-              <img loading="lazy" src="./icons/phone_number.png" alt="" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+              <img loading="lazy" src="./icons/phone_number.png" alt="電話番号" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
               <h1>電話番号</h1>
               <p>042-497-6116</p>
             </div>
             <div className="hidden sm:block w-1/3 text-center">
-              <img loading="lazy" src="./icons/mail_address.png" alt="" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+              <img loading="lazy" src="./icons/mail_address.png" alt="メールアドレス" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
               <h1>メールアドレス</h1>
               <p className="">tokuyukikaku@basil.ocn.ne.jp</p>
             </div>
           </div>
           <div className="sm:hidden text-center mt-2">
-            <img loading="lazy" src="./icons/mail_address.png" alt="" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+            <img loading="lazy" src="./icons/mail_address.png" alt="メールアドレス" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
             <h1>メールアドレス</h1>
             <p className="">tokuyukikaku@basil.ocn.ne.jp</p>
           </div>
@@ -55,12 +55,11 @@ const Contact = () => {
                 <h1 className="text-xl mb-3">メールでのお問い合わせ</h1>
                 <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
               </div>
-              <div className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div>
+              <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div>
               <SendMail />
             </div>
-            <div className="hidden sm:block bg-[url('./illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
+            <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('./illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
           </div>
-
         </div>
       </div>
     </>
