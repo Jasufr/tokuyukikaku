@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div className="home">
         {/* Accueil */}
-        <div className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
+        <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
             <div className="bg-white bg-opacity-55 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
               <h1 className="text-darkpink text-3xl">温もりで支える介護</h1>
@@ -36,14 +36,14 @@ const Home = () => {
               </div>
             </div>
             <div className="flex gap-10 px-6 2md:px-12 lg:px-24 xl:px-28 py-6">
-              <div className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('./illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
+              <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('./illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
               <div className="md:w-1/2 lg:w-1/3 flex flex-col justify-center">
                 <h1 className="text-2xl mb-3 text-darkpink">心温まるサポートで幸福と健康を</h1>
                 <p className="mb-2">徳有企画では、全ての方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。</p>
                 <p>慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、支え合う環境を提供し、誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々をお届けします。</p>
                 <Link to="/about" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                   <p className="">私たちについて</p>
-                  <img loading="lazy" src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
+                  <img loading="lazy" src="./icons/right.png" alt="私たちについて　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                 </Link>
               </div>
             </div>
@@ -77,15 +77,15 @@ const Home = () => {
               </div>
               {/* Houmon service */}
               <div className="houmon md:flex gap-10 mb-6">
-                <div className="hidden md:block w-1/2 bg-[url('./images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"></div>
+                <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="hidden md:block w-1/2 bg-[url('./images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"></div>
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-3">訪問介護</h1>
-                  <div className="md:hidden bg-[url('./images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="md:hidden bg-[url('./images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
                   <p className="mb-2">訪問介護員（ホームヘルパー）などがご自宅に訪問し、介護や日常生活上のお世話を行うサービスです。ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。</p>
                   <p>食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。</p>
                   <Link to="/houmon" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img loading="lazy" src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
+                    <img loading="lazy" src="./icons/right.png" alt="訪問介護　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
               </div>
@@ -93,28 +93,28 @@ const Home = () => {
               <div className="taxi flex gap-10 mb-6">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-3">介護タクシー</h1>
-                  <div className="md:hidden bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  <div aria-label="介護タクシーの車の写真" role="img" className="md:hidden bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
                   <p className="mb-2">介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。</p>
                   <p className="mb-2">ケアマネージャー様の作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。</p>
                   <p>ご利用対象に当てはまらない方々は、一般介護タクシーをご利用することが可能です。</p>
                   <Link to="/taxi" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img loading="lazy" src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
+                    <img loading="lazy" src="./icons/right.png" alt="介護タクシー　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                <div className="hidden md:block w-1/2 bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                <div aria-label="介護タクシーの車の写真" role="img" className="hidden md:block w-1/2 bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
               </div>
               {/* Day service */}
               <div className="dayservice flex gap-10 mb-6">
-                <div className="hidden md:block w-1/2 bg-[url('./images/dayservice1.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                <div aria-label="デイサービスの室内の写真" role="img" className="hidden md:block w-1/2 bg-[url('./images/dayservice1.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div>
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-3">デイサービス</h1>
-                  <div className="md:hidden bg-[url('./images/dayservice1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  <div aria-label="デイサービスの室内の写真" role="img" className="md:hidden bg-[url('./images/dayservice1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
                   <p className="mb-2">全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。</p>
                   <p>また、看護師が常駐しているので日々の機能訓練も安心して行っていただけます。</p>
                   <Link to="/dayservice" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img loading="lazy" src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
+                    <img loading="lazy" src="./icons/right.png" alt="デイサービス　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
               </div>

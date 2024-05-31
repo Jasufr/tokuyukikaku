@@ -10,8 +10,7 @@ import ServiceKyotaku from "./pages/ServiceKyotaku";
 import Recruit from "./pages/Recruit";
 import Privacy from "./pages/Privacy";
 import PageNotFound from "./pages/PageNotFound";
-import { useEffect, useRef, useState } from "react";
-import { useScroll } from "@react-three/drei";
+import { useEffect, useRef } from "react";
 
 function App() {
   const pathname = useLocation();
@@ -72,7 +71,7 @@ function App() {
               <PageNotFound />
             </Route>
           </Switch>
-          <button onClick={() =>  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} ref={upBtnRef} className="upbtn fixed bottom-0 right-0 w-8 z-50 m-4 transition-opacity opacity-0 duration-500"><img src="./icons/up.png" alt="" /></button>
+          <button onClick={() =>  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} ref={upBtnRef} className="upbtn fixed bottom-0 right-0 w-8 z-50 m-4 transition-opacity opacity-0 duration-500"><img src="./icons/up.png" alt="back up button" /></button>
         </MainLayout>
       </div>
     </>
