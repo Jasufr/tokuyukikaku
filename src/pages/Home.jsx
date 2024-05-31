@@ -122,15 +122,15 @@ const Home = () => {
               <div className="kyotaku flex gap-10">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h1 className="text-xl mb-3">居宅介護支援</h1>
-                  <div className="md:hidden bg-[url('./images/kyotaku.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="md:hidden bg-[url('./images/kyotaku.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
                   <p className="mb-2">介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。</p>
                   <p>ケアマネジャーは、利用者やその家族と綿密にコミュニケーションを取りながら、利用者様のニーズに合わせたケアプランを作成します。これにより、利用者が自立した生活を維持し、可能な限り自宅で快適に過ごせるようにサポートします。</p>
                   <Link to="/kyotaku" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
-                    <img loading="lazy" src="./icons/right.png" alt="" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
+                    <img loading="lazy" src="./icons/right.png" alt="居宅介護支援　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                <div className="hidden md:block w-1/2 bg-[url('./images/kyotaku.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="hidden md:block w-1/2 bg-[url('./images/kyotaku.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ const Home = () => {
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">介護タクシー</p>
-                    <img loading="lazy" src="./illustrations/eldery1.png" alt="" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
+                    <img loading="lazy" src="./illustrations/eldery1.png" alt="介護タクシー　ご利用者様イラスト" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
                   </div>
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
@@ -176,7 +176,7 @@ const Home = () => {
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">デイサービス</p>
-                    <img loading="lazy" src="./illustrations/eldery2.png" alt="" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
+                    <img loading="lazy" src="./illustrations/eldery2.png" alt="デイサービス　ご利用者様イラスト" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
                   </div>
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
@@ -186,7 +186,7 @@ const Home = () => {
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">訪問介護</p>
-                    <img loading="lazy" src="./illustrations/eldery3.png" alt="" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
+                    <img loading="lazy" src="./illustrations/eldery3.png" alt="訪問介護　ご利用者様イラスト" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
                   </div>
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
@@ -196,7 +196,7 @@ const Home = () => {
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">訪問介護</p>
-                    <img loading="lazy" src="./illustrations/eldery4.png" alt="" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
+                    <img loading="lazy" src="./illustrations/eldery4.png" alt="訪問介護　ご利用者様イラスト" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
                   </div>
                 </div>
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
@@ -205,7 +205,7 @@ const Home = () => {
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">介護タクシー</p>
-                    <img loading="lazy" src="./illustrations/eldery5.png" alt="" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
+                    <img loading="lazy" src="./illustrations/eldery5.png" alt="介護タクシー　ご利用者様イラスト" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
                   </div>
                 </div>
                 <div className="flex justify-end h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
@@ -215,7 +215,7 @@ const Home = () => {
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">デイサービス</p>
-                    <img loading="lazy" src="./illustrations/eldery6.png" alt="" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
+                    <img loading="lazy" src="./illustrations/eldery6.png" alt="デイサービス　ご利用者様イラスト" className="w-full  max-w-36 max-h-28 object-contain pe-2 pb-2" />
                   </div>
                 </div>
               </div>
@@ -226,13 +226,13 @@ const Home = () => {
           <div className="">
             <div className="flex h-96 relative mt-12 py-6">
               <div className="w-full flex shadow-md">
-                <div className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper2.png')] bg-cover bg-top">
+                <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper2.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
                 </div>
-                <div className="hidden sm:block h-full w-1/3 bg-[url('./illustrations/helper1.png')] bg-cover bg-top">
+                <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden sm:block h-full w-1/3 bg-[url('./illustrations/helper1.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
                 </div>
-                <div className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper3.png')] bg-cover bg-top">
+                <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper3.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
                 </div>
                 <div className="absolute w-full transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
