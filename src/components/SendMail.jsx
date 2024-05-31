@@ -102,7 +102,7 @@ const SendMail = () => {
         handleClose={toggleOkPopUp}
         content={
           <div className="flex flex-col items-center">
-            <img loading="lazy" src="./icons/ok.png" className="w-12" alt="" />
+            <img loading="lazy" src="./icons/ok.png" className="w-12" alt="メール送信成功アイコン" />
             <div>
               <h1 className="text-center text-green text-xl xs:text-2xl mb-2">ありがとうございました！</h1>
               <p className="text-center">できるだけ早くお答えしますので、<br />少々お待ちください。</p>
@@ -115,7 +115,7 @@ const SendMail = () => {
         handleClose={toggleErrorPopUp}
         content={
           <div className="flex flex-col items-center">
-            <img loading="lazy" src="./icons/error.png" className="w-12" alt="" />
+            <img loading="lazy" src="./icons/error.png" className="w-12" alt="メール送信エラーアイコン" />
             <div>
               <h1 className="text-center text-red text-xl xs:text-2xl mb-2">エラーが発生しました。</h1>
               <p className="text-center">もう一度入力してくだい。<br />エラーが続く場合、<br className="block 2md:hidden" />電話番号でお問い合わせください。</p>
