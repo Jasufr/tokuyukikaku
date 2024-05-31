@@ -29,7 +29,7 @@ const ServiceTaxi = () => {
           {/* 保険タクシー */}
           <div className="flex items-center gap-2 sm:gap-5 2md:gap-10 mb-3 xs:mb-4">
             <h1 className="text-2xl text-darkpink text-nowrap">介護タクシー</h1>
-            <div className="bg-[url('./images/kuruma1.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div>
+            <div aria-label="介護タクシーの車の写真" role="img" className="bg-[url('./images/kuruma1.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div>
           </div>
           <Tabs id="1" visibleTab={visibleTab1} setVisibleTab={setVisibleTab1}>
             <div className={`shoukai ${visibleTab1 === "tab1" ? "block" : "hidden"} my-4`}>
