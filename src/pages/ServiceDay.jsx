@@ -38,11 +38,11 @@ const ServiceDay = () => {
           </div>
           <Tabs visibleTab={visibleTab} setVisibleTab={setVisibleTab}>
             <div className={`shoukai ${visibleTab === "tab1" ? "block" : "hidden"} mt-4`}>
-              <h1 className="mb-3 text-xl">デイサービスとは</h1>
+              <h2 className="mb-3 text-xl">デイサービスとは</h2>
               <p className="mb-2">全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。<br /> また、看護師が常駐しているので、日々の機能訓練も安心して行っていただけます。</p>
               <div className="mt-4">
                 <div className="">
-                  <h1 className="mb-3 text-xl">室内の様子</h1>
+                  <h2 className="mb-3 text-xl">室内の様子</h2>
                   <div className="flex flex-col sm:flex-row gap-3 in-h-96 min-h-[500px] bg-lightgray rounded-md bg-opacity-30 p-3">
                     <h4 className="hidden sm:block pt-2 text-vertical text-lg font-bold text-darkstone">全面床暖房付きデイルーム</h4>
                     <h4 className="sm:hidden pt-0 text-lg font-bold text-darkstone">全面床暖房付きデイルーム</h4>
@@ -68,10 +68,10 @@ const ServiceDay = () => {
             <div className={`riyou ${visibleTab === "tab2" ? "block" : "hidden"} mt-4`}>
               <div className="">
                 <div>
-                  <h1 className="mt-4 mb-3 text-xl">ご利用までの流れ</h1>
+                  <h2 className="mt-4 mb-3 text-xl">ご利用までの流れ</h2>
                   <div className="xs:flex gap-5 2md:gap-10">
                     <div className="xs:w-1/2 mb-4 xs:mb-0">
-                      <h1 className="mb-2 text-lg">介護認定を受けていない方</h1>
+                      <h3 className="mb-2 text-lg">介護認定を受けていない方</h3>
                       <ul className="list-square list-inside">
                         <li className="mb-1">居宅介護支援事業所のケアマネージャーまでご相談ください。ご本人やご家族の代行で、役所へ申請手続きを致します。</li>
                         <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
@@ -81,7 +81,7 @@ const ServiceDay = () => {
                       </ul>
                     </div>
                     <div className="xs:w-1/2">
-                      <h1 className="mb-2 text-lg">介護認定を受けられていてご利用してない方</h1>
+                      <h3 className="mb-2 text-lg">介護認定を受けられていてご利用してない方</h3>
                       <ul className="list-square list-inside">
                         <li className="mb-1">居宅介護支援事業所のケアマネージャーまでご相談ください。</li>
                         <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
@@ -97,7 +97,7 @@ const ServiceDay = () => {
                 </div>
                 <div className="md:flex gap-10 mt-4">
                   <div className="mb-4 md:md-0 md:w-1/2">
-                    <h1 className="mb-3 text-xl">ご利用料金</h1>
+                    <h2 className="mb-3 text-xl">ご利用料金</h2>
                     <table className="w-full">
                       <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">
                         8時間以上9時間未満、1割負担の場合（1日につき）
@@ -155,7 +155,7 @@ const ServiceDay = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2">
-                    <h1 className="mb-3 text-xl">一日の流れ</h1>
+                    <h2 className="mb-3 text-xl">一日の流れ</h2>
                     <ul className="list-disc list-inside relative w-full px-2">
                       <div className="h-full w-0.5 bg-darkstone absolute bg-opacity-20 top-0 -z-10 left-2.5"></div>
                       <li className=" text-green mb-8 relative"><span className="font-bold">到着</span><span className="absolute -top-1.5 font-bold text-sm right-0 bg-lightgray bg-opacity-100 py-2 min-w-16 text-center rounded-md shadow-md">8：30</span></li>

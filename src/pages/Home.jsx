@@ -14,10 +14,10 @@ const Home = () => {
         {/* Accueil */}
         <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
-            <div className="bg-white bg-opacity-55 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
+            <div className="bg-white bg-opacity-65 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
               {/* <h2 className="text-darkpink text-3xl">温もりで支える介護</h2>
               <p className="text-lg">やさしさをもって利用者様と接し、心温まる時間を提供します。</p> */}
-              <h1 className="text-darkpink text-3xl">徳有企画 | 西東京市、小平市、武蔵野市を中心し、介護サービス - 安心と信頼のケア</h1>
+              <h1 className="text-darkpink text-2xl">徳有企画 | 西東京市、小平市、武蔵野市を中心する介護サービス、安心と信頼のケア</h1>
             </div>
           </div>
         </div>

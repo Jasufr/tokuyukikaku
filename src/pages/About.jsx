@@ -40,7 +40,7 @@ const About = () => {
         </div>
         <div className="annai py-6 lg:py-12 bg-lightgray bg-opacity-30">
           <div className="px-6 2md:px-12 lg:px-24 xl:px-28">
-            <h1 className="text-2xl mb-3 text-darkpink">会社案内</h1>
+            <h2 className="text-2xl mb-3 text-darkpink">会社案内</h2>
             <div className="2md:flex gap-10">
               <table className="mb-4 2md:mb-0 w-full 2md:w-3/4">
                 <tbody>

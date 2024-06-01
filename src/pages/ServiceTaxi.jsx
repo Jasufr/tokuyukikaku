@@ -39,27 +39,27 @@ const ServiceTaxi = () => {
           </div>
           <Tabs id="1" visibleTab={visibleTab1} setVisibleTab={setVisibleTab1}>
             <div className={`shoukai ${visibleTab1 === "tab1" ? "block" : "hidden"} my-4`}>
-              <h1 className="text-2xl mb-2 text-darkpink">介護保険タクシー</h1>
+              <h2 className="text-2xl mb-2 text-darkpink">介護保険タクシー</h2>
               <div className="sm:flex gap-5 2md:gap-10">
                 <div className="sm:w-1/2 mb-4 sm:mb-0">
-                  <h1 className="mb-3 text-xl">介護保険タクシーとは</h1>
+                  <h3 className="mb-3 text-xl">介護保険タクシーとは</h3>
                   <p className="mb-2">介護保険で利用できる介護タクシーは介護保険タクシーとも言います。</p>
                   <p className="mb-2">介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。（ご利用対象に当てはまらない方々は一般介護タクシーを利用することができます）</p>
                   <p>ケアマネージャーさまの作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。(障害者総合支援法にも適用されます）</p>
                 </div>
                 <div className="sm:w-1/2">
-                  <h1 className="mb-3 text-xl">サービス内容</h1>
+                  <h3 className="mb-3 text-xl">サービス内容</h3>
                   <p className="mb-2">通院介助等のケアプランに基づく身体介助全般に対応。</p>
                   <p className="mb-2">ベッド上の介助から始ります、おむつ交換・排泄介助・更衣介助・移乗介助・移動介助・階段の昇降介助・乗降介助・病院受付までの移動介助・帰宅後のケアまで。</p>
                   <p>院内介助も対応できます。</p>
                 </div>
               </div>
-              <h1 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h1>
+              <h2 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h2>
               <div>
-                <h1 className="mb-3 text-xl">一般介護タクシーとは</h1>
+                <h3 className="mb-3 text-xl">一般介護タクシーとは</h3>
                 <p className="">西東京市を拠点に東京都全域介護保険外（自費利用）でも安心安全安い介護タクシーをご利用いただけます。</p>
                 <div className="mt-4">
-                  <h1 className="mb-3 text-xl">ご利用対象</h1>
+                  <h3 className="mb-3 text-xl">ご利用対象</h3>
                   <ol className="list-decimal list-inside">
                     <li className="mb-1">介護保険法第19条に規定する要介護認定又は要支援認定を受けている方</li>
                     <li className="mb-1">身体障害者福祉法第4条に規定する身体障害者手帳の交付を受けている方</li>
@@ -74,16 +74,16 @@ const ServiceTaxi = () => {
             </div>
 
             <div className={`riyou ${visibleTab1 === "tab2" ? "block" : "hidden"} my-4`}>
-              <h1 className="text-2xl mb-2 text-darkpink">介護保険タクシー</h1>
+              <h2 className="text-2xl mb-2 text-darkpink">介護保険タクシー</h2>
               <div className="sm:flex gap-5 2md:gap-10">
                 <div className="sm:w-1/2 mb-4 sm:mb-0">
-                  <h1 className="mb-3 text-xl">ご利用方法</h1>
+                  <h3 className="mb-3 text-xl">ご利用方法</h3>
                   <p className="mb-2">当事業所が利用者様と訪問介護契約を結び、ケアマネージャーさまが作成した通院介助等のケアプランに基づいてサービス開始。</p>
                   <p><span className="font-bold">対応地域：</span>西東京市・小平市(一部)・武蔵野市(一部)</p>
                   <p><span className="font-bold">営業時間：</span>7時30分～18時30分（時間外応相談）月曜日～土曜日</p>
                 </div>
                 <div className="sm:w-1/2">
-                  <h1 className="mb-2 text-xl">ご利用料金</h1>
+                  <h3 className="mb-2 text-xl">ご利用料金</h3>
                   <table className="w-full">
                     <tbody>
                       <tr>
@@ -110,10 +110,10 @@ const ServiceTaxi = () => {
                   </table>
                 </div>
               </div>
-              <h1 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h1>
+              <h2 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h2>
               <div>
                 <div>
-                  <h1 className="text-xl mb-3">ご利用料金</h1>
+                  <h3 className="text-xl mb-3">ご利用料金</h3>
                   <div className="sm:flex gap-5 2md:gap-10">
                     <div className="sm:w-1/2 mb-4 sm:mb-0">
                       <table className="w-full">
