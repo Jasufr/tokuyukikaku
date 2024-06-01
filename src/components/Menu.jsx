@@ -56,45 +56,45 @@ const Menu = () => {
         <div className="w-3/4 mt-24 mx-auto text-nowrap">
           <div className="mb-2">
             <Link to="/" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="flex items-center justify-center gap-1">
-              <img loading="lazy" className="w-12" src="./icons/logo.png" alt="徳有企画（とくゆきかく）ロゴ" />
-              <h1 className="text-xl text-center">合同会社徳 徳有企画</h1>
+              <img loading="eager" className="w-12" src="./icons/logo.png" alt="徳有企画（とくゆきかく）ロゴ" />
+              <p className="text-xl text-center">合同会社 徳有企画</p>
             </Link>
           </div>
           <ul className="mb-2 w-11/12 mx-auto">
             <li>
               <Link to="/about" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                 私たちについて
-                <img loading="lazy" className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="私たちについて　もっと見る　右矢印" />
+                <img loading="eager" className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="私たちについて　もっと見る　右矢印" />
               </Link>
             </li>
             <li>
               <div>
                 <div className="group h-[31.2px] flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out" onClick={() => setServicesOpened(!servicesOpened)}>
                   サービス
-                  <img loading="lazy" className={`w-4 pt-0.5 ${servicesOpened ? "rotate-90 transition-all duration-200 delay-75" : "rotate-0 transition-all duration-200 delay-75"}`} src="./icons/open-bottom.png" alt="サービス　もっと見る" /></div>
+                  <img loading="eager" className={`w-4 pt-0.5 ${servicesOpened ? "rotate-90 transition-all duration-200 delay-75" : "rotate-0 transition-all duration-200 delay-75"}`} src="./icons/open-bottom.png" alt="サービス　もっと見る" /></div>
                 <ul className={`px-3 overflow-hidden ${servicesOpened ? "h-full" : "h-0"}`}>
                   <li>
                     <Link to="/houmon" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                      <img loading="lazy" className="w-5" src="./icons/minibus-.png" alt="サービス　訪問介護　アイコン" />
+                      <img loading="eager" className="w-5" src="./icons/minibus-.png" alt="サービス　訪問介護　アイコン" />
                       訪問介護
                     </Link>
                   </li>
                   <li>
                     <Link to="/taxi" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                      <img loading="lazy" className="w-5" src="./icons/taxi.png" alt="サービス　介護タクシー　アイコン" />
+                      <img loading="eager" className="w-5" src="./icons/taxi.png" alt="サービス　介護タクシー　アイコン" />
                       介護タクシー
                     </Link>
                   </li>
                   <li>
                     <Link to="/dayservice" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                      <img loading="lazy" className="w-5" src="./icons/business-group.png" alt="サービス　デイサービス　アイコン" />
+                      <img loading="eager" className="w-5" src="./icons/business-group.png" alt="サービス　デイサービス　アイコン" />
                       デイサービス
                     </Link>
 
                   </li>
                   <li>
                     <Link to="/kyotaku" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="flex gap-1 items-center hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
-                      <img loading="lazy" className="w-5" src="./icons/neighbour.png" alt="サービス　居宅介護支援　アイコン" />
+                      <img loading="eager" className="w-5" src="./icons/neighbour.png" alt="サービス　居宅介護支援　アイコン" />
                       居宅介護支援
                     </Link>
                   </li>
@@ -103,21 +103,21 @@ const Menu = () => {
             </li>
             <li><Link to="/contact" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
               お問い合わせ
-              <img loading="lazy" className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="お問い合わせ　もっと見る　右矢印" />
+              <img loading="eager" className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="お問い合わせ　もっと見る　右矢印" />
             </Link></li>
             <li><Link to="/recruit" onClick={() => { setMenuOpened(!menuOpened), setServicesOpened(false) }} className="group flex items-center justify-between hover:bg-darkstone hover:text-darkpink px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
               採用情報
-              <img loading="lazy" className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="採用情報　もっと見る　右矢印" />
+              <img loading="eager" className="w-4 group-hover:translate-x-0.5 transition-all duration-200" src="./icons/right.png" alt="採用情報　もっと見る　右矢印" />
             </Link></li>
           </ul>
           <div>
             <div className="mb-2">
               <div className="flex items-center justify-center gap-1">
-                <img loading="lazy" className="w-8" src="./icons/phone.png" alt="電話番号" />
+                <img loading="eager" className="w-8" src="./icons/phone.png" alt="電話番号" />
                 <p className="text-xl">042-497-6116</p>
               </div>
               <div className="flex justify-center gap-1 items-center">
-                <img loading="lazy" className="w-3" src="./icons/time.png" alt="受付時間" />
+                <img loading="eager" className="w-3" src="./icons/time.png" alt="受付時間" />
                 <p className="text-[12px]">9：00～18：00</p>
               </div>
             </div>
@@ -125,9 +125,9 @@ const Menu = () => {
               <a className="" href="">個人情報保護方針</a>
               <div className="relative">
                 <p className="">イラストDesigned by <a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="https://www.freepik.com/" target="_blank">Freepik</a></p>
-                <img loading="lazy" className="absolute -bottom-1.5 -right-10 w-9" src="./icons/logo.png" alt="徳有企画（とくゆきかく）ロゴ" />
+                <img loading="eager" className="absolute -bottom-1.5 -right-10 w-9" src="./icons/logo.png" alt="徳有企画（とくゆきかく）ロゴ" />
               </div>
-              <h1>© 2024  合同会社徳有企画</h1>
+              <p>© 2024  合同会社徳有企画</p>
             </div>
           </div>
         </div>
