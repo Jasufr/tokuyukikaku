@@ -10,6 +10,7 @@ const ServiceTaxi = () => {
       <Helmet>
         <title>徳有企画 | 介護タクシー</title>
         <meta name="description" content="介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。（ご利用対象に当てはまらない方々は一般介護タクシーを利用することができます）" />
+        <link rel="canonical" href="/taxi" />
       </Helmet>
       <div className="houmon relative">
         {/* Blobs Houmon */}

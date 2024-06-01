@@ -7,6 +7,7 @@ const Contact = () => {
       <Helmet>
         <title>徳有企画 | お問い合わせ</title>
         <meta name="description" content="あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。" />
+        <link rel="canonical" href="/contact" />
       </Helmet>
       <div className="contact relative">
         {/* Blobs Recruit */}

@@ -10,6 +10,7 @@ const ServiceKyotaku = () => {
       <Helmet>
         <title>徳有企画 | 居宅介護支援</title>
         <meta name="description" content="介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。" />
+        <link rel="canonical" href="/kyotaku" />
       </Helmet>
       <div className="kyotaku relative">
         {/* Blobs Kyotaku */}

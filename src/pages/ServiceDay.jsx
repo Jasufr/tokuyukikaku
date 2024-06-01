@@ -10,6 +10,7 @@ const ServiceDay = () => {
       <Helmet>
         <title>徳有企画 | デイサービス</title>
         <meta name="description" content="全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。また、看護師が常駐しているので、日々の機能訓練も安心して行っていただけます。" />
+        <link rel="canonical" href="/dayservice" />
       </Helmet>
       <div className="day relative">
         {/* Blobs Kyotaku */}
