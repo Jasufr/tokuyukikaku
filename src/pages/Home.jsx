@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 
 const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | ホーム</title>
+        <meta name="description" content="徳有企画では、全ての方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々をお届けします。" />
+      </Helmet>
       <div className="home">
         {/* Accueil */}
         <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
@@ -182,7 +187,7 @@ const Home = () => {
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
                     <p className="text-vertical text-sm">
-                    <span className="text-darkpink">住み慣れた自宅</span>での生活をサポートしていただけて、<span className="text-darkpink">感謝</span>しています。</p>
+                      <span className="text-darkpink">住み慣れた自宅</span>での生活をサポートしていただけて、<span className="text-darkpink">感謝</span>しています。</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">訪問介護</p>
@@ -192,7 +197,7 @@ const Home = () => {
                 <div className="flex justify-end  h-40 bg-lightgray bg-opacity-40 p-2 rounded-md shadow-md">
                   <div className="w-1/2 flex justify-center py-2">
                     <p className="text-vertical text-sm">
-                     遠くに住んでいる母の生活が<span className="text-darkpink">安全</span>になり、<span className="text-darkpink">ほっとしました</span>。<br />（ご家族より）</p>
+                      遠くに住んでいる母の生活が<span className="text-darkpink">安全</span>になり、<span className="text-darkpink">ほっとしました</span>。<br />（ご家族より）</p>
                   </div>
                   <div className="flex flex-col justify-between w-1/2">
                     <p className="bg-green text-white text-xs py-0.5 px-1.5  self-end rounded-sm shadow-md">訪問介護</p>

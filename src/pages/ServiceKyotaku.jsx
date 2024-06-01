@@ -1,11 +1,16 @@
 import { useState } from "react";
 import Tabs from "../layout/Tabs";
+import { Helmet } from "react-helmet-async";
 
 const ServiceKyotaku = () => {
   const [visibleTab, setVisibleTab] = useState("tab1");
 
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | 居宅介護支援</title>
+        <meta name="description" content="介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。" />
+      </Helmet>
       <div className="kyotaku relative">
         {/* Blobs Kyotaku */}
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">

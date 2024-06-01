@@ -1,11 +1,16 @@
 import { useState } from "react";
 import Tabs from "../layout/Tabs";
+import { Helmet } from "react-helmet-async";
 
 const ServiceDay = () => {
   const [visibleTab, setVisibleTab] = useState("tab1");
 
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | デイサービス</title>
+        <meta name="description" content="全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。また、看護師が常駐しているので、日々の機能訓練も安心して行っていただけます。" />
+      </Helmet>
       <div className="day relative">
         {/* Blobs Kyotaku */}
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">

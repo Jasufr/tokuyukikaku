@@ -1,8 +1,14 @@
+import { Helmet } from "react-helmet-async";
+
 const About = () => {
   const mapKey = import.meta.env.VITE_MAP_KEY
 
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | 私たちについて</title>
+        <meta name="description" content="当社は高齢者や障がい者、その家族に寄り添い、心身の健康と幸福をサポートします。利用者のニーズを最優先に考え、最適なケアプランを提供し、豊かで充実した生活を目指します。地域コミュニティと協力し、皆の幸福と福祉を追求します。私たちは真の人間関係を築き、お互いに学び合い、支え合う環境を大切にしています。" />
+      </Helmet>
       <div className="about relative">
         {/* Blobs About */}
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">

@@ -1,6 +1,12 @@
+import { Helmet } from "react-helmet-async";
+
 const Privacy = () => {
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | 個人情報保護方針</title>
+        <meta name="description" content="合同会社德有企画(以下「当社」という)は、利用者及びその家族の個人情報を適切に取り扱うことを社会的責務と考え、個人情報の保護に努めます。" />
+      </Helmet>
       <div className="privacy px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12">
         <h1 className="text-2xl text-darkpink mb-4">個人情報保護方針</h1>
         <p className="mb-8">合同会社德有企画(以下「当社」という)は、利用者及びその家族の個人情報を適切に取り扱うことを社会的責務と考え、個人情報の保護に努めます。</p>

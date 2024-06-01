@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import SendMail from "../components/SendMail";
 
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | お問い合わせ</title>
+        <meta name="description" content="あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。" />
+      </Helmet>
       <div className="contact relative">
         {/* Blobs Recruit */}
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">

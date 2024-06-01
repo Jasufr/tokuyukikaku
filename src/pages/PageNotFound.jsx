@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 
 const PageNotFound = () => {
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | エラー 404</title>
+        <meta name="description" content="お探しのページは見つかりませんでした。ご指定いただいたアドレスが間違っているか、ページが移動または削除された可能性があります。" />
+      </Helmet>
       <div className="not-found relative">
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">
           <div className="green absolute w-36 2md:w-48 top-36 -right-2 -rotate-90">

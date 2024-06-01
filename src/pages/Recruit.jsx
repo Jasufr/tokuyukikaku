@@ -1,6 +1,12 @@
+import { Helmet } from "react-helmet-async";
+
 const Recruit = () => {
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | 採用情報</title>
+        <meta name="description" content="介護職員（常勤・非常勤ヘルパー）及び介護タクシードライバーを募集中。朝食･昼食･夕食作り､各所掃除･洗濯･おむつ交換､お買物､入浴介助などの介護業務を､シフト制で分担して対応していきます｡" />
+      </Helmet>
       <div className="relative py-6 lg:py-12">
         {/* Blobs Recruit */}
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">

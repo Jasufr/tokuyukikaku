@@ -1,11 +1,16 @@
 import { useState } from "react";
 import Tabs from "../layout/Tabs";
+import { Helmet } from "react-helmet-async";
 
 const ServiceHoumon = () => {
   const [visibleTab, setVisibleTab] = useState("tab1");
 
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | 訪問介護</title>
+        <meta name="description" content="ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。" />
+      </Helmet>
       <div className="houmon relative">
         {/* Blobs Houmon */}
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">

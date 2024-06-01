@@ -1,11 +1,16 @@
 import { useState } from "react";
 import Tabs from "../layout/Tabs";
+import { Helmet } from "react-helmet-async";
 
 const ServiceTaxi = () => {
   const [visibleTab1, setVisibleTab1] = useState("tab1");
 
   return (
     <>
+      <Helmet>
+        <title>徳有企画 | 介護タクシー</title>
+        <meta name="description" content="介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。（ご利用対象に当てはまらない方々は一般介護タクシーを利用することができます）" />
+      </Helmet>
       <div className="houmon relative">
         {/* Blobs Houmon */}
         <div className="blobs w-full h-full absolute overflow-hidden -z-10">
