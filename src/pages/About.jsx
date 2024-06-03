@@ -68,11 +68,11 @@ const About = () => {
               </table>
               <div className="2md:w-1/4 min-w-64 h-64 xs:h-80 2md:min-h-72">
                 <iframe className="rounded-md shadow-md" style={{ border: '0', height: '100%', width: '100%' }} loading="lazy" allowFullScreen src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRbVMFADlGGART5nk37jmu4c&key=${mapKey}`}></iframe>
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </div >
     </>
 
   );
