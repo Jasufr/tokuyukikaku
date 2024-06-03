@@ -122,7 +122,7 @@ const Menu = () => {
               </div>
             </div>
             <div className="h-14 flex flex-col justify-center items-center text-[10px]">
-              <a className="" href="">個人情報保護方針</a>
+              <Link className="hover:text-darkpink transition-colors duration-200" to="/privacy">個人情報保護方針</Link>
               <div className="relative">
                 <p className="">イラストDesigned by <a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="https://www.freepik.com/" target="_blank">Freepik</a></p>
                 <img loading="eager" className="absolute -bottom-1.5 -right-10 w-9" src="./icons/logo.png" alt="徳有企画（とくゆきかく）ロゴ" />
