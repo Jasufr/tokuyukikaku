@@ -29,7 +29,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 mb-6 py-6 lg:py-12">
-          <h1 className="text-2xl text-darkpink mb-3">お問い合わせ</h1>
+          <h1  className="text-2xl text-darkpink mb-3">お問い合わせ</h1  >
           <p className="mb-2">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
           <div className="flex justify-center">
             <div className="w-1/2 sm:w-1/3 text-center">
@@ -40,7 +40,7 @@ const Contact = () => {
             <div className="w-1/2 sm:w-1/3 text-center">
               <img loading="lazy" src="./icons/phone_number.png" alt="電話番号" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
               <h3>電話番号</h3>
-              <p>042-497-6116</p>
+              <p>042-497-6466</p>
             </div>
             <div className="hidden sm:block w-1/3 text-center">
               <img loading="lazy" src="./icons/mail_address.png" alt="メールアドレス" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />

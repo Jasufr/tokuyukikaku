@@ -63,7 +63,7 @@ const ServiceHoumon = () => {
               <p>※要支援（1～2）の方は 介護予防訪問介護 の対象となります。</p>
               <div className="mt-3">
                 <p><span className="font-bold">対応地域：</span>西東京市・小平市・武蔵野市</p>
-                <p><span className="font-bold">営業時間：</span>7:00～20:00　年中無休</p>
+                <p><span className="font-bold">営業時間：</span>7 : 00～20 : 00　年中無休</p>
               </div>
               <h2 className="mt-4 mb-3 text-xl">ご利用までの流れ</h2>
               <div className="xs:flex gap-5 2md:gap-10">

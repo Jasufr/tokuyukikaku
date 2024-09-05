@@ -22,7 +22,7 @@ const Navbar = () => {
               </div>
               <div className="flex justify-end gap-1 items-center">
                 <img loading="eager" className="w-4" src="./icons/time.png" alt="受付時間" />
-                <p className="text-sm">9：00～18：00</p>
+                <p className="text-sm">9 : 00～18 : 00</p>
               </div>
             </div>
             <div>

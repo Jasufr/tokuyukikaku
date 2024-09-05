@@ -80,7 +80,7 @@ const ServiceTaxi = () => {
                   <h3 className="mb-3 text-xl">ご利用方法</h3>
                   <p className="mb-2">当事業所が利用者様と訪問介護契約を結び、ケアマネージャーさまが作成した通院介助等のケアプランに基づいてサービス開始。</p>
                   <p><span className="font-bold">対応地域：</span>西東京市・小平市(一部)・武蔵野市(一部)</p>
-                  <p><span className="font-bold">営業時間：</span>7時30分～18時30分（時間外応相談）月曜日～土曜日</p>
+                  <p><span className="font-bold">営業時間：</span>7 : 30～18 : 30（時間外応相談）月曜日～土曜日</p>
                 </div>
                 <div className="sm:w-1/2">
                   <h3 className="mb-2 text-xl">ご利用料金</h3>
@@ -88,7 +88,7 @@ const ServiceTaxi = () => {
                     <tbody>
                       <tr>
                         <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone min-w-24" scope="row">運賃</th>
-                        <td className="bg-white bg-opacity-50 p-2 border border-darkstone">１キロ　300円 + 介護保険利用者様負担額</td>
+                        <td className="bg-white bg-opacity-50 p-2 border border-darkstone">1.5キロまで　500円、その後1キロ　300円　+　介護保険利用者様負担額</td>
                       </tr>
                       <tr>
                         <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone min-w-24" scope="row">迎車料金</th>
@@ -126,30 +126,30 @@ const ServiceTaxi = () => {
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">２キロ　７００円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">1.091キロ　500円</td>
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">２８８メートル　９０円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">233メートル　100円</td>
                           </tr>
                           <tr>
-                            <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４５秒までごとに</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">９０円</td>
+                            <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">時速10キロ以下の走行時間について1分45秒までごとに</th>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">90円</td>
                           </tr>
                           <tr>
                             <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">２キロ　７３０円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">1.091キロ　530円</td>
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">２７６メートル　９０円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">220メートル　100円</td>
                           </tr>
                           <tr>
-                            <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">時速１０キロ以下の走行時間について１分４０秒までごとに</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">９０円</td>
+                            <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">時速10キロ以下の走行時間について1分40秒までごとに</th>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">100円</td>
                           </tr>
                         </tbody>
                       </table>
@@ -165,28 +165,27 @@ const ServiceTaxi = () => {
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">３０分まで　２７６０円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">30分まで　3430円</td>
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">３０分までごとに　２７６０円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">30分までごとに　3430円</td>
                           </tr>
                           <tr>
                             <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">初乗り運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">３０分まで　２８８０円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">30分まで　3610円</td>
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">加算運賃</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">３０分までごとに　２８８０円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">30分までごとに　3610円</td>
                           </tr>
                         </tbody>
                       </table>
                       <div className="mt-2 ms-1">
-                        <p><span className="font-bold">深夜・早朝割増：</span>２２時から５時まで２割増</p>
-                        <p><span className="font-bold">迎車料金：</span>１キロを限度として実車扱い(350円～365円)</p>
+                        <p><span className="font-bold">迎車料金：</span>1回　500円</p>
                         <p><span className="font-bold">予約料金：</span>無料</p>
                       </div>
                     </div>
@@ -217,16 +216,17 @@ const ServiceTaxi = () => {
                     </table>
                     <div className="ms-1 mt-2">
                       <p className="mb-1">※その他の介助は応相談</p>
-                      <p className="mb-1">※介助中にメーター料金は発生致しません</p>
                     </div>
                   </div>
 
                 </div>
                 <div className="mt-4 sm:text-center">
                   <p className="mb-1">※高速道路使用料金及び駐車料金が発生した場合はお客様負担となります。</p>
-                  <p className="mb-1">※ご利用当日のキャンセルは車両到着前無料、車両到着後メーター料金７３０円発生します。</p>
-                  <p className="mb-1">※利用中の車いすの貸し出しは無料・リクライニング車椅子の貸出料金：1,000円</p>
-                  <p className="mb-1">※ストレッチャーの利用料金：2,000円</p>
+                  <p className="mb-1">※キャンセルはご利用の1時間前まで : 無料（日曜日のキャンセルは前日18：00まで無料）</p>
+                  <p className="mb-1">※車両到着後キャンセル料金 : 小型車1000円、大型車1030円</p>
+                  <p className="mb-1">※利用中の車いすの貸し出し : 無料</p>
+                  <p className="mb-1">※リクライニング車椅子の貸出料金 : 1,000円</p>
+                  <p className="mb-1">※ストレッチャーの利用料金 : 2,000円</p>
                 </div>
               </div>
             </div>

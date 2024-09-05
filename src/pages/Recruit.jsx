@@ -60,8 +60,8 @@ const Recruit = () => {
                       <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">勤務時間</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
                         <ul>
-                          <li>非常勤ヘルパー 8：00～18：30の間でシフト制 ＜週1日～･1日1h～勤務OK＞</li>
-                          <li className="mb-1">常勤ヘルパー 8：00～17：00又は9：00～18：00（週休二日制）</li>
+                          <li>非常勤ヘルパー 8 : 00～18 : 30の間でシフト制 ＜週1日～･1日1h～勤務OK＞</li>
+                          <li className="mb-1">常勤ヘルパー 8 : 00～17 : 00又は9 : 00～18 : 00（週休二日制）</li>
                           <li>★家庭環境等､考慮致します</li>
                           <li>★直行直帰可</li>
                         </ul>
