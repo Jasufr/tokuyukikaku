@@ -41,10 +41,10 @@ const Privacy = () => {
         </ul>
         <p className="font-bold mb-2">合同会社徳有企画 お問い合わせ窓口</p>
         <ul>
-          <li className="mb-1">住所：〒188-0013 東京都西東京市向台町6-10-11</li>
-          <li className="mb-1">TEL： 042-497-6466</li>
-          <li className="mb-1">FAX： 042-497-6467</li>
-          <li className="mb-1">受付時間：9：00~18：00 (土曜・日曜・祝日を除く)</li>
+          <li className="mb-1">住所 : 〒188-0013 東京都西東京市向台町6-10-11</li>
+          <li className="mb-1">TEL :  042-497-6466</li>
+          <li className="mb-1">FAX :  042-497-6467</li>
+          <li className="mb-1">受付時間 : 9 : 00~18 : 00 (土曜・日曜・祝日を除く)</li>
         </ul>
         <p className="text-end text-lg">合同会社 徳有企画<br />代表 長谷川燕華</p>
       </div>
