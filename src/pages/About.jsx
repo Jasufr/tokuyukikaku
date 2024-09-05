@@ -36,7 +36,7 @@ const About = () => {
             <p className="mb-2">介護に取り組む私たちは、利用者様のニーズを理解し、満たすことを最優先にしています。一人ひとりの利用者様に最適なケアプランを提供し、利用者様の生活を豊かで充実したものにすることを目指します。</p>
             <p>また、私たちは真の人間関係を築き、お互いに学び合い、支え合う環境を大切にしています。地域のコミュニティとの協力を通じて、お互いに成長し、より良い未来を築いていくことを使命としています。</p>
           </div>
-          <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('./images/dayservice2.jpg')] bg-center bg-cover rounded-md shadow-md hidden md:block w-1/4 2md:w-2/5 min-h-80"></div>
+          <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('/images/dayservice2.jpg')] bg-center bg-cover rounded-md shadow-md hidden md:block w-1/4 2md:w-2/5 min-h-80"></div>
         </div>
         <div className="annai py-6 lg:py-12 bg-lightgray bg-opacity-30">
           <div className="px-6 2md:px-12 lg:px-24 xl:px-28">
