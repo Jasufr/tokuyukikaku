@@ -61,10 +61,10 @@ const Contact = () => {
                 <h2 className="text-xl mb-3">メールでのお問い合わせ</h2>
                 <p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
               </div>
-              <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('./illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div>
+              <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('/illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div>
               <SendMail />
             </div>
-            <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('./illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
+            <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('/illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
           </div>
         </div>
       </div>

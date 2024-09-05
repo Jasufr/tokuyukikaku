@@ -54,7 +54,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex gap-10 px-6 2md:px-12 lg:px-24 xl:px-28 py-6">
-              <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('./illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
+              <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('/illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
               <div className="md:w-1/2 lg:w-1/3 flex flex-col justify-center">
                 <h2 className="text-2xl mb-3 text-darkpink">心温まるサポートで幸福と健康を</h2>
                 <p className="mb-2">徳有企画では、介護を必要とする方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。</p>
@@ -244,13 +244,13 @@ const Home = () => {
           <div className="">
             <div className="flex h-96 relative mt-12 py-6">
               <div className="w-full flex shadow-md">
-                <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper2.png')] bg-cover bg-top">
+                <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper2.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
                 </div>
-                <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden sm:block h-full w-1/3 bg-[url('./illustrations/helper1.png')] bg-cover bg-top">
+                <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden sm:block h-full w-1/3 bg-[url('/illustrations/helper1.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
                 </div>
-                <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('./illustrations/helper3.png')] bg-cover bg-top">
+                <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper3.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
                 </div>
                 <div className="absolute w-full transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
