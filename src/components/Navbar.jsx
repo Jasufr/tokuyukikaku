@@ -18,7 +18,7 @@ const Navbar = () => {
             <div>
               <div className="flex gap-1">
                 <img loading="eager" className="w-8" src="./icons/phone.png" alt="電話番号" />
-                <p className="text-2xl">042-497-6116</p>
+                <p className="text-2xl">042-497-6466</p>
               </div>
               <div className="flex justify-end gap-1 items-center">
                 <img loading="eager" className="w-4" src="./icons/time.png" alt="受付時間" />
@@ -32,6 +32,7 @@ const Navbar = () => {
                     私たちについて
                   </li>
                 </Link>
+
                 <button className="group">
                   <li className="relative group hover:bg-darkstone px-2 py-1 rounded-md hover:bg-opacity-10 transition duration-200 ease-in-out">
                     <div className="group flex items-center group-hover:text-darkpink cursor-pointer">

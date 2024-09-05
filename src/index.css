@@ -18,7 +18,7 @@ body,
   padding: 0;
 }
 
-.navbar *, h1, h2, h3, .btn * {
+.navbar *, h1, h2, h3, span, .btn * {
   font-family: "Zen Antique", serif;
 }
 

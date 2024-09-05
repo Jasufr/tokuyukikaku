@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="bg-lightpink rounded-lg shadow-md p-1 xs:p-4 lg:p-8 text-center w-1/2">
                   <div className="flex items-center justify-center gap-1">
                     <img loading="lazy" className="w-4 xs:w-6 lg:w-10" src="./icons/phone.png" alt="電話番号" />
-                    <h2 className="text-sm xs:text-xl lg:text-3xl">042-497-6116</h2>
+                    <h2 className="text-sm xs:text-xl lg:text-3xl">042-497-6466</h2>
                   </div>
                   <h3 className="text-[10px] xs:text-sm lg:text-base"><span className="hidden xs:inline">受付時間</span> 9：00～18：00</h3>
                   <h3 className="text-[9px] xs:text-sm lg:text-base">休日：日曜日</h3>

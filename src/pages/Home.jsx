@@ -1,7 +1,14 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
+import TaxiPopUp from "../components/TaxiPopUp";
+import { useState } from "react";
 
 const Home = () => {
+  const [isTaxiPopUpOpen, setIsTaxiPopUpOpen] = useState(true);
+
+  const toggleTaxiPopUp = () => {
+    setIsTaxiPopUpOpen(!isTaxiPopUpOpen);
+  }
 
   return (
     <>
@@ -22,6 +29,10 @@ const Home = () => {
           </div>
         </div>
         <div>
+          {/* TaxiPopUp */}
+          <div>
+            {isTaxiPopUpOpen && <TaxiPopUp handleClose={toggleTaxiPopUp} />}
+          </div>
           {/* About */}
           <div className="about-section relative my-6 lg:my-12">
             {/* Blobs About */}
@@ -46,8 +57,8 @@ const Home = () => {
               <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('./illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
               <div className="md:w-1/2 lg:w-1/3 flex flex-col justify-center">
                 <h2 className="text-2xl mb-3 text-darkpink">心温まるサポートで幸福と健康を</h2>
-                <p className="mb-2">徳有企画では、全ての方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。</p>
-                <p>慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、支え合う環境を提供し、誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々をお届けします。</p>
+                <p className="mb-2">徳有企画では、介護を必要とする方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。</p>
+                <p>慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々をお届けします。</p>
                 <Link to="/about" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                   <p className="">私たちについて</p>
                   <img loading="lazy" src="./icons/right.png" alt="私たちについて　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
@@ -103,7 +114,7 @@ const Home = () => {
                   <div aria-label="介護タクシーの車の写真" role="img" className="md:hidden bg-[url('./images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
                   <p className="mb-2">介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。</p>
                   <p className="mb-2">ケアマネージャー様の作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。</p>
-                  <p>ご利用対象に当てはまらない方々は、一般介護タクシーをご利用することが可能です。</p>
+                  <p>介護保険以外でも、一般介護タクシーをご利用することが可能です。</p>
                   <Link to="/taxi" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
                     <img loading="lazy" src="./icons/right.png" alt="介護タクシー　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
