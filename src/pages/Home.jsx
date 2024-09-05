@@ -19,7 +19,7 @@ const Home = () => {
       </Helmet>
       <div className="home">
         {/* Accueil */}
-        <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('./images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
+        <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('/images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
             <div className="bg-white bg-opacity-65 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
               {/* <h2 className="text-darkpink text-3xl">温もりで支える介護</h2>
