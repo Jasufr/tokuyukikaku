@@ -31,8 +31,9 @@ const Recruit = () => {
           <div className="flex gap-10">
             <div className="sm:w-4/5 2md:w-3/5">
               <h1 className="text-2xl text-darkpink mb-3">採用情報</h1>
+              {/* 介護職員 */}
               <div>
-                <h2 className="text-xl mb-3">お仕事内容</h2>
+                <h2 className="text-xl mb-3 font-bold">介護職員</h2>
                 <p className="mb-2">介護職員（常勤・非常勤ヘルパー）及び介護タクシードライバーを募集中</p>
                 <p className="mb-2">朝食･昼食･夕食作り､各所掃除･洗濯･おむつ交換､お買物､入浴介助などの介護業務を､シフト制で分担して対応していきます｡</p>
                 <p className="text-[px]">※直行直帰OK！</p>
@@ -42,8 +43,8 @@ const Recruit = () => {
                 <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.png')] bg-cover bg-top w-1/3"></div>
                 <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.png')] bg-cover bg-top w-1/3 rounded-r-md"></div>
               </div>
-              <div className="mt-6">
-                <h2 className="text-xl mb-3">募集要項</h2>
+              <div className="mt-6 mb-3">
+                <h2 className="text-lg mb-3">募集要項</h2>
                 <table>
                   <tbody>
                     <tr>
@@ -84,6 +85,61 @@ const Recruit = () => {
                           <li>弊社は東京都の介護職員処遇改善加算Ⅰ・介護職員等特定処遇改善加算Ⅱ及び介護職員ベースアップ等加算を取得しております。</li>
                           <li>処遇改善(特別手当)手当として、常勤ヘルパーは毎月66,000円～150,000円(経験及び勤務年数による)支給。
                             非常勤ヘルパーは訪問1件に付き300円支給。（自費利用の場合は、特別手当がつきません。）</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              {/* 介護支援専門員 */}
+              <div>
+                <h2 className="text-xl mb-3 font-bold">介護支援専門員（ケアマネジャー）</h2>
+                <p className="mb-2">介護支援専門員業務全般
+                </p>
+                <p className="mb-2">【訪問範囲】西東京市　＊電動自転車での移動です。</p>
+              </div>
+              <div className="mt-6">
+                <h2 className="text-lg mb-3">募集要項</h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2  text-start min-w-[120px]" scope="row">給与</th>
+                      <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
+                        <ul className="">
+                          <li className="">基本給 : 198,000円〜250,000円</li>
+                          <li className="mb-1">定額的に支払われる手当 : 特別手当 52,000円〜312,000円</li>
+                          <li className="">固定残業代 : なし</li>
+                          <li className="font-bold">合計 : 250,000円〜562,000円</li>
+                          <li className="">※フルタイム求人の場合は月額（換算額）、パート求人の場合は時間額を表示しています。</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">勤務時間</th>
+                      <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
+                        <ul>
+                          <li>就業時間1 : 9 : 00〜18 : 00</li>
+                          <li className="">就業時間2 : 8 : 00〜17 : 00</li>
+                          <li className="mb-1">又は : 8 : 30〜17 : 30の時間の間の8時間程度</li>
+                          <li>時間外労働時間 : なし</li>
+                          <li>休憩時間 : 60分</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">対象となる方</th>
+                      <td className="bg-white bg-opacity-50 p-2 border border-darkstone" >
+                        <ul>
+                          <li>･免許・資格名 : 介護支援専門員（ケアマネージャー）</li>
+                          <li>･学歴不問</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">特別手当</th>
+                      <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
+                        <ul>
+                          <li></li>
                         </ul>
                       </td>
                     </tr>
