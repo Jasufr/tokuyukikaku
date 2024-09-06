@@ -10,9 +10,6 @@ const ImageWithPlaceholder = ({ src, alt, className, imgClassName, placeholderSr
     };
   }, [src]);
 
-  console.log(placeholderSrc);
-
-
   return (
     <>
       <div className={`${className} bg-[url('${placeholderSrc}')]`}>

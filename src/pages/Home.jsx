@@ -4,6 +4,7 @@ import TaxiPopUp from "../components/TaxiPopUp";
 import { useState } from "react";
 import ImageWithPlaceholder from "../components/ImageWithPlaceholder";
 
+
 const Home = () => {
   const [isTaxiPopUpOpen, setIsTaxiPopUpOpen] = useState(true);
 
@@ -65,7 +66,7 @@ const Home = () => {
               {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('/illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div> */}
               <ImageWithPlaceholder
                 // src="/illustrations/helper1.png"
-                placeholderSrc="/illustrations/helper2Small.png"
+                placeholderSrc="/illustrations/helper1Small.png"
                 alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
                 className="hidden md:block md:w-1/2 lg:w-2/3 bg-top bg-cover min-h-[500px] rounded-md shadow-md"
                 imgClassName="rounded-md"
