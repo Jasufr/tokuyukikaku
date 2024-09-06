@@ -36,55 +36,48 @@ const Recruit = () => {
                 <h2 className="text-xl mb-3 font-bold">介護職員</h2>
                 <p className="mb-2">介護職員（常勤・非常勤ヘルパー）及び介護タクシードライバーを募集中</p>
                 <p className="mb-2">朝食･昼食･夕食作り､各所掃除･洗濯･おむつ交換､お買物､入浴介助などの介護業務を､シフト制で分担して対応していきます｡</p>
-                <p className="text-[px]">※直行直帰OK！</p>
+                <p className="">※ 直行直帰OK！</p>
               </div>
               <div className="flex w-full h-32 mt-6 sm:hidden shadow-md rounded-md">
                 <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('/illustrations/helper2.png')] bg-cover bg-top w-1/3 rounded-l-md"></div>
                 <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.png')] bg-cover bg-top w-1/3"></div>
                 <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.png')] bg-cover bg-top w-1/3 rounded-r-md"></div>
               </div>
-              <div className="mt-6 mb-3">
+              <div className="my-6">
                 <h2 className="text-lg mb-3">募集要項</h2>
                 <table>
                   <tbody>
                     <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2  text-start min-w-[120px]" scope="row">給与</th>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2  xs:text-start w-12 xs:min-w-[120px]" scope="row">給与</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
                         <ul className="">
-                          <li className="">非常勤ヘルパー時給 1700円～2550円（一律処遇改善手当300円を含む）</li>
-                          <li className="mb-1">常勤ヘルパー月給 260,000円～400,000円</li>
-                          <li className="list-none">※経験･資格等考慮のうえ決定</li>
+                          <li className="list-square list-inside">非常勤ヘルパー : <span className="ms-3">時給1700円～2550円（一律処遇改善手当300円を含む）</span></li>
+                          <li className="list-square list-inside mb-2">常勤ヘルパー : <span className="ms-3">月給260,000円～400,000円</span></li>
+                          <li className="mb-2">※ 経験･資格等考慮のうえ決定</li>
+                          <li className="list-disc list-inside">弊社は東京都の介護職員処遇改善加算Ⅰ・介護職員等特定処遇改善加算Ⅱ及び介護職員ベースアップ等加算を取得しております。</li>
+                          <li className="list-disc list-inside">処遇改善(特別手当)手当として、常勤ヘルパーは毎月66,000円～150,000円(経験及び勤務年数による)支給。非常勤ヘルパーは訪問1件に付き300円支給。（自費利用の場合は、特別手当がつきません。）</li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">勤務時間</th>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 xs:text-start" scope="row">勤務時間</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
                         <ul>
-                          <li>非常勤ヘルパー 8 : 00～18 : 30の間でシフト制 ＜週1日～･1日1h～勤務OK＞</li>
-                          <li className="mb-1">常勤ヘルパー 8 : 00～17 : 00又は9 : 00～18 : 00（週休二日制）</li>
-                          <li>★家庭環境等､考慮致します</li>
-                          <li>★直行直帰可</li>
+                          <li className="list-square list-inside">非常勤ヘルパー : <span className="ms-3">8 : 00～18 : 30の間でシフト制</span></li>
+                          <li className="mb-2">※ 週1日～･1日1h～勤務OK</li>
+                          <li className="list-square list-inside mb-2">常勤ヘルパー : <span className="ms-3">8 : 00～17 : 00又は9 : 00～18 : 00（週休二日制）</span></li>
+                          <li>※ 家庭環境等､考慮致します</li>
+                          <li>※ 直行直帰可</li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">対象となる方</th>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 xs:text-start" scope="row">対象となる方</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone" >
                         <ul>
-                          <li>･要普通自動車免許(AT限定可)</li>
-                          <li>･ヘルパー2級以上必須（経験は問いません､資格取得見込み者もご相談ください）</li>
-                          <li>･学歴不問</li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">特別手当</th>
-                      <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
-                        <ul>
-                          <li>弊社は東京都の介護職員処遇改善加算Ⅰ・介護職員等特定処遇改善加算Ⅱ及び介護職員ベースアップ等加算を取得しております。</li>
-                          <li>処遇改善(特別手当)手当として、常勤ヘルパーは毎月66,000円～150,000円(経験及び勤務年数による)支給。
-                            非常勤ヘルパーは訪問1件に付き300円支給。（自費利用の場合は、特別手当がつきません。）</li>
+                          <li className="list-square list-inside">要普通自動車免許(AT限定可)</li>
+                          <li className="list-square list-inside">ヘルパー2級以上必須（経験は問いません､資格取得見込み者もご相談ください）</li>
+                          <li className="list-square list-inside">学歴不問</li>
                         </ul>
                       </td>
                     </tr>
@@ -94,49 +87,52 @@ const Recruit = () => {
               {/* 介護支援専門員 */}
               <div>
                 <h2 className="text-xl mb-3 font-bold">介護支援専門員（ケアマネジャー）</h2>
-                <p className="mb-2">介護支援専門員業務全般
-                </p>
-                <p className="mb-2">【訪問範囲】西東京市　＊電動自転車での移動です。</p>
+                <p className="mb-2">介護支援専門員業務全般 ・【訪問範囲】西東京市</p>
+                <p className="">※ 電動自転車での移動です。</p>
               </div>
               <div className="mt-6">
                 <h2 className="text-lg mb-3">募集要項</h2>
                 <table>
                   <tbody>
                     <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2  text-start min-w-[120px]" scope="row">給与</th>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2  xs:text-start w-12 xs:min-w-[120px]" scope="row">給与</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
                         <ul className="">
-                          <li className="">基本給 : 198,000円〜250,000円</li>
-                          <li className="mb-1">定額的に支払われる手当 : 特別手当 52,000円〜312,000円</li>
-                          <li className="">固定残業代 : なし</li>
-                          <li className="font-bold">合計 : 250,000円〜562,000円</li>
-                          <li className="">※フルタイム求人の場合は月額（換算額）、パート求人の場合は時間額を表示しています。</li>
+                          <li className="list-square list-inside">基本給 : <span className="ms-3">198,000円〜250,000円</span></li>
+                          <li className="list-square list-inside">定額的に支払われる手当 : <span className="ms-3">特別手当 52,000円〜312,000円</span></li>
+                          <li className="list-square list-inside mb-1">固定残業代 : <span className="ms-3">なし</span></li>
+                          <li className="font-bold mb-2">合計 : <span className="ms-3">250,000円〜562,000円</span></li>
+                          <li className="mb-2">※ フルタイム求人の場合は月額（換算額）、パート求人の場合は時間額を表示しています。</li>
+                          <li className="list-disc list-inside">その他の手当等付記事項 : <span className="ms-3">【該当者に支給】20名以上手当（1名につき）: </span></li>
+                          <li className="ms-3">⇒ 要介護1～2 : 10,000円</li>
+                          <li className="ms-3 mb-2">⇒ 要介護3～5 : 13,000円</li>
+                          <li className="">※ 月収５０万円以上可能</li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">勤務時間</th>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 xs:text-start" scope="row">勤務時間</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
                         <ul>
-                          <li>就業時間1 : 9 : 00〜18 : 00</li>
-                          <li className="">就業時間2 : 8 : 00〜17 : 00</li>
-                          <li className="mb-1">又は : 8 : 30〜17 : 30の時間の間の8時間程度</li>
-                          <li>時間外労働時間 : なし</li>
-                          <li>休憩時間 : 60分</li>
+                          <li className="list-square list-inside">就業時間1 : <span className="ms-3">9 : 00〜18 : 00</span></li>
+                          <li className="list-square list-inside">就業時間2 : <span className="ms-3">8 : 00〜17 : 00</span></li>
+                          <li className="list-square list-inside mb-2">又は : <span className="ms-3">8 : 30〜17 : 30の時間の間の8時間程度</span></li>
+                          <li>※ 時間外労働時間 : <span className="ms-3">なし</span></li>
+                          <li>※ 休憩時間 : <span className="ms-3">60分</span></li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">対象となる方</th>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 xs:text-start" scope="row">対象となる方</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone" >
                         <ul>
-                          <li>･免許・資格名 : 介護支援専門員（ケアマネージャー）</li>
-                          <li>･学歴不問</li>
+                          <li className="list-square list-inside">免許・資格名 : <span className="ms-3">介護支援専門員（ケアマネージャー）</span></li>
+                          <li className="list-square list-inside">学歴不問</li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 text-start" scope="row">特別手当</th>
+                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 xs:text-start" scope="row">特別手当</th>
                       <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
                         <ul>
                           <li></li>
