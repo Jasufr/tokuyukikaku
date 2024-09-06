@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 const ImageWithPlaceholder = ({ src, alt, className, imgClassName, placeholderSrc }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-
   useEffect(() => {
     const img = new Image();
     img.src = src;

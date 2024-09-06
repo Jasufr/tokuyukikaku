@@ -110,10 +110,24 @@ const Home = () => {
               </div>
               {/* Houmon service */}
               <div className="houmon md:flex gap-10 mb-6">
-                <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"></div>
+                {/* <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"></div> */}
+                <ImageWithPlaceholder
+                  src="/images/houmon.jpg"
+                  placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                  alt="訪問介護　ご利用者様とヘルパーの写真"
+                  className="hidden md:block w-1/2 bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"
+                  imgClassName="rounded-md"
+                />
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">訪問介護</h3>
-                  <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="md:hidden bg-[url('/images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  {/* <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="md:hidden bg-[url('/images/houmon.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
+                  <ImageWithPlaceholder
+                    src="/images/houmon.jpg"
+                    placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                    alt="訪問介護　ご利用者様とヘルパーの写真"
+                    className="md:hidden bg-center bg-cover rounded-md shadow-md mb-2 h-40"
+                    imgClassName="rounded-md"
+                  />
                   <p className="mb-2">訪問介護員（ホームヘルパー）などがご自宅に訪問し、介護や日常生活上のお世話を行うサービスです。ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。</p>
                   <p>食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。</p>
                   <Link to="/houmon" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
@@ -126,7 +140,14 @@ const Home = () => {
               <div className="taxi flex gap-10 mb-6">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">介護タクシー</h3>
-                  <div aria-label="介護タクシーの車の写真" role="img" className="md:hidden bg-[url('/images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  {/* <div aria-label="介護タクシーの車の写真" role="img" className="md:hidden bg-[url('/images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
+                  <ImageWithPlaceholder
+                    src="/images/kuruma1.jpg"
+                    placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                    alt="介護タクシーの車の写真"
+                    className="md:hidden bg-center bg-cover rounded-md shadow-md mb-2 h-40"
+                    imgClassName="rounded-md"
+                  />
                   <p className="mb-2">介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。</p>
                   <p className="mb-2">ケアマネージャー様の作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。</p>
                   <p>介護保険以外でも、一般介護タクシーをご利用することが可能です。</p>
@@ -135,14 +156,35 @@ const Home = () => {
                     <img loading="lazy" src="./icons/right.png" alt="介護タクシー　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                <div aria-label="介護タクシーの車の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                {/* <div aria-label="介護タクシーの車の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
+                <ImageWithPlaceholder
+                  src="/images/kuruma1.jpg"
+                  placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                  alt="介護タクシーの車の写真"
+                  className="hidden md:block w-1/2 bg-center bg-cover rounded-md shadow-md min-h-[300px]"
+                  imgClassName="rounded-md"
+                />
               </div>
               {/* Day service */}
               <div className="dayservice flex gap-10 mb-6">
-                <div aria-label="デイサービスの室内の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/dayservice1.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                {/* <div aria-label="デイサービスの室内の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/dayservice1.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
+                <ImageWithPlaceholder
+                  src="images/dayservice1.jpg"
+                  placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                  alt="デイサービスの室内の写真"
+                  className="hidden md:block w-1/2 bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"
+                  imgClassName="rounded-md"
+                />
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">デイサービス</h3>
-                  <div aria-label="デイサービスの室内の写真" role="img" className="md:hidden bg-[url('/images/dayservice1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  {/* <div aria-label="デイサービスの室内の写真" role="img" className="md:hidden bg-[url('/images/dayservice1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
+                  <ImageWithPlaceholder
+                    src="images/dayservice1.jpg"
+                    placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                    alt="デイサービスの室内の写真"
+                    className="md:hidden bg-center bg-cover rounded-md shadow-md mb-2 h-40"
+                    imgClassName="rounded-md"
+                  />
                   <p className="mb-2">全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。</p>
                   <p>また、看護師が常駐しているので日々の機能訓練も安心して行っていただけます。</p>
                   <Link to="/dayservice" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
@@ -155,7 +197,14 @@ const Home = () => {
               <div className="kyotaku flex gap-10">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">居宅介護支援</h3>
-                  <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="md:hidden bg-[url('/images/kyotaku.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div>
+                  {/* <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="md:hidden bg-[url('/images/kyotaku.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
+                  <ImageWithPlaceholder
+                    src="/images/kyotaku.jpg"
+                    placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                    alt="居宅介護支援のケアマネジャーとご利用者様の写真"
+                    className="md:hidden bg-center bg-cover rounded-md shadow-md mb-2 h-40"
+                    imgClassName="rounded-md"
+                  />
                   <p className="mb-2">介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。</p>
                   <p>ケアマネジャーは、利用者やその家族と綿密にコミュニケーションを取りながら、利用者様のニーズに合わせたケアプランを作成します。これにより、利用者が自立した生活を維持し、可能な限り自宅で快適に過ごせるようにサポートします。</p>
                   <Link to="/kyotaku" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
@@ -163,7 +212,14 @@ const Home = () => {
                     <img loading="lazy" src="./icons/right.png" alt="居宅介護支援　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kyotaku.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div>
+                {/* <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kyotaku.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
+                <ImageWithPlaceholder
+                  src="/images/kyotaku.jpg"
+                  placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                  alt="居宅介護支援のケアマネジャーとご利用者様の写真"
+                  className="hidden md:block w-1/2 bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"
+                  imgClassName="rounded-md"
+                />
               </div>
             </div>
           </div>
@@ -257,17 +313,39 @@ const Home = () => {
 
           {/* Recruit */}
           <div className="">
-            <div className="flex h-96 relative mt-12 py-6">
+            <div className="flex h-96 relative mt-12 mb-6">
               <div className="w-full flex shadow-md">
-                <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper2.png')] bg-cover bg-top">
+                <div className="bg-black w-full h-full bg-cover absolute bg-opacity-40"></div>
+                <ImageWithPlaceholder
+                  src="/illustrations/helper2.png"
+                  placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                  alt="居宅介護支援のケアマネジャーとご利用者様の写真"
+                  className="h-full w-1/2 sm:w-1/3 bg-cover bg-top"
+                  imgClassName="object-top"
+                />
+                {/* <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper2.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
-                </div>
-                <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden sm:block h-full w-1/3 bg-[url('/illustrations/helper1.png')] bg-cover bg-top">
+                </div> */}
+                <ImageWithPlaceholder
+                  src="/illustrations/helper1.png"
+                  placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                  alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
+                  className="hidden sm:block h-full w-1/3 bg-cover bg-top"
+                  imgClassName="object-top"
+                />
+                {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden sm:block h-full w-1/3 bg-[url('/illustrations/helper1.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
-                </div>
-                <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper3.png')] bg-cover bg-top">
+                </div> */}
+                <ImageWithPlaceholder
+                  src="/illustrations/helper3.png"
+                  placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                  alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
+                  className="h-full w-1/2 sm:w-1/3 bg-cover bg-top"
+                  imgClassName="object-top"
+                />
+                {/* <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper3.png')] bg-cover bg-top">
                   <div className="w-full h-full bg-black bg-opacity-40"></div>
-                </div>
+                </div> */}
                 <div className="absolute w-full transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                   <p className="text-white text-xl px-2 w-full max-w-[420px] xs:w-2/3 text-center mb-3">あなたの笑顔が誰かの笑顔になる職場で、
                     一緒に働きませんか？</p>
@@ -280,8 +358,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
     </>
   );
 };
