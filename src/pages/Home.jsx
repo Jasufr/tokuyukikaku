@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import TaxiPopUp from "../components/TaxiPopUp";
 import { useState } from "react";
+import ImageWithPlaceholder from "../components/ImageWithPlaceholder";
 
 const Home = () => {
   const [isTaxiPopUpOpen, setIsTaxiPopUpOpen] = useState(true);
@@ -19,11 +20,18 @@ const Home = () => {
       </Helmet>
       <div className="home">
         {/* Accueil */}
-        <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('/images/tokuyukikaku.jpg')] w-full h-96 2md:h-screen bg-center bg-cover">
+        <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="w-full h-96 2md:h-screen relative">
+          {/* <div className="blurLoad bg-[url('/images/tokuyukikakuSmall.jpg')] w-full h-full 2md:h-screen absolute bg-cover bg-center -z-10">
+            <img src="/images/tokuyukikaku.jpg" loading="lazy" alt="徳有企画（とくゆきかく）の施設" className="w-full h-full 2md:h-screen object-cover object-center absolute -z-10" />
+          </div> */}
+          <ImageWithPlaceholder
+            src="/images/tokuyukikaku.jpg"
+            placeholderSrc="/images/tokuyukikakuSmall.jpg"
+            alt="徳有企画（とくゆきかく）の施設"
+            className="w-full h-full bg-cover bg-center absolute -z-10"
+          />
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
             <div className="bg-white bg-opacity-65 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
-              {/* <h2 className="text-darkpink text-3xl">温もりで支える介護</h2>
-              <p className="text-lg">やさしさをもって利用者様と接し、心温まる時間を提供します。</p> */}
               <h1 className="text-darkpink text-2xl">徳有企画 | <span className="font-bold text-xl">西東京市、小平市、武蔵野市を中心する介護サービス、安心と信頼のケア</span></h1>
             </div>
           </div>
@@ -54,7 +62,14 @@ const Home = () => {
               </div>
             </div>
             <div className="flex gap-10 px-6 2md:px-12 lg:px-24 xl:px-28 py-6">
-              <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('/illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div>
+              {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('/illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div> */}
+              <ImageWithPlaceholder
+                src="/illustrations/helper1.png"
+                placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
+                className="hidden md:block md:w-1/2 lg:w-2/3 bg-top bg-cover min-h-[500px] rounded-md shadow-md"
+                imgClassName="rounded-md"
+              />
               <div className="md:w-1/2 lg:w-1/3 flex flex-col justify-center">
                 <h2 className="text-2xl mb-3 text-darkpink">心温まるサポートで幸福と健康を</h2>
                 <p className="mb-2">徳有企画では、介護を必要とする方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。</p>
