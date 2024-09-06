@@ -38,11 +38,11 @@ const Recruit = () => {
                 <p className="mb-2">朝食･昼食･夕食作り､各所掃除･洗濯･おむつ交換､お買物､入浴介助などの介護業務を､シフト制で分担して対応していきます｡</p>
                 <p className="">※ 直行直帰OK！</p>
               </div>
-              <div className="flex w-full h-32 mt-6 sm:hidden shadow-md rounded-md">
+              {/* <div className="flex w-full h-32 mt-6 sm:hidden shadow-md rounded-md">
                 <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('/illustrations/helper2.png')] bg-cover bg-top w-1/3 rounded-l-md"></div>
                 <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.png')] bg-cover bg-top w-1/3"></div>
                 <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.png')] bg-cover bg-top w-1/3 rounded-r-md"></div>
-              </div>
+              </div> */}
               <div className="my-6">
                 <h2 className="text-lg mb-3">募集要項</h2>
                 <table>
@@ -106,7 +106,7 @@ const Recruit = () => {
                           <li className="list-disc list-inside">その他の手当等付記事項 : <span className="ms-3">【該当者に支給】20名以上手当（1名につき）: </span></li>
                           <li className="ms-3">⇒ 要介護1～2 : 10,000円</li>
                           <li className="ms-3 mb-2">⇒ 要介護3～5 : 13,000円</li>
-                          <li className="">※ 月収５０万円以上可能</li>
+                          <li className="">※ 月収50万円以上可能</li>
                         </ul>
                       </td>
                     </tr>
@@ -131,14 +131,7 @@ const Recruit = () => {
                         </ul>
                       </td>
                     </tr>
-                    <tr>
-                      <th className="bg-lightpink bg-opacity-80 border border-darkstone p-2 xs:text-start" scope="row">特別手当</th>
-                      <td className="bg-white bg-opacity-50 p-2 border border-darkstone">
-                        <ul>
-                          <li></li>
-                        </ul>
-                      </td>
-                    </tr>
+
                   </tbody>
                 </table>
               </div>
