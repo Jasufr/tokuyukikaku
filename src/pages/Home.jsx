@@ -64,8 +64,8 @@ const Home = () => {
             <div className="flex gap-10 px-6 2md:px-12 lg:px-24 xl:px-28 py-6">
               {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('/illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div> */}
               <ImageWithPlaceholder
-                src="/illustrations/helper1.png"
-                placeholderSrc="/images/tokuyukikakuSmall.jpg"
+                // src="/illustrations/helper1.png"
+                placeholderSrc="/illustrations/helper2Small.png"
                 alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
                 className="hidden md:block md:w-1/2 lg:w-2/3 bg-top bg-cover min-h-[500px] rounded-md shadow-md"
                 imgClassName="rounded-md"
