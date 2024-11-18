@@ -57,7 +57,7 @@ const ServiceTaxi = () => {
               <h2 className="text-2xl mt-4 mb-2 text-darkpink">一般介護タクシー</h2>
               <div>
                 <h3 className="mb-3 text-xl">一般介護タクシーとは</h3>
-                <p className="">西東京市を拠点に東京都全域介護保険外（自費利用）でも安心安全安い介護タクシーをご利用いただけます。</p>
+                <p className="">西東京市を拠点に東京都全域介護保険外（自費利用）でも安心安全な介護タクシーをご利用いただけます。</p>
                 <div className="mt-4">
                   <h3 className="mb-3 text-xl">ご利用対象</h3>
                   <ol className="list-decimal list-inside">
@@ -67,7 +67,7 @@ const ServiceTaxi = () => {
                   </ol>
                 </div>
                 <div className="mt-4 text-cente">
-                  <p><span className="font-bold">車両：</span>スズキエブリィワゴン＆ニッサンキャラバンを使用しております、車いす又はリクライニング車いす、ストレッチャーにも対応できます。</p>
+                  <p><span className="font-bold">車両：</span>スズキエブリィワゴン・ニッサンキャラバンを使用しております、車いす又はリクライニング車いす、ストレッチャーにも対応できます。</p>
                   <p><span className="font-bold">運転手：</span>二種免許はもちろん、介護福祉士又はヘルパー2級の資格が取得しております、ご安心してお任せください。</p>
                 </div>
               </div>
@@ -78,7 +78,8 @@ const ServiceTaxi = () => {
               <div className="sm:flex gap-5 2md:gap-10">
                 <div className="sm:w-1/2 mb-4 sm:mb-0">
                   <h3 className="mb-3 text-xl">ご利用方法</h3>
-                  <p className="mb-2">当事業所が利用者様と訪問介護契約を結び、ケアマネージャーさまが作成した通院介助等のケアプランに基づいてサービス開始。</p>
+                  <p className="mb-2">当事業所が利用者様と訪問介護契約を結び、ケアマネージャーさまが作成した通院介助等のケアプランに基づいてサービスが開始します。</p>
+                  <p className="mb-2 font-bold">お客様の状況・状態によって料金が異なりますので、お気軽にお電話・メールにて、ご相談ください。</p>
                   <p><span className="font-bold">対応地域：</span>西東京市・小平市(一部)・武蔵野市(一部)</p>
                   <p><span className="font-bold">営業時間：</span>7 : 30～18 : 30（時間外応相談）月曜日～土曜日</p>
                 </div>

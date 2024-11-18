@@ -33,7 +33,7 @@ const Home = () => {
           />
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
             <div className="bg-white bg-opacity-65 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
-              <h1 className="text-darkpink text-2xl">徳有企画 | <span className="font-bold text-xl">西東京市、小平市、武蔵野市を中心する介護サービス、安心と信頼のケア</span></h1>
+              <h1 className="text-darkpink text-2xl">徳有企画 | <span className="font-bold text-xl">西東京市、小平市、武蔵野市を中心する介護サービス<br/>安心と信頼のケア</span></h1>
             </div>
           </div>
         </div>
@@ -207,7 +207,7 @@ const Home = () => {
                     imgClassName="rounded-md"
                   />
                   <p className="mb-2">介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。</p>
-                  <p>ケアマネジャーは、利用者やその家族と綿密にコミュニケーションを取りながら、利用者様のニーズに合わせたケアプランを作成します。これにより、利用者が自立した生活を維持し、可能な限り自宅で快適に過ごせるようにサポートします。</p>
+                  <p>ケアマネジャーは、利用者やその家族と綿密にコミュニケーションを取りながら、利用者様のニーズに合わせたケアプランを作成します。これにより、利用者が自立した生活を維持し、自宅で快適に過ごせるようにサポートします。</p>
                   <Link to="/kyotaku" className="btn flex self-end items-center gap-1 text-sm mt-2 group px-2 bg-lightgray shadow-inner hover:bg-lightpink transition-all duration-200 rounded-md">
                     <p className="">もっと見る</p>
                     <img loading="lazy" src="./icons/right.png" alt="居宅介護支援　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />

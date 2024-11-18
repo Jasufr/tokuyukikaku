@@ -74,7 +74,7 @@ const ServiceDay = () => {
                       <h3 className="mb-2 text-lg">介護認定を受けていない方</h3>
                       <ul className="list-square list-inside">
                         <li className="mb-1">居宅介護支援事業所のケアマネージャーまでご相談ください。ご本人やご家族の代行で、役所へ申請手続きを致します。</li>
-                        <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
+                        <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになりましたら、居宅介護支援事業所との契約を行ないます。</li>
                         <li className="mb-1">役所に介護保険の申請を行い、後日、認定員がご自宅に伺って、介護認定調査が行なわれます。その後、認定結果が郵便にて送られてきます。</li>
                         <li className="mb-1">ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。</li>
                         <li className="mb-1">各サービスの事業所との契約をし、各介護サービスのご利用が始まります。</li>
@@ -84,7 +84,7 @@ const ServiceDay = () => {
                       <h3 className="mb-2 text-lg">介護認定を受けられていてご利用してない方</h3>
                       <ul className="list-square list-inside">
                         <li className="mb-1">居宅介護支援事業所のケアマネージャーまでご相談ください。</li>
-                        <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになったら、居宅介護支援事業所との契約を行ないます。</li>
+                        <li className="mb-1">ケアマネージャーがご自宅へ伺い、お話をおききし、介護保険やケアプランなどについて、ご説明させて頂きます。ご利用がお決まりになりましたら、居宅介護支援事業所との契約を行ないます。</li>
                         <li className="mb-1">ケアマネージャーが、ケアプランを作成し、各介護サービスのご利用の手続きに入ります。</li>
                         <li className="mb-1">各サービスの事業所との契約をし、各介護サービスのご利用が始まります。</li>
                       </ul>
@@ -127,7 +127,7 @@ const ServiceDay = () => {
                     </table>
                     <div className="mt-4">
                       <p className="text-start font-bold text-darkstone text-lg ms-2 mb-2">入浴介助料　43円</p>
-                      <p>上記の料金は一例になります。<br /> その他の時間や加算については、お問い合わせ時や面接の際にご説明させていただきます。</p>
+                      <p>上記の料金は一例になります。<br /> その他の時間や加算については、お問い合わせ時にご説明させていただきます。</p>
                     </div>
                     <table className="w-full mt-4">
                       <caption className="text-start font-bold text-darkstone text-lg ms-2 mb-2">その他サービス</caption>

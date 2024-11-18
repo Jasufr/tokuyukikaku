@@ -46,11 +46,11 @@ const About = () => {
                 <tbody>
                   <tr>
                     <th className="bg-lightpink p-2 text-start border border-darkstone min-w-24" scope="row">社名（事業所番号）</th>
-                    <td className="bg-white p-2 border border-darkstone">合同会社徳有企画 （139540041）</td>
+                    <td className="bg-white p-2 border border-darkstone">合同会社徳有企画 （1395400417）</td>
                   </tr>
                   <tr>
                     <th className="bg-lightpink p-2 text-start border border-darkstone" scope="row">設立年月日</th>
-                    <td className="bg-white p-2 border border-darkstone">2222年（令和22年）2月22日</td>
+                    <td className="bg-white p-2 border border-darkstone">2010年（平成22年）7月31日</td>
                   </tr>
                   <tr>
                     <th className="bg-lightpink p-2 text-start border border-darkstone" scope="row">代表者</th>
@@ -58,7 +58,7 @@ const About = () => {
                   </tr>
                   <tr>
                     <th className="bg-lightpink p-2 text-start border border-darkstone" scope="row">従業員数</th>
-                    <td className="bg-white p-2 border border-darkstone">27名</td>
+                    <td className="bg-white p-2 border border-darkstone">27名（2024年9月現在）</td>
                   </tr>
                   <tr>
                     <th className="bg-lightpink p-2 text-start border border-darkstone" scope="row">事業内容</th>

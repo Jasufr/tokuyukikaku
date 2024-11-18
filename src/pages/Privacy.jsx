@@ -46,7 +46,7 @@ const Privacy = () => {
           <li className="mb-1">FAX :  042-497-6467</li>
           <li className="mb-1">受付時間 : 9 : 00~18 : 00 (土曜・日曜・祝日を除く)</li>
         </ul>
-        <p className="text-end text-lg">合同会社 徳有企画<br />代表 長谷川燕華</p>
+        <p className="text-end text-lg">合同会社徳有企画<br />代表 長谷川燕華</p>
       </div>
     </>
   );

@@ -105,8 +105,9 @@ const SendMail = () => {
             <img loading="lazy" src="./icons/ok.png" className="w-12" alt="メール送信成功アイコン" />
             <div>
               <h1 className="text-center text-green text-xl xs:text-2xl mb-2">ありがとうございました！</h1>
-              <p className="text-center">できるだけ早くお答えしますので、<br />少々お待ちください。</p>
-              <p className="text-end text-sm my-2">徳有企画事務所</p>
+              <p className="text-center">お問い合わせ内容を受け付け致しました。</p>
+              <p>回答までにお時間を頂くことがあります。</p>
+              <p className="text-end text-sm my-2">合同会社徳有企画</p>
             </div>
 
           </div>
@@ -118,8 +119,8 @@ const SendMail = () => {
             <img loading="lazy" src="./icons/error.png" className="w-12" alt="メール送信エラーアイコン" />
             <div>
               <h1 className="text-center text-red text-xl xs:text-2xl mb-2">エラーが発生しました。</h1>
-              <p className="text-center">もう一度入力してくだい。<br />エラーが続く場合、<br className="block 2md:hidden" />電話番号でお問い合わせください。</p>
-              <p className="text-end text-sm my-2">徳有企画事務所</p>
+              <p className="text-center">入力内容をご確認ください。<br />エラーが続く場合、<br className="block 2md:hidden" />電話番号でお問い合わせください。</p>
+              <p className="text-end text-sm my-2">合同会社徳有企画</p>
             </div>
 
           </div>
@@ -143,7 +144,7 @@ const SendMail = () => {
             <tr>
               <th className="border border-darkslate text-start p-2 bg-lightpink bg-opacity-80" scope="row">お名前<span className="float-end text-[12px] bg-darkpink px-2 py-1 text-lightpink rounded-md">必須</span></th>
               <td className="border border-darkslate p-4 bg-white bg-opacity-50">
-                <input required={true} type="text" value={name} onChange={(e) => { setName(e.target.value) }} placeholder="例）幕ノ内一歩" className="border border-zinc p-2 focus:outline-darkpink w-full" />
+                <input required={true} type="text" value={name} onChange={(e) => { setName(e.target.value) }} placeholder="例）姓 名" className="border border-zinc p-2 focus:outline-darkpink w-full" />
               </td>
             </tr>
             <tr>
