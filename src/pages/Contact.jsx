@@ -1,12 +1,13 @@
 import { Helmet } from "react-helmet-async";
 import SendMail from "../components/SendMail";
+import ImageWithPlaceholder from "../components/ImageWithPlaceholder";
 
 const Contact = () => {
   return (
     <>
       <Helmet>
         <title>徳有企画 | お問い合わせ</title>
-        <meta name="description" content="あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。" />
+        <meta name="description" content="各種介護サービスについて不明点等がございましたら、お気軽に下記のメールや電話番号まで、ご連絡ください。メールでご連絡の際は、下記のメールフォームからでもご利用いただけます。" />
         <link rel="canonical" href="/contact" />
       </Helmet>
       <div className="contact relative">
@@ -29,7 +30,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 mb-6 py-6 lg:py-12">
-          <h1  className="text-2xl text-darkpink mb-3">お問い合わせ</h1  >
+          <h1 className="text-2xl text-darkpink mb-3">お問い合わせ</h1  >
           <p className="mb-2">各種介護サービスについて不明点等がございましたら、お気軽に下記のメールや電話番号まで、ご連絡ください。</p>
           <p className="mb-2">メールでご連絡の際は、下記のメールフォームからでもご利用いただけます。</p>
           <div className="flex justify-center">
@@ -56,15 +57,29 @@ const Contact = () => {
           </div>
         </div>
         <div className="bg-lightgray bg-opacity-30 px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12">
-          <div className="flex gap-10">
-            <div className="sm:w-3/4 2md:w-2/3">
+          <div className="flex justify-center gap-10">
+            <div className="w-full sm:w-3/4 2md:w-2/3">
               <div className="mb-2">
                 <h2 className="text-xl mb-4">メールでのお問い合わせ</h2>
               </div>
-              <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('/illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div>
+              {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('/illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div> */}
+              <ImageWithPlaceholder
+              src="/illustrations/helper4.png"
+              placeholderSrc="/illustrations/helper4Small.png"
+              alt="ご利用者様とヘルパーのイラスト"
+              className="h-32 mb-2 sm:hidden bg-cover bg-center rounded-md shadow-md"
+              imgClassName="rounded-md"
+            />
               <SendMail />
             </div>
-            <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('/illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div>
+            {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('/illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div> */}
+            <ImageWithPlaceholder
+              src="/illustrations/helper4.png"
+              placeholderSrc="/illustrations/helper4Small.png"
+              alt="ご利用者様とヘルパーのイラスト"
+              className="hidden sm:block bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"
+              imgClassName="rounded-md"
+            />
           </div>
         </div>
       </div>

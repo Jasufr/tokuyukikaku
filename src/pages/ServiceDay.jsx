@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tabs from "../layout/Tabs";
 import { Helmet } from "react-helmet-async";
+import ImageWithPlaceholder from "../components/ImageWithPlaceholder";
 
 const ServiceDay = () => {
   const [visibleTab, setVisibleTab] = useState("tab1");
@@ -34,7 +35,14 @@ const ServiceDay = () => {
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12">
           <div className="flex items-center gap-2 sm:gap-5 2md:gap-10 mb-3 xs:mb-4">
             <h1 className="text-2xl text-darkpink text-nowrap">デイサービス</h1>
-            <div aria-label="デイサービスの室内の写真" role="img" className="bg-[url('/images/dayservice1.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div>
+            {/* <div aria-label="デイサービスの室内の写真" role="img" className="bg-[url('/images/dayservice1.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div> */}
+            <ImageWithPlaceholder
+              src="/images/dayservice1.jpg"
+              placeholderSrc="/images/dayservice1Small.jpg"
+              alt="デイサービスの室内の写真"
+              className="bg-cover bg-center w-full h-14 sm:h-20 rounded-md shadow-md"
+              imgClassName="rounded-md"
+            />
           </div>
           <Tabs visibleTab={visibleTab} setVisibleTab={setVisibleTab}>
             <div className={`shoukai ${visibleTab === "tab1" ? "block" : "hidden"} mt-4`}>
@@ -46,20 +54,62 @@ const ServiceDay = () => {
                   <div className="flex flex-col sm:flex-row gap-3 in-h-96 min-h-[500px] bg-lightgray rounded-md bg-opacity-30 p-3">
                     <h4 className="hidden sm:block pt-2 text-vertical text-lg font-bold text-darkstone">全面床暖房付きデイルーム</h4>
                     <h4 className="sm:hidden pt-0 text-lg font-bold text-darkstone">全面床暖房付きデイルーム</h4>
-                    <div aria-label="デイサービスの室内の座席の写真" role="img" className="bg-[url('/images/dayservice4.JPG')] bg-center bg-cover w-full min-h-52 rounded-md shadow-md"></div>
-                    <div aria-label="デイサービスの室内の座席の写真" role="img" className="bg-[url('/images/dayservice5.JPG')] bg-center bg-cover w-full min-h-52 rounded-md shadow-md"></div>
-                    <div aria-label="デイサービスの室内の座席の写真" role="img" className="bg-[url('/images/dayservice3.JPG')] bg-center bg-cover w-full min-h-52 rounded-md shadow-md"></div>
+                    {/* <div aria-label="デイサービスの室内の座席の写真" role="img" className="bg-[url('/images/dayservice4.JPG')] bg-center bg-cover w-full min-h-52 rounded-md shadow-md"></div> */}
+                    <ImageWithPlaceholder
+                      src="/images/dayservice4.JPG"
+                      placeholderSrc="/images/dayservice4Small.jpg"
+                      alt="デイサービスの室内の写真"
+                      className="bg-cover bg-center w-full h-[210px] sm:h-[470px] rounded-md shadow-md"
+                      imgClassName="rounded-md"
+                    />
+                    {/* <div aria-label="デイサービスの室内の座席の写真" role="img" className="bg-[url('/images/dayservice5.JPG')] bg-center bg-cover w-full min-h-52 rounded-md shadow-md"></div> */}
+                    <ImageWithPlaceholder
+                      src="/images/dayservice5.JPG"
+                      placeholderSrc="/images/dayservice5Small.jpg"
+                      alt="デイサービスの室内の写真"
+                      className="bg-center bg-cover w-full h-[210px] sm:h-[470px] rounded-md shadow-md"
+                      imgClassName="rounded-md"
+                    />
+                    {/* <div aria-label="デイサービスの室内の座席の写真" role="img" className="bg-[url('/images/dayservice3.JPG')] bg-center bg-cover w-full min-h-52 rounded-md shadow-md"></div> */}
+                    <ImageWithPlaceholder
+                      src="/images/dayservice3.JPG"
+                      placeholderSrc="/images/dayservice3Small.jpg"
+                      alt="デイサービスの室内の写真"
+                      className="bg-cover bg-center w-full h-[210px] sm:h-[470px] rounded-md shadow-md"
+                      imgClassName="rounded-md"
+                    />
                   </div>
                   <div className="mt-4 flex flex-col sm:flex-row gap-3 bg-lightgray rounded-md bg-opacity-30 p-3">
                     <h4 className="hidden sm:block pt-2 text-vertical text-lg font-bold text-darkstone">品数豊富な日替わり昼食</h4>
                     <h4 className="sm:hidden pt-0 text-lg font-bold text-darkstone">品数豊富な日替わり昼食</h4>
-                    <div aria-label="デイサービスの食事の写真" role="img" className="bg-[url('/images/dayservice8.jpg')] bg-center bg-cover w-full min-h-56 sm:min-h-[500px] rounded-md shadow-md"></div>
+                    {/* <div aria-label="デイサービスの食事の写真" role="img" className="bg-[url('/images/dayservice8.jpg')] bg-center bg-cover w-full min-h-56 sm:min-h-[500px] rounded-md shadow-md"></div> */}
+                    <ImageWithPlaceholder
+                      src="/images/dayservice8.jpg"
+                      placeholderSrc="/images/dayservice8Small.jpg"
+                      alt="デイサービスの食事の写真"
+                      className="bg-cover bg-center w-full h-[300px] sm:h-[500px] rounded-md shadow-md"
+                      imgClassName="rounded-md"
+                    />
                   </div>
                   <div className="mt-4 flex flex-col sm:flex-row gap-3 in-h-96 min-h-[500px] bg-lightgray rounded-md bg-opacity-30 p-3">
                     <h4 className="hidden sm:block pt-2 text-vertical text-lg font-bold text-darkstone">広いバスタブとお手洗い完備</h4>
                     <h4 className="sm:hidden pt-0 text-lg font-bold text-darkstone">広いバスタブとお手洗い完備</h4>
-                    <div aria-label="デイサービスの風呂の写真" role="img" className="bg-[url('/images/dayservice6.jpg')] bg-bottom bg-cover sm:w-2/3 min-h-56 rounded-md shadow-md"></div>
-                    <div aria-label="デイサービスのお手洗いの写真" role="img" className="bg-[url('/images/dayservice7.jpg')] bg-center bg-cover sm:w-1/3 min-h-56 rounded-md shadow-md"></div>
+                    {/* <div aria-label="デイサービスの風呂の写真" role="img" className="bg-[url('/images/dayservice6.jpg')] bg-bottom bg-cover sm:w-2/3 min-h-56 rounded-md shadow-md"></div> */}
+                    <ImageWithPlaceholder
+                      src="/images/dayservice6.jpg"
+                      placeholderSrc="/images/dayservice6Small.jpg"
+                      alt="デイサービスの風呂の写真"
+                      className="bg-bottom bg-cover sm:w-2/3 h-[240px] sm:h-[480px] rounded-md shadow-md"
+                      imgClassName="rounded-md object-bottom"
+                    />
+                    {/* <div aria-label="デイサービスのお手洗いの写真" role="img" className="bg-[url('/images/dayservice7.jpg')] bg-center bg-cover sm:w-1/3 min-h-56 rounded-md shadow-md"></div> */}
+                    <ImageWithPlaceholder
+                      src="/images/dayservice7.jpg"
+                      placeholderSrc="/images/dayservice7Small.jpg"
+                      alt="デイサービスのお手洗いの写真"
+                      className="bg-center bg-cover sm:w-1/3 h-[240px] sm:h-[480px] rounded-md shadow-md"
+                      imgClassName="rounded-md"
+                    />
                   </div>
                 </div>
               </div>

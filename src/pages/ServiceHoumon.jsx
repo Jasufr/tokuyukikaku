@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tabs from "../layout/Tabs";
 import { Helmet } from "react-helmet-async";
+import ImageWithPlaceholder from "../components/ImageWithPlaceholder";
 
 const ServiceHoumon = () => {
   const [visibleTab, setVisibleTab] = useState("tab1");
@@ -34,7 +35,14 @@ const ServiceHoumon = () => {
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12">
           <div className="flex items-center gap-2 sm:gap-5 2md:gap-10 mb-3 xs:mb-4">
             <h1 className="text-2xl text-darkpink text-nowrap">訪問介護</h1>
-            <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="bg-[url('/images/houmon.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div>
+            {/* <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="bg-[url('/images/houmon.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div> */}
+            <ImageWithPlaceholder
+              src="/images/houmon.jpg"
+              placeholderSrc="/images/houmonSmall.jpg"
+              alt="訪問介護　ご利用者様とヘルパーの写真"
+              className="bg-cover bg-center w-full h-14 sm:h-20 rounded-md shadow-md"
+              imgClassName="rounded-md"
+            />
           </div>
           <Tabs visibleTab={visibleTab} setVisibleTab={setVisibleTab}>
             <div className={`shoukai ${visibleTab === "tab1" ? "block" : "hidden"} mt-4`}>

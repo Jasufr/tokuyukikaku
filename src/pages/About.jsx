@@ -42,7 +42,7 @@ const About = () => {
             src="/images/dayservice2.jpg"
             placeholderSrc="/images/dayservice2Small.jpg"
             alt="徳有企画（とくゆきかく）の施設"
-            className="bg-center bg-cover rounded-md shadow-md hidden md:block w-1/4 2md:w-2/5"
+            className="bg-center bg-cover rounded-md shadow-md hidden md:block w-1/4 2md:w-2/5 h-80"
             imgClassName="rounded-md h-80"
           />
         </div>
