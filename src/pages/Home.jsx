@@ -33,7 +33,7 @@ const Home = () => {
           />
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
             <div className="bg-white bg-opacity-65 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
-              <h1 className="text-darkpink text-2xl">徳有企画 | <span className="font-bold text-xl">西東京市、小平市、武蔵野市を中心する介護サービス<br/>安心と信頼のケア</span></h1>
+              <h1 className="text-darkpink text-2xl">徳有企画 | <span className="font-bold text-xl">西東京市、小平市、武蔵野市を中心する介護サービス<br />安心と信頼のケア</span></h1>
             </div>
           </div>
         </div>
@@ -64,6 +64,16 @@ const Home = () => {
             </div>
             <div className="flex gap-10 px-6 2md:px-12 lg:px-24 xl:px-28 py-6">
               {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('/illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div> */}
+              {/* <div className="hidden md:block md:w-1/2 lg:w-2/3 bg-top bg-cover min-h-[500px] rounded-md shadow-md relative">
+                <ImageWithPlaceholder
+                  src="/illustrations/helper.png"
+                  placeholderSrc="/illustrations/helper1Small.png"
+                  alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
+                  // className=""
+                  className="w-full h-full bg-cover bg-center absolute"
+                // imgClassName="rounded-md"
+                />
+              </div> */}
               <ImageWithPlaceholder
                 src="/illustrations/helper1.png"
                 placeholderSrc="/illustrations/helper1Small.png"
@@ -160,7 +170,7 @@ const Home = () => {
                 {/* <div aria-label="介護タクシーの車の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kuruma1.jpg')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
                 <ImageWithPlaceholder
                   src="/images/kuruma1.jpg"
-                  placeholderSrc="/images/kuruma1.jpg"
+                  placeholderSrc="/images/kuruma1Small.jpg"
                   alt="介護タクシーの車の写真"
                   className="hidden md:block w-1/2 bg-center bg-cover rounded-md shadow-md min-h-[300px]"
                   imgClassName="rounded-md"
@@ -181,7 +191,7 @@ const Home = () => {
                   {/* <div aria-label="デイサービスの室内の写真" role="img" className="md:hidden bg-[url('/images/dayservice1.jpg')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
                   <ImageWithPlaceholder
                     src="images/dayservice1.jpg"
-                    placeholderSrc="/images/dayservice1.jpg"
+                    placeholderSrc="/images/dayservice1Small.jpg"
                     alt="デイサービスの室内の写真"
                     className="md:hidden bg-center bg-cover rounded-md shadow-md mb-2 h-40"
                     imgClassName="rounded-md"
@@ -216,7 +226,7 @@ const Home = () => {
                 {/* <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kyotaku.jpg')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
                 <ImageWithPlaceholder
                   src="/images/kyotaku.jpg"
-                  placeholderSrc="/images/kyotaku.jpg"
+                  placeholderSrc="/images/kyotakuSmall.jpg"
                   alt="居宅介護支援のケアマネジャーとご利用者様の写真"
                   className="hidden md:block w-1/2 bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"
                   imgClassName="rounded-md"
@@ -319,7 +329,7 @@ const Home = () => {
                 <div className="bg-black w-full h-full bg-cover absolute bg-opacity-40"></div>
                 <ImageWithPlaceholder
                   src="/illustrations/helper2.png"
-                  placeholderSrc="/images/helper2Small.jpg"
+                  placeholderSrc="/illustrations/helper2Small.png"
                   alt="居宅介護支援のケアマネジャーとご利用者様の写真"
                   className="h-full w-1/2 sm:w-1/3 bg-cover bg-top"
                   imgClassName="object-top"
@@ -329,7 +339,7 @@ const Home = () => {
                 </div> */}
                 <ImageWithPlaceholder
                   src="/illustrations/helper1.png"
-                  placeholderSrc="/images/helper1Small.jpg"
+                  placeholderSrc="/illustrations/helper1Small.png"
                   alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
                   className="hidden sm:block h-full w-1/3 bg-cover bg-top"
                   imgClassName="object-top"
@@ -339,7 +349,7 @@ const Home = () => {
                 </div> */}
                 <ImageWithPlaceholder
                   src="/illustrations/helper3.png"
-                  placeholderSrc="/images/helper3.jpg"
+                  placeholderSrc="/illustrations/helper3Small.png"
                   alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
                   className="h-full w-1/2 sm:w-1/3 bg-cover bg-top"
                   imgClassName="object-top"
