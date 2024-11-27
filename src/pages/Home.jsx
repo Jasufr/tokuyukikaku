@@ -16,7 +16,17 @@ const Home = () => {
     <>
       <Helmet>
         <title>徳有企画 | ホーム</title>
-        <meta name="description" content="徳有企画では、全ての方々に心からのケアとサポートを提供することを信念とし、ご利用者様、ご家族、地域の皆様の幸福を大切に考えています。慎重な考慮と行動に基づき、個々のニーズを理解し、満たすことを重視しています。真の人間関係を築き、誠心誠意、そして熱意を持って、皆様に安心で温かみのある日々をお届けします。" />
+        <meta name="description" content="徳有企画 | 西東京市、小平市、武蔵野市を中心する介護サービス安心と信頼のケア" />
+
+        <meta property="og:title" content="徳有企画 | ホーム" />
+        <meta
+          property="og:description"
+          content="徳有企画 | 西東京市、小平市、武蔵野市を中心する介護サービス安心と信頼のケア"
+        />
+        <meta property="og:image" content="./icons/logo.png" />
+        <meta property="og:url" content="https://tokuyukikaku.netlify.app/" />
+        <meta property="og:type" content="website" />
+
         <link rel="canonical" href="/" />
       </Helmet>
       <div className="home">
