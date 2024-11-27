@@ -11,6 +11,16 @@ const ServiceKyotaku = () => {
       <Helmet>
         <title>徳有企画 | 居宅介護支援</title>
         <meta name="description" content="介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。" />
+
+        <meta property="og:title" content="徳有企画 | 居宅介護支援" />
+        <meta
+          property="og:description"
+          content="介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。"
+        />
+        <meta property="og:image" content="/images/kyotaku.jpg" />
+        <meta property="og:url" content="https://tokuyukikaku.netlify.app/kyotaku" />
+        <meta property="og:type" content="website" />
+
         <link rel="canonical" href="/kyotaku" />
       </Helmet>
       <div className="kyotaku relative">

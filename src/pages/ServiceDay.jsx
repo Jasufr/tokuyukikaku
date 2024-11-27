@@ -11,6 +11,16 @@ const ServiceDay = () => {
       <Helmet>
         <title>徳有企画 | デイサービス</title>
         <meta name="description" content="全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。また、看護師が常駐しているので、日々の機能訓練も安心して行っていただけます。" />
+
+        <meta property="og:title" content="徳有企画 | デイサービス" />
+        <meta
+          property="og:description"
+          content="全面床暖房を完備した室内では、フラワーアレンジメント・書道・麻雀など認知症予防に効果があるとされているレクリエーションを用意しています。また、看護師が常駐しているので、日々の機能訓練も安心して行っていただけます。"
+        />
+        <meta property="og:image" content="/images/dayservice1.jpg" />
+        <meta property="og:url" content="https://tokuyukikaku.netlify.app/dayservice" />
+        <meta property="og:type" content="website" />
+
         <link rel="canonical" href="/dayservice" />
       </Helmet>
       <div className="day relative">

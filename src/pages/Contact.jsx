@@ -8,6 +8,16 @@ const Contact = () => {
       <Helmet>
         <title>徳有企画 | お問い合わせ</title>
         <meta name="description" content="各種介護サービスについて不明点等がございましたら、お気軽に下記のメールや電話番号まで、ご連絡ください。メールでご連絡の際は、下記のメールフォームからでもご利用いただけます。" />
+
+        <meta property="og:title" content="徳有企画 | お問い合わせ" />
+        <meta
+          property="og:description"
+          content="各種介護サービスについて不明点等がございましたら、お気軽に下記のメールや電話番号まで、ご連絡ください。メールでご連絡の際は、下記のメールフォームからでもご利用いただけます。"
+        />
+        <meta property="og:image" content="/illustrations/helper4.png" />
+        <meta property="og:url" content="https://tokuyukikaku.netlify.app/contact" />
+        <meta property="og:type" content="website" />
+
         <link rel="canonical" href="/contact" />
       </Helmet>
       <div className="contact relative">

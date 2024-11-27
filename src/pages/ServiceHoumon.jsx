@@ -11,6 +11,16 @@ const ServiceHoumon = () => {
       <Helmet>
         <title>徳有企画 | 訪問介護</title>
         <meta name="description" content="ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。" />
+
+        <meta property="og:title" content="徳有企画 | 訪問介護" />
+        <meta
+          property="og:description"
+          content="ホームヘルパーなどのスタッフが、ご自宅を訪問して必要なサービスを行います。食事や排せつなどの介助を行う「身体介護」、調理や掃除などを行う「生活援助」をはじめ、ご自宅での生活に関するサービスや日常生活でのアドバイスをいたします。"
+        />
+        <meta property="og:image" content="/images/houmon.jpg" />
+        <meta property="og:url" content="https://tokuyukikaku.netlify.app/houmon" />
+        <meta property="og:type" content="website" />
+
         <link rel="canonical" href="/houmon" />
       </Helmet>
       <div className="houmon relative">

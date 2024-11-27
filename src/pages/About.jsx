@@ -10,7 +10,14 @@ const About = () => {
         <title>徳有企画 | 私たちについて</title>
         <meta name="description" content="当社は、高齢者や障がいを持つ方々、そしてそのご家族の方々に寄り添い、心身の健康と幸福をサポートをしていきます。利用者様、ご家族の皆様、地域のコミュニティ、そして当社のスタッフ全員の幸福と福祉を真摯に考えています。" />
 
-
+        <meta property="og:title" content="徳有企画 | 私たちについて" />
+        <meta
+          property="og:description"
+          content="当社は、高齢者や障がいを持つ方々、そしてそのご家族の方々に寄り添い、心身の健康と幸福をサポートをしていきます。利用者様、ご家族の皆様、地域のコミュニティ、そして当社のスタッフ全員の幸福と福祉を真摯に考えています。"
+        />
+        <meta property="og:image" content="/images/dayservice2.jpg" />
+        <meta property="og:url" content="https://tokuyukikaku.netlify.app/about" />
+        <meta property="og:type" content="website" />
 
         <link rel="canonical" href="/about" />
       </Helmet>

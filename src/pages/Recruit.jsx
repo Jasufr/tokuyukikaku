@@ -7,6 +7,16 @@ const Recruit = () => {
       <Helmet>
         <title>徳有企画 | 採用情報</title>
         <meta name="description" content="介護職員（常勤・非常勤ヘルパー）及び介護タクシードライバー・介護支援専門員業務全般（ケアマネジャー）を募集しています。" />
+
+        <meta property="og:title" content="徳有企画 | 採用情報" />
+        <meta
+          property="og:description"
+          content="介護職員（常勤・非常勤ヘルパー）及び介護タクシードライバー・介護支援専門員業務全般（ケアマネジャー）を募集しています。"
+        />
+        <meta property="og:image" content="/illustrations/helper3.png" />
+        <meta property="og:url" content="https://tokuyukikaku.netlify.app/recruit" />
+        <meta property="og:type" content="website" />
+
         <link rel="canonical" href="/recruit" />
       </Helmet>
       <div className="relative py-6 lg:py-12">

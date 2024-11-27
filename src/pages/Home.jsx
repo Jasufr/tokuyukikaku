@@ -23,7 +23,7 @@ const Home = () => {
           property="og:description"
           content="徳有企画 | 西東京市、小平市、武蔵野市を中心する介護サービス安心と信頼のケア"
         />
-        <meta property="og:image" content="./icons/logo.png" />
+        <meta property="og:image" content="/images/tokuyukikaku.jpg" />
         <meta property="og:url" content="https://tokuyukikaku.netlify.app/" />
         <meta property="og:type" content="website" />
 
