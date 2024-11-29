@@ -211,7 +211,7 @@ const ServiceDay = () => {
                       </tbody>
                     </table>
                     <div className="mt-4 text-center">
-                      <p>※詳細なご料金は<a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="./pdfs/test.pdf" target="_blank">こちら</a>からご覧ください。</p>
+                      <p>※詳細なご料金は<a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="./pdfs/dayRyoukinHyou.pdf" target="_blank">こちら</a>からご覧ください。</p>
                     </div>
                   </div>
                   <div className="md:w-1/2">
