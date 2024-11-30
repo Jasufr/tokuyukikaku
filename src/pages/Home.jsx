@@ -36,10 +36,12 @@ const Home = () => {
             <img src="/images/tokuyukikaku.jpg" loading="lazy" alt="徳有企画（とくゆきかく）の施設" className="w-full h-full 2md:h-screen object-cover object-center absolute -z-10" />
           </div> */}
           <ImageWithPlaceholder
-            src="/images/tokuyukikaku.jpg"
+            src="/images/tokuyukikaku.webp"
             placeholderSrc="/images/tokuyukikakuSmall.jpg"
             alt="徳有企画（とくゆきかく）の施設"
             className="w-full h-full bg-cover bg-center absolute -z-10"
+            imgClassName=""
+            loading="eager"
           />
           <div className="h-full items-end 2md:items-center flex justify-center 2md:justify-end">
             <div className="bg-white bg-opacity-65 w-full 2md:w-1/3 lg:w-1/4 flex flex-col p-3 2md:rounded-s-sm shadow-md">
