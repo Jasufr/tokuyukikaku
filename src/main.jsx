@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorPage from './components/ErrorPage.jsx';
-import './index.css'
+import './styles.css'
 import { HelmetProvider } from 'react-helmet-async';
 
 createRoot(document.getElementById("root")).render(

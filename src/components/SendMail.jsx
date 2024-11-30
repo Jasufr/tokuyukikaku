@@ -125,8 +125,10 @@ const SendMail = () => {
 
           </div>
         } />}
+      {/* Debug Buttons */}
       {/* <button className="bg-green text-white p-2 my-2" onClick={toggleOkPopUp}>toggle okpopup</button>
       <button className="bg-red text-white p-2 my-2" onClick={toggleErrorPopUp}>toggle errorpopup</button> */}
+
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
         <table className="w-full mb-2">
           <tbody>

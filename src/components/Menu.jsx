@@ -20,6 +20,7 @@ const Menu = () => {
       <button
         onClick={() => setMenuOpened(!menuOpened)}
         className={`menu_icon z-50 fixed top-7 xs:top-6 right-4 xs:right-8 p-3 bg-white shadow-md w-10 h-10 xs:w-11 xs:h-11 rounded-md`}
+        aria-label="Open or Close Navigation Menu"
       >
         <div
           className={`bg-darkpink h-0.5 rounded-md w-full transition-all ${menuOpened ? "rotate-45  translate-y-0.5" : ""

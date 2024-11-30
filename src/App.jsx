@@ -71,7 +71,7 @@ function App() {
               <PageNotFound />
             </Route>
           </Switch>
-          <button onClick={() =>  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} ref={upBtnRef} className="upbtn fixed bottom-0 right-0 w-8 z-50 m-4 transition-opacity opacity-0 duration-500"><img loading="eager" src="./icons/up.png" alt="back up button" /></button>
+          <button onClick={() =>  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })} ref={upBtnRef} className="upbtn fixed bottom-0 right-0 w-8 z-50 m-4 transition-opacity opacity-0 duration-500"><img loading="eager" src="./icons/up.webp" alt="back up button" /></button>
         </MainLayout>
       </div>
     </>

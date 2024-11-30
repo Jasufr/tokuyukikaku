@@ -32,9 +32,6 @@ const Home = () => {
       <div className="home">
         {/* Accueil */}
         <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="w-full h-96 2md:h-screen relative">
-          {/* <div className="blurLoad bg-[url('/images/tokuyukikakuSmall.jpg')] w-full h-full 2md:h-screen absolute bg-cover bg-center -z-10">
-            <img src="/images/tokuyukikaku.webp" loading="lazy" alt="徳有企画（とくゆきかく）の施設" className="w-full h-full 2md:h-screen object-cover object-center absolute -z-10" />
-          </div> */}
           <ImageWithPlaceholder
             src="/images/tokuyukikaku.webp"
             placeholderSrc="/images/tokuyukikakuSmall.jpg"
@@ -75,17 +72,6 @@ const Home = () => {
               </div>
             </div>
             <div className="flex gap-10 px-6 2md:px-12 lg:px-24 xl:px-28 py-6">
-              {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden md:block md:w-1/2 lg:w-2/3 bg-[url('/illustrations/helper1.png')] bg-top bg-cover min-h-[500px] rounded-md shadow-md"></div> */}
-              {/* <div className="hidden md:block md:w-1/2 lg:w-2/3 bg-top bg-cover min-h-[500px] rounded-md shadow-md relative">
-                <ImageWithPlaceholder
-                  src="/illustrations/helper.png"
-                  placeholderSrc="/illustrations/helper1Small.png"
-                  alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
-                  // className=""
-                  className="w-full h-full bg-cover bg-center absolute"
-                // imgClassName="rounded-md"
-                />
-              </div> */}
               <ImageWithPlaceholder
                 src="/illustrations/helper1.webp"
                 placeholderSrc="/illustrations/helper1Small.png"
@@ -133,7 +119,6 @@ const Home = () => {
               </div>
               {/* Houmon service */}
               <div className="houmon md:flex gap-10 mb-6">
-                {/* <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/houmon.webp')] bg-center bg-cover rounded-md shadow-md md:min-h-[300px]"></div> */}
                 <ImageWithPlaceholder
                   src="/images/houmon.webp"
                   placeholderSrc="/images/houmonSmall.jpg"
@@ -143,7 +128,6 @@ const Home = () => {
                 />
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">訪問介護</h3>
-                  {/* <div aria-label="訪問介護　ご利用者様とヘルパーの写真" role="img" className="md:hidden bg-[url('/images/houmon.webp')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
                   <ImageWithPlaceholder
                     src="/images/houmon.webp"
                     placeholderSrc="/images/houmonSmall.jpg"
@@ -163,7 +147,6 @@ const Home = () => {
               <div className="taxi flex gap-10 mb-6">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">介護タクシー</h3>
-                  {/* <div aria-label="介護タクシーの車の写真" role="img" className="md:hidden bg-[url('/images/kuruma1.webp')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
                   <ImageWithPlaceholder
                     src="/images/kuruma1.webp"
                     placeholderSrc="/images/kuruma1Small.jpg"
@@ -179,7 +162,6 @@ const Home = () => {
                     <img loading="lazy" src="./icons/right.webp" alt="介護タクシー　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                {/* <div aria-label="介護タクシーの車の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kuruma1.webp')] bg-center bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
                 <ImageWithPlaceholder
                   src="/images/kuruma1.webp"
                   placeholderSrc="/images/kuruma1Small.jpg"
@@ -190,7 +172,6 @@ const Home = () => {
               </div>
               {/* Day service */}
               <div className="dayservice flex gap-10 mb-6">
-                {/* <div aria-label="デイサービスの室内の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/dayservice1.webp')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
                 <ImageWithPlaceholder
                   src="images/dayservice1.webp"
                   placeholderSrc="/images/dayservice1Small.jpg"
@@ -200,7 +181,6 @@ const Home = () => {
                 />
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">デイサービス</h3>
-                  {/* <div aria-label="デイサービスの室内の写真" role="img" className="md:hidden bg-[url('/images/dayservice1.webp')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
                   <ImageWithPlaceholder
                     src="images/dayservice1.webp"
                     placeholderSrc="/images/dayservice1Small.jpg"
@@ -220,7 +200,6 @@ const Home = () => {
               <div className="kyotaku flex gap-10">
                 <div className="md:w-1/2 flex flex-col justify-center">
                   <h3 className="text-xl mb-3">居宅介護支援</h3>
-                  {/* <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="md:hidden bg-[url('/images/kyotaku.webp')] bg-center bg-cover rounded-md shadow-md mb-2 h-40"></div> */}
                   <ImageWithPlaceholder
                     src="/images/kyotaku.webp"
                     placeholderSrc="/images/kyotakuSmall.jpg"
@@ -235,7 +214,6 @@ const Home = () => {
                     <img loading="lazy" src="./icons/right.webp" alt="居宅介護支援　もっと見る　右矢印" className="w-8 group-hover:translate-x-0.5 transition-all duration-200" />
                   </Link>
                 </div>
-                {/* <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="hidden md:block w-1/2 bg-[url('/images/kyotaku.webp')] bg-bottom bg-cover rounded-md shadow-md min-h-[300px]"></div> */}
                 <ImageWithPlaceholder
                   src="/images/kyotaku.webp"
                   placeholderSrc="/images/kyotakuSmall.jpg"
@@ -346,9 +324,6 @@ const Home = () => {
                   className="h-full w-1/2 sm:w-1/3 bg-cover bg-top"
                   imgClassName="object-top"
                 />
-                {/* <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper2.png')] bg-cover bg-top">
-                  <div className="w-full h-full bg-black bg-opacity-40"></div>
-                </div> */}
                 <ImageWithPlaceholder
                   src="/illustrations/helper1.webp"
                   placeholderSrc="/illustrations/helper1Small.png"
@@ -356,9 +331,6 @@ const Home = () => {
                   className="hidden sm:block h-full w-1/3 bg-cover bg-top"
                   imgClassName="object-top"
                 />
-                {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="hidden sm:block h-full w-1/3 bg-[url('/illustrations/helper1.png')] bg-cover bg-top">
-                  <div className="w-full h-full bg-black bg-opacity-40"></div>
-                </div> */}
                 <ImageWithPlaceholder
                   src="/illustrations/helper3.webp"
                   placeholderSrc="/illustrations/helper3Small.png"
@@ -366,9 +338,6 @@ const Home = () => {
                   className="h-full w-1/2 sm:w-1/3 bg-cover bg-top"
                   imgClassName="object-top"
                 />
-                {/* <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="h-full w-1/2 sm:w-1/3 bg-[url('/illustrations/helper3.png')] bg-cover bg-top">
-                  <div className="w-full h-full bg-black bg-opacity-40"></div>
-                </div> */}
                 <div className="absolute w-full transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                   <p className="text-white text-xl px-2 w-full max-w-[420px] xs:w-2/3 text-center mb-3">あなたの笑顔が誰かの笑顔になる職場で、
                     一緒に働きませんか？</p>

@@ -148,7 +148,6 @@ const Recruit = () => {
               </div>
             </div>
             <div className="hidden sm:block w-1/5 2md:w-2/5 rounded-md shadow-md">
-              {/* <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('/illustrations/helper2.webp')] bg-cover bg-top h-1/3 rounded-t-md"></div> */}
               <ImageWithPlaceholder
               src="/illustrations/helper2.webp"
               placeholderSrc="/illustrations/helper2Small.png"
@@ -156,7 +155,6 @@ const Recruit = () => {
               className="bg-cover bg-top h-1/3 rounded-t-md"
               imgClassName="rounded-t-md"
             />
-              {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.webp')] bg-cover bg-top h-1/3"></div> */}
               <ImageWithPlaceholder
               src="/illustrations/helper1.webp"
               placeholderSrc="/illustrations/helper1Small.png"
@@ -164,7 +162,6 @@ const Recruit = () => {
               className="bg-cover bg-top h-1/3"
               imgClassName=""
             />
-              {/* <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.webp')] bg-cover bg-top h-1/3 rounded-b-md"></div> */}
               <ImageWithPlaceholder
               src="/illustrations/helper3.webp"
               placeholderSrc="/illustrations/helper3Small.png"

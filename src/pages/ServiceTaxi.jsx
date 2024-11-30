@@ -46,7 +46,6 @@ const ServiceTaxi = () => {
           {/* 保険タクシー */}
           <div className="flex items-center gap-2 sm:gap-5 2md:gap-10 mb-3 xs:mb-4">
             <h1 className="text-2xl text-darkpink text-nowrap">介護タクシー</h1>
-            {/* <div aria-label="介護タクシーの車の写真" role="img" className="bg-[url('/images/kuruma1.webp')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div> */}
             <ImageWithPlaceholder
               src="/images/kuruma1.webp"
               placeholderSrc="/images/kuruma1Small.jpg"
@@ -63,7 +62,7 @@ const ServiceTaxi = () => {
                   <h3 className="mb-3 text-xl">介護保険タクシーとは</h3>
                   <p className="mb-2">介護保険で利用できる介護タクシーは介護保険タクシーとも言います。</p>
                   <p className="mb-2">介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。（ご利用対象に当てはまらない方々は一般介護タクシーを利用することができます）</p>
-                  <p>ケアマネージャーさまの作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。(障害者総合支援法にも適用されます）</p>
+                  <p>ケアマネージャーさまの作成する通院介助等のケアプランに基づいてご利用いただくことで、介護保険が適用され、身体介助と移送を一本化にしたサービスです。（障害者総合支援法にも適用されます）</p>
                 </div>
                 <div className="sm:w-1/2">
                   <h3 className="mb-3 text-xl">サービス内容</h3>

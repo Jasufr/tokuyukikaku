@@ -72,7 +72,6 @@ const Contact = () => {
               <div className="mb-2">
                 <h2 className="text-xl mb-4">メールでのお問い合わせ</h2>
               </div>
-              {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('/illustrations/helper4.webp')] bg-cover bg-center rounded-md shadow-md"></div> */}
               <ImageWithPlaceholder
               src="/illustrations/helper4.webp"
               placeholderSrc="/illustrations/helper4Small.png"
@@ -82,7 +81,6 @@ const Contact = () => {
             />
               <SendMail />
             </div>
-            {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('/illustrations/helper4.webp')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div> */}
             <ImageWithPlaceholder
               src="/illustrations/helper4.webp"
               placeholderSrc="/illustrations/helper4Small.png"
