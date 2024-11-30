@@ -13,7 +13,7 @@ const Recruit = () => {
           property="og:description"
           content="介護職員（常勤・非常勤ヘルパー）及び介護タクシードライバー・介護支援専門員業務全般（ケアマネジャー）を募集しています。"
         />
-        <meta property="og:image" content="/illustrations/helper3.png" />
+        <meta property="og:image" content="/illustrations/helper3.webp" />
         <meta property="og:url" content="https://tokuyukikaku.netlify.app/recruit" />
         <meta property="og:type" content="website" />
 
@@ -50,9 +50,9 @@ const Recruit = () => {
                 <p className="">※ 直行直帰OK！</p>
               </div>
               {/* <div className="flex w-full h-32 mt-6 sm:hidden shadow-md rounded-md">
-                <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('/illustrations/helper2.png')] bg-cover bg-top w-1/3 rounded-l-md"></div>
-                <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.png')] bg-cover bg-top w-1/3"></div>
-                <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.png')] bg-cover bg-top w-1/3 rounded-r-md"></div>
+                <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('/illustrations/helper2.webp')] bg-cover bg-top w-1/3 rounded-l-md"></div>
+                <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.webp')] bg-cover bg-top w-1/3"></div>
+                <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.webp')] bg-cover bg-top w-1/3 rounded-r-md"></div>
               </div> */}
               <div className="my-6">
                 <h2 className="text-lg mb-3">募集要項</h2>
@@ -148,25 +148,25 @@ const Recruit = () => {
               </div>
             </div>
             <div className="hidden sm:block w-1/5 2md:w-2/5 rounded-md shadow-md">
-              {/* <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('/illustrations/helper2.png')] bg-cover bg-top h-1/3 rounded-t-md"></div> */}
+              {/* <div aria-label="ご利用者様とヘルパーが散歩するイラスト" role="img" className="bg-[url('/illustrations/helper2.webp')] bg-cover bg-top h-1/3 rounded-t-md"></div> */}
               <ImageWithPlaceholder
-              src="/illustrations/helper2.png"
+              src="/illustrations/helper2.webp"
               placeholderSrc="/illustrations/helper2Small.png"
               alt="ご利用者様とヘルパーが散歩するイラスト"
               className="bg-cover bg-top h-1/3 rounded-t-md"
               imgClassName="rounded-t-md"
             />
-              {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.png')] bg-cover bg-top h-1/3"></div> */}
+              {/* <div aria-label="ご利用者様に買い物のお手伝いをするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper1.webp')] bg-cover bg-top h-1/3"></div> */}
               <ImageWithPlaceholder
-              src="/illustrations/helper1.png"
+              src="/illustrations/helper1.webp"
               placeholderSrc="/illustrations/helper1Small.png"
               alt="ご利用者様に買い物のお手伝いをするヘルパーのイラスト"
               className="bg-cover bg-top h-1/3"
               imgClassName=""
             />
-              {/* <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.png')] bg-cover bg-top h-1/3 rounded-b-md"></div> */}
+              {/* <div aria-label="ご利用者様とケアするヘルパーのイラスト" role="img" className="bg-[url('/illustrations/helper3.webp')] bg-cover bg-top h-1/3 rounded-b-md"></div> */}
               <ImageWithPlaceholder
-              src="/illustrations/helper3.png"
+              src="/illustrations/helper3.webp"
               placeholderSrc="/illustrations/helper3Small.png"
               alt="ご利用者様とケアするヘルパーのイラスト"
               className="bg-cover bg-top h-1/3 rounded-b-md"

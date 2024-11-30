@@ -12,7 +12,7 @@ const Privacy = () => {
           property="og:description"
           content="合同会社德有企画(以下「当社」という)は、利用者及びその家族の個人情報を適切に取り扱うことを社会的責務と考え、個人情報の保護に努めます。"
         />
-        <meta property="og:image" content="/icons/logo.png" />
+        <meta property="og:image" content="/icons/logo.webp" />
         <meta property="og:url" content="https://tokuyukikaku.netlify.app/privacy" />
         <meta property="og:type" content="website" />
 

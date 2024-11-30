@@ -15,7 +15,7 @@ const About = () => {
           property="og:description"
           content="当社は、高齢者や障がいを持つ方々、そしてそのご家族の方々に寄り添い、心身の健康と幸福をサポートをしていきます。利用者様、ご家族の皆様、地域のコミュニティ、そして当社のスタッフ全員の幸福と福祉を真摯に考えています。"
         />
-        <meta property="og:image" content="/images/dayservice2.jpg" />
+        <meta property="og:image" content="/images/dayservice2.webp" />
         <meta property="og:url" content="https://tokuyukikaku.netlify.app/about" />
         <meta property="og:type" content="website" />
 
@@ -47,9 +47,9 @@ const About = () => {
             <p className="mb-2">介護に取り組む私たちは、利用者様のニーズを理解し、満たすことを最優先にしています。一人ひとりの利用者様に最適なケアプランを提供し、利用者様の生活を豊かで充実したものにすることを目指します。</p>
             <p>また、私たちは真の人間関係を築き、お互いに学び合い、支え合う環境を大切にしています。地域のコミュニティとの協力を通じて、お互いに成長し、より良い未来を築いていくことを使命としています。</p>
           </div>
-          {/* <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('/images/dayservice2.jpg')] bg-center bg-cover rounded-md shadow-md hidden md:block w-1/4 2md:w-2/5 min-h-80"></div> */}
+          {/* <div aria-label="徳有企画（とくゆきかく）の施設" role="img" className="bg-[url('/images/dayservice2.webp')] bg-center bg-cover rounded-md shadow-md hidden md:block w-1/4 2md:w-2/5 min-h-80"></div> */}
           <ImageWithPlaceholder
-            src="/images/dayservice2.jpg"
+            src="/images/dayservice2.webp"
             placeholderSrc="/images/dayservice2Small.jpg"
             alt="徳有企画（とくゆきかく）の施設"
             className="bg-center bg-cover rounded-md shadow-md hidden md:block w-1/4 2md:w-2/5 h-80"

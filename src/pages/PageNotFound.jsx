@@ -28,7 +28,7 @@ const PageNotFound = () => {
         </div>
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 mb-6 py-6 lg:py-12 ">
           <div className="text-center">
-            <img className="w-24 m-auto" loading="eager" src="./icons/nothing-found.png" alt="エラー　アイコン　404" />
+            <img className="w-24 m-auto" loading="eager" src="./icons/nothing-found.webp" alt="エラー　アイコン　404" />
             <h1 className="text-2xl mb-3">404 Page Not Found</h1>
             <h2 className="text-xl mb-3">お探しのページは見つかりませんでした。</h2>
             <p className="mb-1">ご指定いただいたアドレスが間違っているか、ページが移動または削除された可能性があります。</p>

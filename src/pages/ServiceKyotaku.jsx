@@ -17,7 +17,7 @@ const ServiceKyotaku = () => {
           property="og:description"
           content="介護を必要とする高齢者や障害者が自宅で適切な介護サービスを受けられるように、介護支援専門員（ケアマネジャー）が行う支援活動のことを指します。"
         />
-        <meta property="og:image" content="/images/kyotaku.jpg" />
+        <meta property="og:image" content="/images/kyotaku.webp" />
         <meta property="og:url" content="https://tokuyukikaku.netlify.app/kyotaku" />
         <meta property="og:type" content="website" />
 
@@ -45,9 +45,9 @@ const ServiceKyotaku = () => {
         <div className="px-6 2md:px-12 lg:px-24 xl:px-28 py-6 lg:py-12">
           <div className="flex items-center gap-2 sm:gap-5 2md:gap-10 mb-3 xs:mb-4">
             <h1 className="text-2xl text-darkpink text-nowrap">居宅支援</h1>
-            {/* <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="bg-[url('/images/kyotaku.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div> */}
+            {/* <div aria-label="居宅介護支援のケアマネジャーとご利用者様の写真" role="img" className="bg-[url('/images/kyotaku.webp')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div> */}
             <ImageWithPlaceholder
-              src="/images/kyotaku.jpg"
+              src="/images/kyotaku.webp"
               placeholderSrc="/images/kyotakuSmall.jpg"
               alt="居宅介護支援のケアマネジャーとご利用者様の写真"
               className="bg-cover bg-center w-full h-14 sm:h-20 rounded-md shadow-md"

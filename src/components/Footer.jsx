@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="flex gap-6 w-full lg:w-3/4">
                 <div className="bg-lightpink rounded-lg shadow-md p-1 xs:p-4 lg:p-8 text-center w-1/2">
                   <div className="flex items-center justify-center gap-1">
-                    <img loading="lazy" className="w-4 xs:w-6 lg:w-10" src="./icons/phone.png" alt="電話番号" />
+                    <img loading="lazy" className="w-4 xs:w-6 lg:w-10" src="./icons/phone.webp" alt="電話番号" />
                     <h2 className="text-sm xs:text-xl lg:text-3xl">042-497-6466</h2>
                   </div>
                   <h3 className="text-[10px] xs:text-sm lg:text-base"><span className="hidden xs:inline">受付時間</span> 9 : 00～18 : 00</h3>
@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
                 <Link to="/contact" className="bg-lightpink rounded-lg shadow-md p-2 xs:p-4 lg:p-8 flex flex-col items-center justify-center w-1/2 hover:bg-darkpink hover:bg-opacity-20 transition-colors duration-200">
                   <h2 className="text-[10px] xs:text-sm sm:text-base lg:text-xl">メールでのお問い合わせ</h2>
-                  <img loading="lazy" className="w-8 lg:w-14" src="./icons/mail.png" alt="問い合わせ　メールアドレス" />
+                  <img loading="lazy" className="w-8 lg:w-14" src="./icons/mail.webp" alt="問い合わせ　メールアドレス" />
                 </Link>
               </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
           <Link className="hover:text-darkpink transition-colors duration-200" to="/privacy">個人情報保護方針</Link>
           <div className="relative">
             <p className="">イラスト Designed by <a className="text-darkpink hover:text-darkstone transition-colors duration-200 ease-in-out" href="https://www.freepik.com/" target="_blank">Freepik</a></p>
-            <img loading="lazy" className="absolute -bottom-1.5 -right-10 w-9" src="./icons/logo.png" alt="徳有企画（とくゆきかく）ロゴ" />
+            <img loading="lazy" className="absolute -bottom-1.5 -right-10 w-9" src="./icons/logo.webp" alt="徳有企画（とくゆきかく）ロゴ" />
           </div>
           <h2>© 2024  合同会社徳有企画</h2>
         </div>

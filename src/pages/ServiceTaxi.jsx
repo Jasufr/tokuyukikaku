@@ -17,7 +17,7 @@ const ServiceTaxi = () => {
           property="og:description"
           content="介護保険で利用できる介護タクシーは介護保険タクシーとも言います。介護保険タクシーご利用には要介護認定(1～5)と訪問介護契約が必要となります。（ご利用対象に当てはまらない方々は一般介護タクシーを利用することができます）"
         />
-        <meta property="og:image" content="/images/kuruma1.jpg" />
+        <meta property="og:image" content="/images/kuruma1.webp" />
         <meta property="og:url" content="https://tokuyukikaku.netlify.app/taxi" />
         <meta property="og:type" content="website" />
 
@@ -46,9 +46,9 @@ const ServiceTaxi = () => {
           {/* 保険タクシー */}
           <div className="flex items-center gap-2 sm:gap-5 2md:gap-10 mb-3 xs:mb-4">
             <h1 className="text-2xl text-darkpink text-nowrap">介護タクシー</h1>
-            {/* <div aria-label="介護タクシーの車の写真" role="img" className="bg-[url('/images/kuruma1.jpg')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div> */}
+            {/* <div aria-label="介護タクシーの車の写真" role="img" className="bg-[url('/images/kuruma1.webp')] bg-center bg-cover w-full h-14 sm:h-20 rounded-md shadow-md"></div> */}
             <ImageWithPlaceholder
-              src="/images/kuruma1.jpg"
+              src="/images/kuruma1.webp"
               placeholderSrc="/images/kuruma1Small.jpg"
               alt="介護タクシーの車の写真"
               className="bg-cover bg-center w-full h-14 sm:h-20 rounded-md shadow-md"

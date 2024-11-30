@@ -14,7 +14,7 @@ const Contact = () => {
           property="og:description"
           content="各種介護サービスについて不明点等がございましたら、お気軽に下記のメールや電話番号まで、ご連絡ください。メールでご連絡の際は、下記のメールフォームからでもご利用いただけます。"
         />
-        <meta property="og:image" content="/illustrations/helper4.png" />
+        <meta property="og:image" content="/illustrations/helper4.webp" />
         <meta property="og:url" content="https://tokuyukikaku.netlify.app/contact" />
         <meta property="og:type" content="website" />
 
@@ -45,23 +45,23 @@ const Contact = () => {
           <p className="mb-2">メールでご連絡の際は、下記のメールフォームからでもご利用いただけます。</p>
           <div className="flex justify-center">
             <div className="w-1/2 sm:w-1/3 text-center">
-              <img loading="lazy" src="./icons/address.png" alt="住所" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+              <img loading="lazy" src="./icons/address.webp" alt="住所" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
               <h3>住所</h3>
               <p>188-0013 西東京市<br /> 向台町6丁目10番10号</p>
             </div>
             <div className="w-1/2 sm:w-1/3 text-center">
-              <img loading="lazy" src="./icons/phone_number.png" alt="電話番号" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+              <img loading="lazy" src="./icons/phone_number.webp" alt="電話番号" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
               <h3>電話番号</h3>
               <p>042-497-6466</p>
             </div>
             <div className="hidden sm:block w-1/3 text-center">
-              <img loading="lazy" src="./icons/mail_address.png" alt="メールアドレス" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+              <img loading="lazy" src="./icons/mail_address.webp" alt="メールアドレス" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
               <h3>メールアドレス</h3>
               <p className="">tokuyukikaku@basil.ocn.ne.jp</p>
             </div>
           </div>
           <div className="sm:hidden text-center mt-2">
-            <img loading="lazy" src="./icons/mail_address.png" alt="メールアドレス" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
+            <img loading="lazy" src="./icons/mail_address.webp" alt="メールアドレス" className="w-11 mx-auto my-2 bg-lightpink shadow-md rounded-full p-3" />
             <h3>メールアドレス</h3>
             <p className="">tokuyukikaku@basil.ocn.ne.jp</p>
           </div>
@@ -72,9 +72,9 @@ const Contact = () => {
               <div className="mb-2">
                 <h2 className="text-xl mb-4">メールでのお問い合わせ</h2>
               </div>
-              {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('/illustrations/helper4.png')] bg-cover bg-center rounded-md shadow-md"></div> */}
+              {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="h-32 mb-2 sm:hidden bg-[url('/illustrations/helper4.webp')] bg-cover bg-center rounded-md shadow-md"></div> */}
               <ImageWithPlaceholder
-              src="/illustrations/helper4.png"
+              src="/illustrations/helper4.webp"
               placeholderSrc="/illustrations/helper4Small.png"
               alt="ご利用者様とヘルパーのイラスト"
               className="h-32 mb-2 sm:hidden bg-cover bg-center rounded-md shadow-md"
@@ -82,9 +82,9 @@ const Contact = () => {
             />
               <SendMail />
             </div>
-            {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('/illustrations/helper4.png')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div> */}
+            {/* <div aria-label="ご利用者様とヘルパーのイラスト" role="img" className="hidden sm:block bg-[url('/illustrations/helper4.webp')] bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"></div> */}
             <ImageWithPlaceholder
-              src="/illustrations/helper4.png"
+              src="/illustrations/helper4.webp"
               placeholderSrc="/illustrations/helper4Small.png"
               alt="ご利用者様とヘルパーのイラスト"
               className="hidden sm:block bg-cover bg-center w-1/4 2md:w-1/3 rounded-md shadow-md"
