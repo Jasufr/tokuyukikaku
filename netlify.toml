@@ -1,0 +1,14 @@
+[[redirects]]
+from = "/訪問介護/"
+to = "/houmon"
+status = 301
+
+[[redirects]]
+from = "/介護保険タクシー/"
+to = "/taxi"
+status = 301
+
+[[redirects]]
+from = "/一般介護タクシー/"
+to = "/taxi"
+status = 301
