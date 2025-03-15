@@ -65,7 +65,7 @@ const Recruit = () => {
                           <li className="list-square list-inside">非常勤ヘルパー : <span className="ms-3">時給1700円～2550円（一律処遇改善手当300円を含む）</span></li>
                           <li className="list-square list-inside mb-2">常勤ヘルパー : <span className="ms-3">月給260,000円～400,000円</span></li>
                           <li className="mb-2">※ 経験･資格等考慮のうえ決定</li>
-                          <li className="list-disc list-inside">弊社は東京都の介護職員処遇改善加算Ⅰ・介護職員等特定処遇改善加算Ⅱ及び介護職員ベースアップ等加算を取得しております。</li>
+                          <li className="list-disc list-inside">弊社は東京都の介護職員処遇改善加算ⅠⅠを取得しております。</li>
                           <li className="list-disc list-inside">処遇改善(特別手当)手当として、常勤ヘルパーは毎月66,000円～150,000円(経験及び勤務年数による)支給。非常勤ヘルパーは訪問1件に付き300円支給。（自費利用の場合は、特別手当がつきません。）</li>
                         </ul>
                       </td>

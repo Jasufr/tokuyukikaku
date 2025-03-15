@@ -152,7 +152,7 @@ const ServiceTaxi = () => {
                           </tr>
                           <tr>
                             <th className="bg-white bg-opacity-50 p-2 text-start border border-darkstone min-w-24" scope="row">時速10キロ以下の走行時間について1分45秒までごとに</th>
-                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">90円</td>
+                            <td className="bg-white bg-opacity-50 p-2 border border-darkstone">100円</td>
                           </tr>
                           <tr>
                             <th className="bg-lightpink bg-opacity-80 p-2 text-start border border-darkstone min-w-24" colSpan={2}>大型車</th>
